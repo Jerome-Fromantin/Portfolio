@@ -1,0 +1,431 @@
+/* Styles pour index-ori.html */
+/*
+@import "imports/Variables.scss";
+
+body {
+  font-family: "Times New Roman";
+  font-size: 14px
+}
+
+#entete {
+  position: fixed;
+  z-index: 1;
+  font-size: 3em;
+  padding: 0;
+  border-bottom: $blackBor
+}
+#entete, #quisuisje, #pdp {
+  background-color: $backGrey
+}
+
+#logoLink {
+  margin-left: 10px
+}
+#logo {
+  height: 100px
+}
+
+#navbar span a {
+  border: 2px transparent solid;
+  border-radius: $title;
+  &:hover {
+    color: black;
+    text-decoration: none;
+    border: $blackBor;
+    -webkit-animation: color-change 3s linear infinite;
+    animation: color-change 3s linear infinite
+  }
+}
+
+@-webkit-keyframes color-change {
+  0% {
+    background: royalblue;
+  }
+  50% {
+    background: white;
+  }
+  100% {
+    background: red;
+  }
+}
+@keyframes color-change {
+  0% {
+    background: royalblue;
+  }
+  50% {
+    background: white;
+  }
+  100% {
+    background: red;
+  }
+}
+
+#emptyDiv {
+  width: 176px;
+  height: 100px
+}
+
+#head {
+  background-color: black;
+  background-image: url(Images/Clavier.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px
+}
+
+#headText {
+  display: inline-block;
+  background-color: rgba(222, 222, 222, 0.5);
+  color: black;
+  padding: 0 10px;
+  border: $blackBor;
+  border-radius: $title;
+  margin-top: 220px
+}
+
+#author {
+  font-size: 5em
+}
+
+#authorJob {
+  font-weight: bold
+}
+
+#quisuisje {
+  padding: 110px 80px 55px 80px
+}
+
+.quisuisje {
+  display: inline-block;
+  background-color: $red;
+  color: white;
+  border: $blackBor;
+  border-radius: $title;
+  transition: background-color 0.5s, border 0.5s;
+  &:hover {
+    background-color: $blue;
+    border: 2px $red solid
+  }
+}
+
+.description, .infos-compet {
+  background-color: white;
+  font-size: 1.5em;
+  text-align: left;
+  text-indent: 30px;
+  padding: 30px 30px 10px 30px;
+  border-radius: 20px
+}
+
+.infos-compet {
+  display: inline-block;
+  width: 48%;
+  text-align: center;
+  text-indent: 0;
+  margin: 0 1%
+}
+
+.parag {
+  text-align: left
+}
+
+.parag span {
+  color: $red;
+  font-weight: bold;
+  text-decoration: underline
+}
+
+.passions, .projets, .texteblanc3 {
+  background-color: white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+  border-radius: 20px
+}
+
+#realisations {
+  background-color: $red;
+  padding: 110px 80px 55px 80px
+}
+
+.realisations {
+  display: inline-block;
+  background-color: $blue;
+  color: white;
+  border: $blackBor;
+  border-radius: $title;
+  transition: background-color 0.5s, color 0.5s;
+  &:hover {
+    background-color: $backGrey;
+    color: $red
+  }
+}
+
+.typeProjet {
+  color: $red;
+  font-weight: bold
+}
+
+.liensProjet {
+  border-right: $blackBor
+}
+
+.boutonReal {
+  background-color: $red;
+  min-width: 250px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: $blackBor;
+  border-radius: $title;
+  margin: 10px;
+  transition: background-color 0.5s, color 0.5s;
+  &:hover {
+    background-color: $backGrey;
+    color: $red
+  }
+}
+
+// Code à revérifier plus tard avec la modif des projets.
+.reddy2 {
+  color: $red;
+  font-weight: bold
+}
+
+.boutreal {
+  background-color: $red;
+  border: $blackBor;
+  border-radius: $title
+}
+// Fin du code à revérifier.
+
+#cv {
+  background-color: $blue;
+  padding-top: 90px;
+  padding-bottom: 55px
+}
+
+.cv {
+  display: inline-block;
+  background-color: $backGrey;
+  color: $red;
+  border: $blackBor;
+  border-radius: $title;
+  margin-top: 20px;
+  transition: background-color 0.5s, color 0.5s;
+  &:hover {
+    background-color: rgb(150, 150, 150);
+    color: $blue
+  }
+}
+
+.categorieCV {
+  color: white;
+  font-size: 1.5em;
+  text-align: left;
+  padding: 30px 30px 10px 30px
+}
+
+#pdp {
+  height: 100px;
+  font-size: 2em;
+  padding: 0;
+  border-top: $blackBor
+}
+*/
+
+/* Style pour index.html */
+body {
+  padding: 0;
+  margin: 0
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  height: 100%;
+  font-family: Consolas, 'Courier New', monospace;
+  font-size: 20px;
+  padding: 5px 10px
+}
+
+.eachLine, .root, .sub1, .sub2, .sub2-hover, .sub2-close-hover, .sub3, .sub3-hover, .sub3-close-hover, .sub4 {
+  display: flex;
+  flex-direction: row
+}
+
+.line {
+  width: 35px;
+  min-width: 35px;
+  color: grey;
+  text-align: right
+}
+
+.root {
+  color: dodgerblue;
+  margin-left: 20px
+}
+
+h1, h2, h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0
+}
+
+.sub1, .sub2, .sub3, .sub4 {
+  padding-left: 40px;
+  border-left: 1px darken(grey, 20) solid;
+  margin-left: 20px
+}
+
+.sub1 {
+  color: skyblue
+}
+
+.sub2 {
+  color: yellow
+}
+
+.sub2-hover:hover {
+  background: yellow;
+  color: black;
+  >.baliseSymbol {
+    color: black
+  }
+  ~ .sub2-close-hover {
+    background: yellow;
+    color: black;
+    >.baliseSymbol {
+      color: black
+    }
+  }
+}
+
+.sub2-close-hover:hover {
+  background: yellow;
+  color: black;
+  >.baliseSymbol {
+    color: black
+  }
+}
+
+.content, .egal {
+  color: white
+}
+
+#photoLinkId {
+  cursor: pointer;
+  text-decoration: underline
+}
+#photoLinkId:hover {
+  background: white;
+  color: black
+}
+
+#divImgToOpen {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1
+}
+
+#imgId {
+  width: 30%;
+  max-width: 504px;
+  border: 2px dodgerblue solid;
+  border-radius: 20px;
+  margin-bottom: 3px
+}
+
+#closeId {
+  cursor: pointer;
+  width: 100px;
+  background: black;
+  color: yellow;
+  border: 2px dodgerblue solid;
+  border-radius: 5px;
+  transition: 0.5s
+}
+#closeId:hover {
+  background: yellow;
+  color: black
+}
+
+address {
+  font-style: normal
+}
+
+a:link {
+  color: white
+}
+a:visited {
+  color: orchid
+}
+a:hover {
+  background: white;
+  color: black
+}
+
+blockquote {
+  margin: 0
+}
+
+.sub3 {
+  color: orchid
+}
+
+.sub3-hover:hover, .sub3-close-hover:hover {
+  background: orchid;
+  color: black;
+  >.baliseSymbol {
+    color: black
+  }
+}
+
+.indent {
+  width: 40px;
+  min-width: 40px;
+  border-left: 1px darken(grey, 20) solid
+}
+
+.baliseSymbol {
+  color: grey
+}
+
+.attr {
+  color: rgb(255,0,40)
+}
+
+.value {
+  color: goldenrod
+}
+
+.listContent {
+  color: white;
+  list-style-position: inside;
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
+
+#easterEgg {
+  color: black
+}
+
+.comment {
+  color: lime
+}
+
+.projets, .formations, .expériences {
+  color: skyblue
+}
