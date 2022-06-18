@@ -1,11 +1,6 @@
-@charset "UTF-8";
-/* Styles pour index-ori.html */
-/*
-@import "imports/Variables.scss";
-
 body {
-  font-family: "Times New Roman";
-  font-size: 14px
+  font-family: "Averia Serif Libre";
+  font-size: 14px;
 }
 
 #entete {
@@ -13,29 +8,35 @@ body {
   z-index: 1;
   font-size: 3em;
   padding: 0;
-  border-bottom: $blackBor
+  border-bottom: 2px black solid;
 }
+
 #entete, #quisuisje, #pdp {
-  background-color: $backGrey
+  background-color: #dedede;
 }
 
-#logoLink {
-  margin-left: 10px
-}
-#logo {
-  height: 100px
+#logoLink, #logoLink-pdp {
+  margin: 0 0 0 10px;
 }
 
-#navbar span a {
+#logo, #logo-pdp {
+  height: 100px;
+}
+
+#navbar span, #navbar-pdp span {
+  margin: 0 2%;
+}
+
+#navbar span a, #navbar-pdp span a {
   border: 2px transparent solid;
-  border-radius: $title;
-  &:hover {
-    color: black;
-    text-decoration: none;
-    border: $blackBor;
-    -webkit-animation: color-change 3s linear infinite;
-    animation: color-change 3s linear infinite
-  }
+  border-radius: 20px 0 20px 0;
+}
+#navbar span a:hover, #navbar-pdp span a:hover {
+  color: black;
+  text-decoration: none;
+  border: 2px black solid;
+  -webkit-animation: color-change 2s linear infinite;
+  animation: color-change 2s linear infinite;
 }
 
 @-webkit-keyframes color-change {
@@ -60,10 +61,8 @@ body {
     background: red;
   }
 }
-
-#emptyDiv {
-  width: 176px;
-  height: 100px
+.links-header, .links-pdp {
+  padding: 8px;
 }
 
 #head {
@@ -72,260 +71,250 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px
+  height: 600px;
 }
 
 #headText {
-  display: inline-block;
-  background-color: rgba(222, 222, 222, 0.5);
+  background-color: rgba(222, 222, 222, 0.7);
   color: black;
+  font-weight: bold;
+  text-align: center;
   padding: 0 10px;
-  border: $blackBor;
-  border-radius: $title;
-  margin-top: 220px
+  border: 2px black solid;
+  border-radius: 20px 0 20px 0;
 }
 
-#author {
-  font-size: 5em
+h1 {
+  font-size: 5em;
 }
 
-#authorJob {
-  font-weight: bold
+h2 {
+  font-size: 2em;
 }
 
 #quisuisje {
-  padding: 110px 80px 55px 80px
+  padding: 110px 80px 55px 80px;
+}
+
+.section-h2 {
+  font-size: 3em;
 }
 
 .quisuisje {
   display: inline-block;
-  background-color: $red;
+  background-color: #e63946;
   color: white;
-  border: $blackBor;
-  border-radius: $title;
+  border: 2px black solid;
+  border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, border 0.5s;
-  &:hover {
-    background-color: $blue;
-    border: 2px $red solid
-  }
+}
+.quisuisje:hover {
+  background-color: royalblue;
+  border: 2px #e63946 solid;
 }
 
-.description, .infos-compet {
+.description, .citation, .contact, .compet, .autresComp, .passions, .projets {
   background-color: white;
   font-size: 1.5em;
   text-align: left;
   text-indent: 30px;
   padding: 30px 30px 10px 30px;
-  border-radius: 20px
+  border-radius: 20px;
 }
 
-.infos-compet {
-  display: inline-block;
-  width: 48%;
+.impWord {
+  color: royalblue;
+}
+
+.citation, .autresComp {
+  width: 480px;
   text-align: center;
   text-indent: 0;
-  margin: 0 1%
+  margin: 0 auto;
+}
+
+.contact-compet {
+  display: flex;
+  justify-content: center;
+}
+
+.contact, .compet {
+  width: 48%;
+  max-width: 570px;
+  text-align: center;
+  text-indent: 0;
+}
+
+.contact {
+  margin-right: 10px;
+}
+
+.compet {
+  margin-left: 10px;
+}
+
+#idImg {
+  width: 50%;
+  max-width: 300px;
+  border: 2px black solid;
+  border-radius: 20px 0 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+ul span {
+  color: #e63946;
+  font-weight: bold;
+}
+
+ul a {
+  color: royalblue;
+  text-decoration: underline;
+}
+ul a:visited {
+  color: black;
+}
+ul a:hover {
+  color: #e63946;
+}
+
+li img {
+  background: #e63946;
+  border-radius: 10px;
+}
+
+.autresComp {
+  margin-top: 20px;
+}
+
+.autresComp ul {
+  text-align: center;
+}
+
+.passions, .projets {
+  text-align: center;
+  text-indent: 0;
 }
 
 .parag {
-  text-align: left
+  text-align: left;
 }
 
 .parag span {
-  color: $red;
+  color: #e63946;
   font-weight: bold;
-  text-decoration: underline
 }
 
-.passions, .projets, .texteblanc3 {
-  background-color: white;
-  font-size: 1.5em;
-  text-align: center;
-  padding: 30px 30px 10px 30px;
-  border-radius: 20px
+#thermidor {
+  color: royalblue;
+  font-weight: bold;
 }
 
 #realisations {
-  background-color: $red;
-  padding: 110px 80px 55px 80px
+  background-color: #e63946;
+  padding: 110px 80px 55px 80px;
 }
 
 .realisations {
   display: inline-block;
-  background-color: $blue;
+  background-color: royalblue;
   color: white;
-  border: $blackBor;
-  border-radius: $title;
+  border: 2px black solid;
+  border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: $backGrey;
-    color: $red
-  }
+}
+.realisations:hover {
+  background-color: #dedede;
+  color: #e63946;
+}
+
+.projets img {
+  background: #e63946;
+  border-radius: 10px;
 }
 
 .typeProjet {
-  color: $red;
-  font-weight: bold
+  color: #e63946;
+  font-weight: bold;
 }
 
 .liensProjet {
-  border-right: $blackBor
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.boutonReal {
-  background-color: $red;
+.boutonProjet {
+  background-color: #e63946;
   min-width: 250px;
   color: white;
   font-size: 24px;
   font-weight: bold;
-  border: $blackBor;
-  border-radius: $title;
+  border: 2px black solid;
+  border-radius: 20px 0 20px 0;
   margin: 10px;
   transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: $backGrey;
-    color: $red
-  }
+}
+.boutonProjet:hover {
+  background-color: #dedede;
+  color: #e63946;
 }
 
-// Code à revérifier plus tard avec la modif des projets.
-.reddy2 {
-  color: $red;
-  font-weight: bold
+.texteProjet {
+  padding: 0 10px;
 }
 
-.boutreal {
-  background-color: $red;
-  border: $blackBor;
-  border-radius: $title
+.technos {
+  color: royalblue;
 }
-// Fin du code à revérifier.
 
 #cv {
-  background-color: $blue;
-  padding-top: 90px;
-  padding-bottom: 55px
+  background-color: royalblue;
+  padding: 110px 80px 55px 80px;
 }
 
 .cv {
   display: inline-block;
-  background-color: $backGrey;
-  color: $red;
-  border: $blackBor;
-  border-radius: $title;
-  margin-top: 20px;
+  background-color: #dedede;
+  color: #e63946;
+  border: 2px black solid;
+  border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: rgb(150, 150, 150);
-    color: $blue
-  }
+}
+.cv:hover {
+  background-color: #969696;
+  color: royalblue;
 }
 
 .categorieCV {
   color: white;
   font-size: 1.5em;
   text-align: left;
-  padding: 30px 30px 10px 30px
+  padding: 10px 0;
 }
 
-#pdp {
-  height: 100px;
-  font-size: 2em;
-  padding: 0;
-  border-top: $blackBor
-}
-*/
-/* Style pour index.html */
-body {
-  padding: 0;
-  margin: 0;
+.cvIcon {
+  padding: 3px;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  background: black;
-  height: 100%;
-  font-family: Consolas, "Courier New", monospace;
-  font-size: 20px;
-  padding: 5px 10px;
+.cvYear {
+  padding: 2px 6px;
 }
 
-.eachLine, .root, .sub1, .sub2, .sub2-hover, .sub2-close-hover, .sub3, .sub3-hover, .sub3-close-hover, .sub4 {
-  display: flex;
-  flex-direction: row;
-}
-
-.line {
-  width: 35px;
-  min-width: 35px;
-  color: grey;
-  text-align: right;
-}
-
-.root {
-  color: dodgerblue;
-  margin-left: 20px;
-}
-
-h1, h2, h3 {
-  font-size: 20px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.sub1, .sub2, .sub3, .sub4 {
-  padding-left: 40px;
-  border-left: 1px #4d4d4d solid;
-  margin-left: 20px;
-}
-
-.sub1 {
-  color: skyblue;
-}
-
-.sub2 {
-  color: yellow;
-}
-
-.sub2-hover:hover {
-  background: yellow;
-  color: black;
-}
-.sub2-hover:hover > .baliseSymbol {
-  color: black;
-}
-.sub2-hover:hover ~ .sub2-close-hover {
-  background: yellow;
-  color: black;
-}
-.sub2-hover:hover ~ .sub2-close-hover > .baliseSymbol {
-  color: black;
-}
-
-.sub2-close-hover:hover {
-  background: yellow;
-  color: black;
-}
-.sub2-close-hover:hover > .baliseSymbol {
-  color: black;
-}
-
-.content, .egal {
-  color: white;
-}
-
-#photoLinkId {
+#easterEgg {
   cursor: pointer;
-  text-decoration: underline;
+  transition: background-color 0.5s, color 0.5s;
 }
-
-#photoLinkId:hover {
-  background: white;
+#easterEgg:hover {
+  background-color: #dedede;
   color: black;
 }
 
-#divImgToOpen {
+#divEasterToOpen {
   display: none;
   align-items: center;
   flex-direction: column;
@@ -340,98 +329,246 @@ h1, h2, h3 {
   z-index: 1;
 }
 
-#imgId {
-  width: 30%;
-  max-width: 504px;
-  border: 2px dodgerblue solid;
-  border-radius: 20px;
-  margin-bottom: 3px;
+#easterText {
+  background-color: #dedede;
+  width: 50%;
+  max-width: 550px;
+  color: black;
+  padding: 5px;
+  border: 2px #e63946 solid;
+  border-radius: 20px 0 20px 0;
+  margin-bottom: 5px;
 }
 
-#closeId {
+#easterClose {
   cursor: pointer;
   width: 100px;
-  background: black;
-  color: yellow;
-  border: 2px dodgerblue solid;
-  border-radius: 5px;
+  background: royalblue;
+  color: white;
+  border: 2px white solid;
+  border-radius: 10px 0 10px 0;
   transition: 0.5s;
 }
-
-#closeId:hover {
-  background: yellow;
+#easterClose:hover {
+  background: #dedede;
   color: black;
+  border: 2px #e63946 solid;
 }
 
-address {
-  font-style: normal;
-}
-
-a:link {
-  color: white;
-}
-
-a:visited {
-  color: orchid;
-}
-
-a:hover {
-  background: white;
+.cvLink {
+  background-color: #dedede;
   color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+.cvLink:hover {
+  background-color: black;
+  color: #dedede;
+  text-decoration: none;
 }
 
-blockquote {
+#cvDown {
+  display: inline-block;
+  background-color: #dedede;
+  color: black;
+  border: 2px black solid;
+  border-radius: 20px 0 20px 0;
+  transition: background-color 0.5s, color 0.5s;
+}
+#cvDown:hover {
+  background-color: black;
+  color: #dedede;
+  text-decoration: none;
+}
+
+#cvDownText {
   margin: 0;
 }
 
-.sub3 {
-  color: orchid;
-}
-
-.sub3-hover:hover, .sub3-close-hover:hover {
-  background: orchid;
-  color: black;
-}
-.sub3-hover:hover > .baliseSymbol, .sub3-close-hover:hover > .baliseSymbol {
-  color: black;
-}
-
-.indent {
-  width: 40px;
-  min-width: 40px;
-  border-left: 1px #4d4d4d solid;
-}
-
-.baliseSymbol {
-  color: grey;
-}
-
-.attr {
-  color: #ff0028;
-}
-
-.value {
-  color: goldenrod;
-}
-
-.listContent {
-  color: white;
-  list-style-position: inside;
-  list-style-type: none;
+#pdp {
+  font-size: 2em;
   padding: 0;
-  margin: 0;
+  border-top: 2px black solid;
 }
 
-#easterEgg {
-  color: black;
-}
+/* MEDIA QUERIES */
+/* 5 breakpoints : 1000, 760, 650, 540, 390 */
+@media screen and (max-width: 1000px) {
+  #entete {
+    font-size: 2.5em;
+  }
 
-.comment {
-  color: lime;
-}
+  #logo, #logo-pdp {
+    height: 90px;
+  }
 
-.projets, .formations, .expériences {
-  color: skyblue;
+  #head {
+    height: 500px;
+  }
+
+  .links-header, .links-pdp {
+    display: flex;
+    padding: 0 6px;
+  }
+
+  #quisuisje, #realisations, #cv {
+    padding: 100px 70px 50px 70px;
+  }
+
+  .contact-compet {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact, .compet, .autresComp {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  .contact {
+    margin-right: 0;
+  }
+
+  .compet {
+    margin: 20px 0 0 0;
+  }
+
+  #pdp {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 760px) {
+  #entete {
+    font-size: 2em;
+  }
+
+  #logo, #logo-pdp {
+    height: 80px;
+  }
+
+  #head {
+    height: 400px;
+  }
+
+  #quisuisje, #realisations, #cv {
+    padding: 90px 60px 45px 60px;
+  }
+
+  .liensProjet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pdp {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 660px) {
+  #entete {
+    font-size: 1.5em;
+  }
+
+  #logo, #logo-pdp {
+    height: 70px;
+  }
+
+  #head {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  #quisuisje, #realisations, #cv {
+    padding: 80px 50px 40px 50px;
+  }
+
+  .citation, .autresComp {
+    width: 100%;
+  }
+
+  #pdp {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 540px) {
+  #entete {
+    font-size: 1em;
+  }
+
+  #logo, #logo-pdp {
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  #quisuisje, #realisations, #cv {
+    padding: 70px 40px 35px 40px;
+  }
+
+  .description, .citation, .contact, .compet, .autresComp, .passions, .projets, .categorieCV {
+    font-size: 1.3em;
+  }
+
+  .boutonProjet {
+    font-size: 20px;
+  }
+
+  .cvIcon {
+    padding: 0 3px;
+  }
+
+  .cvYear {
+    padding: 0 6px;
+  }
+
+  #pdp {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 390px) {
+  #entete, #pdp {
+    font-size: 0.8em;
+  }
+
+  #logo, #logo-pdp {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  #quisuisje, #realisations, #cv {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .description, .citation, .contact, .compet, .autresComp, .passions, .projets, .categorieCV {
+    font-size: 1.1em;
+  }
 }
 
 /*# sourceMappingURL=Style.css.map */

@@ -8,1539 +8,488 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Portfolio de Jérôme Fromantin</title>
         <link rel="icon" type="image/png" href="Images/Favicon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Averia Serif Libre">
+        <!-- Ci-dessous, balises OpenGraph pour partage du portfolio sur Linkedin. -->
+        <meta property="og:url" content="https://jerome-fromantin.github.io/Portfolio/"/>
+        <meta property="og:title" content="Portfolio de Jérôme Fromantin"/>
+        <meta property="og:description" content="Ce site est le portfolio professionnel d'un développeur Front-end junior
+        en recherche d'employeur."/>
+        <!-- <meta property="og:image" content="https://example.com/static/img/cover.jpg"/> A MODIFIER !! -->
+        <!-- Ci-dessous, librairie "Animate On Scroll". Lien : https://michalsnik.github.io/aos/ -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- On peut avoir d'autres méta-données ici. -->
-        <script type="text/javascript" src="showPhotos.js"></script>
+        <script type="text/javascript" src="easterEgg.js"></script>
     </head>
     <body>
-        <main class="main">
-            <div class="eachLine">
-                <div class="line">1</div>
-                <div class="root">
-                    <span class="baliseSymbol">&lt</span>
-                    <h1>portfolio</h1>
-                    <span class="baliseSymbol">&gt</span>
+        <header>
+            <!-- Barre de navigation -->
+            <div class="container-fluid font-weight-bold" id="entete">
+                <nav class="d-flex align-items-center justify-content-between" id="navbar">
+                    <a href="index.html" id="logoLink">
+                        <img src="Images/Logo.png" alt="Logo" title="Accueil" id="logo">
+                    </a>
+                    <div class="d-flex flex-grow-1 justify-content-center">
+                        <div class="d-flex align-items-center flex-grow-1 justify-content-around">
+                            <span class="text-center">
+                                <a href="#quisuisje" class="links-header">Qui suis&#8209;je&nbsp;?</a>
+                                <!-- Le caractère "&#8209;" est le trait d'union insécable. -->
+                            </span>
+                            <span class="text-center">
+                                <a href="#realisations" class="links-header">Réalisations</a>
+                            </span>
+                            <span class="text-center">
+                                <a href="#cv" class="links-header">C.V.</a>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Bannière et titre -->
+            <div class="container-fluid d-flex align-items-center justify-content-center" id="head">
+                <div id="headText">
+                    <h1>Jérôme Fromantin</h1>
+                    <h2><strong>Développeur Front-end junior</strong></h2>
                 </div>
             </div>
-            <section>
-                <div class="eachLine">
-                    <div class="line">2</div>
-                    <div class="sub1">
-                        <span class="baliseSymbol">&lt</span>
-                        <h2>qui-suis-je</h2>
-                        <span class="baliseSymbol">&gt</span>
-                    </div>
+        </header>
+
+        <main>
+            <!-- Section "Qui suis-je ?" -->
+            <section class="container-fluid text-center" id="quisuisje">
+                <h2
+                class="px-2 pb-1 font-weight-bold section-h2 quisuisje"
+                data-aos="fade-left"
+                data-aos-offset="80"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
+                data-aos-mirror="true"
+                data-aos-once="false">Qui suis-je&nbsp;?</h2>
+                <div class="mt-5 description">
+                    <p>Je suis passionné par l'informatique et internet <span class="impWord"><strong>depuis tout
+                    jeune</strong></span>. Pendant des années, j'ai développé <span class="impWord"><strong>plusieurs
+                    blogs personnels en autodidacte</strong></span>, en tant que hobby. Après une carrière
+                    professionnelle variée, j'ai donc décidé de me reconvertir dans le développement web.</p>
+                    <p>J'ai ainsi participé à <span class="impWord"><strong>deux formations
+                    professionnelles</strong></span> dans ce domaine entre avril 2020 et mai 2022. Une de
+                    "<span class="impWord"><strong>Développeur web/web mobile</strong></span>" et une de
+                    "<span class="impWord"><strong>Développeur d'applications JavaScript/React</strong></span>". Durant
+                    ces 2 ans, j'ai donc appris (ou réappris) les techniques telles que
+                    <span class="impWord"><strong>HTML5 et CSS3</strong></span>, Sass,
+                    <span class="impWord"><strong>BootStrap</strong></span>, GitHub,
+                    <span class="impWord"><strong>JavaScript</strong></span>,
+                    <span class="impWord"><strong>React</strong></span>, Redux, PHP et d'autres encore...</p>
                 </div>
-                <div class="eachLine">
-                    <div class="line">3</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>identité</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">Jérôme Fromantin</div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>identité</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
+                <div class="mt-5 citation">
+                    <blockquote>
+                        <b>"<em>Il n'y a pas d'âge pour entreprendre et réussir,
+                        <br>tout est affaire de volonté et de désir.</em>"</b>
+                    </blockquote>
+                    <p>Monique Moreau</p>
                 </div>
-                <div class="eachLine">
-                    <div class="line">4</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>titre</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">Développeur Front-end junior</div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>titre</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
+                <div class="mt-5 contact-compet">
+                    <div class="contact">
+                        <h3 class="px-3 py-1 font-weight-bold quisuisje">Contact</h3>
+                        <p><img src="Images/Moi-nov2018.jpg" alt="Votre serviteur..." id="idImg"></p>
+                        <ul>
+                            <li class="mt-3"><span>E-mail :</span> jeromefromantin@hotmail.fr</li>
+                            <li><span>Téléphone :</span> 06.62.13.68.01</li>
+                            <li><span>Adresse :</span> 6 route de Meuzac - 87380 Magnac-Bourg</li>
+                            <li>
+                                <span>GitHub :</span> <a href="https://github.com/Jerome-Fromantin">17 repositories</a>
+                            </li>
+                            <li>
+                                <span>Linkedin :</span> <a href="https://www.linkedin.com/in/jérôme-fromantin">Suivez-moi
+                                !</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">5</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>objectif</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">(à la recherche d'un CDI entre Limoges et Brive)</div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>objectif</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">6</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>photo</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content" id="photoLinkId" onclick=showIdPhoto()>Moi en novembre 2018</div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>photo</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                        <div id="divImgToOpen">
-                            <img src="Images/Moi-nov2018.jpg" alt="Votre serviteur..." id="imgId">
-                            <span id="closeId" onclick=showIdPhoto()>Fermer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">7</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>e-mail</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">jeromefromantin@hotmail.fr</div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>e-mail</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">8</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>téléphone</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">06.62.13.68.01</div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>téléphone</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">9</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>adresse</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <address class="content">6 route de Meuzac - 87380 Magnac-Bourg</address>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>adresse</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">10</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>lien-GitHub</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">
-                            <a href="https://github.com/Jerome-Fromantin" class="link">
-                                Ma page GitHub contenant 16 repositories
-                            </a>
-                        </div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>lien-GitHub</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">11</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>lien-Linkedin</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">
-                            <a href="https://www.linkedin.com/in/jérôme-fromantin" class="link">Ma page Linkedin</a>
-                        </div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>lien-Linkedin</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">12</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>date-de-naissance</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">23/07/1971</div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>date-de-naissance</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">13</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">14</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>citation</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">15</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <blockquote class="content">
-                            "Il n'y a pas d'âge pour entreprendre et réussir, tout est affaire de volonté et de désir."<br>
-                            Monique Moreau
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">16</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>citation</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">17</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>description</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">18</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            Je suis passionné par l'informatique et internet depuis de nombreuses années. Pendant ces dernières,
-                            j'ai développé plusieurs blogs personnels en hobby. Après une carrière professionnelle variée, j'ai
-                            donc décidé de me reconvertir dans le développement web.<br>
-                            J'ai ainsi participé à deux formations professionnelles dans ce domaine entre avril 2020 et mai
-                            2022. Une de "Développeur web/web mobile" et une de "Développeur d'applications JavaScript/React".
-                            Durant ces 2 ans, j'ai donc appris (ou réappris) les techniques telles que HTML5, CSS3, Sass,
-                            BootStrap, GitHub, JavaScript, React, Redux, PHP et d'autres encore...
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">19</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>description</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">20</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">21</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>compétences-développement</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">22</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            HTML5
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Bonne
-                            maîtrise"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">23</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            CSS3
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Bonne
-                            maîtrise"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">24</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            Sass
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"maîtrise
-                            partielle"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">25</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            BootStrap
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"maîtrise
-                            partielle"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">26</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            JavaScript
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"maîtrise
-                            partielle"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">27</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            React
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"maîtrise
-                            partielle"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">28</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            Redux
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"maîtrise
-                            partielle"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">29</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            GitHub
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"maîtrise
-                            partielle"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">30</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            NPM
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Non
-                            maîtrisé"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">31</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            PHP
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Non
-                            maîtrisé"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">32</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            WordPress
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Non
-                            maîtrisé"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">33</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            autres
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Initiation"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">34</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>compétences-développement</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">35</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">36</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>compétences-informatiques</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">37</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <ul class="listContent">
-                            <li>* Bureautique</li>
-                            <li>* PAO/DAO</li>
-                            <li>* Maintenance hardware et software</li>
+                    <div class="compet">
+                        <h3 class="px-3 py-1 font-weight-bold quisuisje">Développement web</h3>
+                        <ul>
+                            <li class="mt-1">
+                                <img src="Images/Favicon.png"> HTML5, CSS3, Sass, BootStrap
+                            </li>
+                            <li>
+                                <img src="Images/Favicon.png"> JavaScript, React, Redux
+                            </li>
+                            <li>
+                                <img src="Images/Favicon.png"> GitHub, NPM
+                            </li>
+                            <li>
+                                <img src="Images/Favicon.png"> PHP, WordPress
+                            </li>
+                            <li>
+                                <img src="Images/Favicon.png"> Et d'autres...
+                            </li>
+                        </ul>
+                        <h3 class="px-3 py-1 mt-3 font-weight-bold quisuisje">Informatique</h3>
+                        <ul>
+                            <li class="mt-1">
+                                <img src="Images/Favicon.png"> Bureautique
+                            </li>
+                            <li>
+                                <img src="Images/Favicon.png"> PAO/DAO (mise en page)
+                            </li>
+                            <li>
+                                <img src="Images/Favicon.png"> Support utilisateur et maintenance hardware et software
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="eachLine">
-                    <div class="line">38</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>compétences-informatiques</div>
-                            <div class="baliseSymbol">&gt</div>
+                <div class="autresComp">
+                    <h3 class="px-3 py-1 mt-3 font-weight-bold quisuisje">Langues</h3>
+                    <ul>
+                        <li class="mt-1"><span>Anglais</span><br>Avancé - C1</li>
+                        <li><span>Espagnol</span><br>Intermédiaire - B1</li>
+                    </ul>
+                    <h3 class="px-3 py-1 mt-3 font-weight-bold quisuisje">Soft Skills</h3>
+                    <ul>
+                        <li class="mt-1">Adaptabilité</li>
+                        <li>Organisation</li>
+                        <li>Persévérance</li>
+                        <li>Sens de l'écoute</li>
+                        <li>Travail en équipe</li>
+                    </ul>
+                </div>
+                <div class="mt-5 passions">
+                    <h3 class="px-3 py-1 font-weight-bold quisuisje">Passions</h3>
+                    <p class="mt-3 parag">
+                        <span>Développement web :</span> J'ai commencé à créer des sites web personnels il y a de
+                        nombreuses années, en les codant en HTML, pour y partager des passions et opinions. Fin 2018,
+                        j'ai débuté le développement de mon dernier blog, <span id="thermidor">Thermidor</span>, codé en
+                        HTML5 et CSS3. Depuis lors, j'ai aussi développé ce portfolio et une application React
+                        personnelle (qui n'est pas encore en ligne).
+                    </p>
+                    <p class="mt-3 parag">
+                        <span>Mathématiques :</span> La magie des chiffres me fascine... C'est pourquoi j'aime à
+                        pratiquer le boulier chinois, ou <em><b>suan pan</b></em>. Cet outil, bien que multi-centenaire,
+                        permet des calculs complexes tels que les racines cubiques, l'utilisation du système binaire ou
+                        encore hexadécimal.
+                    </p>
+                    <p class="mt-3 parag">
+                        <span>Politique et société :</span> Je suis un citoyen intéressé par la façon dont fonctionne le
+                        monde, au niveau politique comme au niveau sociétal et j'ai des opinions bien affirmées&nbsp;!
+                    </p>
+                    <p class="mt-3 parag"><span>Et d'autres encore...</span></p>
+                </div>
+            </section>
+
+            <!-- Section "Réalisations" -->
+            <section class="container-fluid text-center" id="realisations">
+                <h2
+                class="px-2 pb-1 font-weight-bold section-h2 realisations"
+                data-aos="fade-left"
+                data-aos-offset="80"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
+                data-aos-mirror="true"
+                data-aos-once="false">Réalisations</h2>
+                <div class="mt-5 description">
+                    <p>Les différents travaux affichés ci-dessous sont soit des réalisations personnelles soit des
+                    projets professionnels réalisés lors de la formation de "<span class="impWord"><strong>Développeur
+                    d'applications JavaScript/React</strong></span>". Ces derniers sont considérés comme terminés dans le
+                    cadre de cette formation mais peuvent bien sûr être améliorés (et ils le seront à des degrés
+                    divers). Après tout, je suis un développeur front-end junior&nbsp;!</p>
+                </div>
+                <div class="mt-5 projets">
+                    <h3 class="d-flex align-items-center justify-content-center">
+                        <img src="Images/Favicon.png">
+                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">Thermidor</span>
+                        <img src="Images/Favicon.png">
+                    </h3>
+                    <p class="typeProjet">Blog personnel</p>
+                    <div class="d-flex align-items-center flex-column justify-content-between">
+                        <div class="liensProjet">
+                            <div>
+                                <a class="btn boutonProjet" href="http://www.thermidor.xyz/">Application en ligne</a>
+                            </div>
+                            <div><a class="btn boutonProjet" href="#">Code (non dispo) sur&nbsp;GitHub</a></div>
+                        </div>
+                        <div class="d-flex align-self-start texteProjet">
+                            <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
+                                <p><span>Années :</span> 2018-2022</p>
+                                <p><span>Sujet :</span> Sur le thème du Calendrier Républicain. Pour partager des
+                                opinions et des passions, dont la photographie.</p>
+                                <p class="technos">
+                                    <span>Technologies :</span>
+                                    <strong>HTML5, CSS3, JavaScript.</strong>
+                                </p>
+                                <p><span>Description :</span> Site réalisé en autodidacte. Je prévois d'en faire une
+                                grande refonte grâce à mes nouvelles compétences pour améliorer le code, l'apparence, le
+                                contenu, l'adaptabilité (responsive) et l'accessibilité de ce site. Et je créérai son
+                                dépôt GitHub.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="eachLine">
-                    <div class="line">39</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">40</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>compétences-linguistiques</h3>
-                            <span class="baliseSymbol">&gt</span>
+                <div class="mt-5 projets">
+                    <h3 class="d-flex align-items-center justify-content-center">
+                        <img src="Images/Favicon.png">
+                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">La Part des&nbsp;Anges</span>
+                        <img src="Images/Favicon.png">
+                    </h3>
+                    <p class="typeProjet">Site WordPress d'entreprise</p>
+                    <div class="d-flex align-items-center flex-column justify-content-between">
+                        <div class="liensProjet">
+                            <div>
+                                <a class="btn boutonProjet" href="http://la-part-des-anges.eu/">Application en ligne</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-self-start texteProjet">
+                            <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
+                                <p><span>Années :</span> 2020</p>
+                                <p><span>Sujet :</span> Présente un gîte de tourisme de la campagne girondine ainsi que
+                                les services qu'il offre.</p>
+                                <p class="technos">
+                                    <span>Technologies :</span>
+                                    <strong>HTML5, CSS3, JavaScript, PHP, WordPress.</strong>
+                                </p>
+                                <p><span>Description :</span> Site réalisé seul en 7 semaines (mais en coopération avec
+                                les propriétaires du gîte) dans le cadre du stage de ma première formation web. Il
+                                contient plusieurs fonctionnalités telles que le bilinguisme français/anglais,
+                                l'affichage de galeries photos et la possibilité de réservations. Il nécessiterait
+                                quelques améliorations, parmi lesquelles le passage en HTTPS...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="eachLine">
-                    <div class="line">41</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            Anglais
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Avancé - C1"</span>
+                <div class="mt-5 projets">
+                    <h3 class="d-flex align-items-center justify-content-center">
+                        <img src="Images/Favicon.png">
+                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">Portfolio de
+                        Jérôme&nbsp;Fromantin</span>
+                        <img src="Images/Favicon.png">
+                    </h3>
+                    <p class="typeProjet">Portfolio</p>
+                    <div class="d-flex align-items-center flex-column justify-content-between">
+                        <div class="liensProjet">
+                            <div>
+                                <a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/Portfolio.git">Code
+                                sur GitHub</a>
+                            </div>
                         </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">42</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="baliseSymbol">&lt</div>
-                        <div>
-                            Espagnol
-                            <span class="attr">niveau</span><span class="egal">=</span><span class="value">"Intermédiaire -
-                            B1"</span>
-                        </div>
-                        <div class="baliseSymbol">/&gt</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">43</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>compétences-linguistiques</div>
-                            <div class="baliseSymbol">&gt</div>
+                        <div class="d-flex align-self-start texteProjet">
+                            <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
+                                <p><span>Années :</span> 2020-2022</p>
+                                <p><span>Sujet :</span> Présente ma personnalité, mes compétences, une partie des projets
+                                réalisés et mon parcours professionnel.</p>
+                                <p class="technos">
+                                    <span>Technologies :</span>
+                                    <strong>HTML5, CSS3, Sass, BootStrap, JavaScript, GitHub.</strong>
+                                </p>
+                                <p><span>Description :</span> Une description supplémentaire est-elle vraiment
+                                nécessaire&nbsp;?! D'autres réalisations seront prochainement ajoutées...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="eachLine">
-                    <div class="line">44</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">45</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>compétences-organisationnelles</h3>
-                            <span class="baliseSymbol">&gt</span>
+                <div class="mt-5 projets">
+                    <h3 class="d-flex align-items-center justify-content-center">
+                        <img src="Images/Favicon.png">
+                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">King Of Pop Collection</span>
+                        <img src="Images/Favicon.png">
+                    </h3>
+                    <p class="typeProjet">Application React personnelle</p>
+                    <div class="d-flex align-items-center flex-column justify-content-between">
+                        <div class="liensProjet">
+                            <div>
+                                <a class="btn boutonProjet" href="#">Application hors&nbsp;ligne</a>
+                            </div>
+                            <div><a class="btn boutonProjet" href="#">Code (non dispo) sur&nbsp;GitHub</a></div>
+                        </div>
+                        <div class="d-flex align-self-start texteProjet">
+                            <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
+                                <p><span>Années :</span> 2021-2022</p>
+                                <p><span>Sujet :</span> Sur le thème du King Of Pop, Michael Jackson. Pour partager en
+                                images les nombreuses pièces de collection (disques, DVD, livres, revues...) que j'ai
+                                réunies au cours des ans.</p>
+                                <p class="technos">
+                                    <span>Technologies :</span>
+                                    <strong>HTML5, CSS3, JavaScript, React.</strong>
+                                </p>
+                                <p><span>Description :</span> Travail en cours non disponible en ligne. Application
+                                réalisée seul débutée durant ma dernière formation web. Elle contient plusieurs
+                                fonctionnalités telles que la pagination et le tri des pièces de collection affichées.
+                                C'est un travail de longue haleine qui nécessite encore beaucoup de temps, dont la
+                                récolte des données. Je créérai bientôt son dépôt GitHub.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="eachLine">
-                    <div class="line">46</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <ul class="listContent">
-                            <li>* Planification de tâches à réaliser</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">47</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>compétences-organisationnelles</div>
-                            <div class="baliseSymbol">&gt</div>
+                <div class="mt-5 projets">
+                    <h3 class="d-flex align-items-center justify-content-center">
+                        <img src="Images/Favicon.png">
+                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">Nom du projet</span>
+                        <img src="Images/Favicon.png">
+                    </h3>
+                    <p class="typeProjet">Blog/Maquette/Application React/...</p>
+                    <div class="d-flex align-items-center flex-column justify-content-between">
+                        <div class="liensProjet">
+                            <div>
+                                <a class="btn boutonProjet" href="#">Application en ligne</a>
+                            </div>
+                            <div><a class="btn boutonProjet" href="#">Code sur GitHub</a></div>
                         </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">48</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">49</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>compétences-sociales</h3>
-                            <span class="baliseSymbol">&gt</span>
+                        <div class="d-flex align-self-start texteProjet">
+                            <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
+                                <p><span>Années :</span> 20XX-20XX</p>
+                                <p><span>Sujet :</span> Description rapide du sujet.</p>
+                                <p class="technos">
+                                    <span>Technologies :</span>
+                                    <strong>HTML5, CSS3, Sass, BootStrap, JavaScript, React, GitHub...</strong>
+                                </p>
+                                <p><span>Description :</span> Description un peu plus détaillée...</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">50</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <ul class="listContent">
-                            <li>* Adaptabilité</li>
-                            <li>* Persévérance</li>
-                            <li>* Sens de l'écoute</li>
-                            <li>* Travail en équipe</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">51</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>compétences-sociales</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">52</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div id="easterEgg">Félicitations ! Vous avez trouvé le message caché !</div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">53</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>passions</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">54</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>développement-web</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">55</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            J'ai commencé à créer des sites web personnels il y a de nombreuses années, en les codant en HTML,
-                            pour y partager des passions et opinions. Fin 2018, j'ai débuté le développement de mon blog
-                            personnel, codé en HTML5 et CSS3. Depuis lors, j'ai aussi développé ce portfolio et une application
-                            React personnelle (qui n'est pas encore en ligne).
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">56</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>développement-web</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">57</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>mathématiques</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">58</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            La magie des chiffres me fascine... C'est pourquoi j'aime à pratiquer le boulier chinois, ou
-                            <span class="value">suan pan</span>. Cet outil, bien que multi-centenaire, permet des calculs
-                            complexes tels que les racines cubiques, l'utilisation du système binaire ou encore hexadécimal.
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">59</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>mathématiques</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">60</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>politique-et-société</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">61</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            Je suis un citoyen intéressé par la façon dont fonctionne le monde, au niveau politique (mesures
-                            gouvernementales, souverainisme/européisme, conflit israélo-palestinien...) comme au niveau
-                            sociétal (crise du covid-19, liberté d'expression, affaires d'atteintes sexuelles...) et j'ai sur
-                            chacun de ces sujets des opinions bien affirmées&nbsp;!
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">62</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>politique-et-société</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">63</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>passions</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">64</div>
-                    <div class="sub1">
-                        <div class="baliseSymbol">&lt/</div>
-                        <div>qui-suis-je</div>
-                        <div class="baliseSymbol">&gt</div>
                     </div>
                 </div>
             </section>
-            <div class="eachLine">
-                <div class="line">65</div>
-                <div class="sub2"></div>
-            </div>
-            <div class="eachLine">
-                <div class="line">66</div>
-                <div class="sub1">
-                    <div class="comment">&lt!-- La section ci-dessous est en cours de remplissage. --&gt</div>
-                </div>
-            </div>
-            <section>
-                <div class="eachLine">
-                    <div class="line">67</div>
-                    <div class="sub1">
-                        <span class="baliseSymbol">&lt</span>
-                        <h2>réalisations</h2>
-                        <span class="baliseSymbol">&gt</span>
+
+            <!-- Section "C.V." -->
+            <section class="container-fluid text-center" id="cv">
+                <h2
+                class="px-2 pb-1 font-weight-bold section-h2 cv"
+                data-aos="fade-left"
+                data-aos-offset="80"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
+                data-aos-mirror="true"
+                data-aos-once="false">C.V.</h2><br>
+
+                <h3 class="px-3 py-1 mt-3 font-weight-bold cv">Formations informatiques</h3>
+                <div class="categorieCV">
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>2021-2022</b></span>
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">68</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>projets-hors-formations</h3>
-                            <span class="baliseSymbol">&gt</span>
+                    <div class="ml-5">
+                        <strong>Développeur d'applications JavaScript/React</strong> (niveau 5) -
+                        <span id="easterEgg" onclick=showEasterEgg()>Open</span>Classrooms.
+                        <br>► Mettre en &oelig;uvre des animations CSS, assurer l'adaptabilité et l'accessibilité d'un
+                        site web...
+                        <br>► Créer des composants avec React, créer une librairie réutilisable...
+                        <div id="divEasterToOpen">
+                            <span id="easterText">Félicitations !<br>Vous avez découvert le message caché de ce
+                            portfolio&nbsp;!<br>Maintenant, n'hésitez pas à découvrir aussi mes compétences en
+                            développement en me recrutant...
+                            </span>
+                            <span id="easterClose" onclick=showEasterEgg()>Fermer</span>
                         </div>
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">69</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2018-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>2020</b></span>
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">70</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <ul class="listContent">
-                            <li><span class="projets">* Nom et lien (si disponible) :</span>
-                            <a href="http://www.thermidor.xyz/" class="link">Thermidor</a></li>
-                            <li><span class="projets">* Type :</span> Blog personnel</li>
-                            <li><span class="projets">* Sujet :</span> Sur le thème du Calendrier Républicain. Pour partager
-                            des opinions et des passions, dont la photographie.</li>
-                            <li>
-                                <span class="projets">* Technologies utilisées :</span>
-                                <span class="value">HTML5</span>, <span class="value">CSS3</span>,
-                                <span class="value">JavaScript</span>.
-                            </li>
-                            <li><span class="projets">* Dépôt GitHub :</span> Non créé.</li>
-                            <li><span class="projets">* Description :</span> Site réalisé en autodidacte. Je prévois d'en faire
-                            une grande refonte grâce à mes nouvelles compétences pour améliorer le code, l'apparence, le
-                            contenu, l'adaptabilité (responsive) et l'accessibilité de ce site. Et je créérai son dépôt GitHub.
-                            </li>
-                        </ul>
+                    <div class="ml-5">
+                        <strong>Développeur web/web mobile</strong> (niveau 5) - AFORMAC Limoges.
+                        <br>► Implémenter une maquette, créer une application avec PHP/Symfony ou Vue.js...
+                        <br>► Manipuler une base de données avec SQL...
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">71</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2018-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>2007-2008</b></span>
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">72</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2020</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
+                    <div class="ml-5">
+                        <strong>Technicien Supérieur de Support en Informatique</strong> (niveau 5) - AFPA Istres.
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">73</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <ul class="listContent">
-                            <li><span class="projets">* Nom et lien (si disponible) :</span>
-                                <a href="http://la-part-des-anges.eu/" class="link">La Part des Anges</a></li>
-                            <li><span class="projets">* Type :</span> Site WordPress d'entreprise</li>
-                            <li><span class="projets">* Sujet :</span> Présente un gîte de tourisme de la campagne girondine
-                            ainsi que les services qu'il offre.</li>
-                            <li>
-                                <span class="projets">* Technologies utilisées :</span>
-                                <span class="value">HTML5</span>, <span class="value">CSS3</span>,
-                                <span class="value">JavaScript</span>, <span class="value">PHP</span>,
-                                <span class="value">WordPress</span>.
-                            </li>
-                            <li><span class="projets">* Description :</span> Site réalisé seul en 7 semaines (mais en
-                            coopération avec les propriétaires du gîte) dans le cadre du stage de ma première formation web. Il
-                            contient plusieurs fonctionnalités telles que le bilinguisme français/anglais, l'affichage de
-                            différentes galeries photos et la possibilité de réservations. Il nécessiterait quelques
-                            améliorations, parmi lesquelles le passage en HTTPS...
-                            </li>
-                        </ul>
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>2000-2001</b></span>
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">74</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2020</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
+                    <div class="ml-5">
+                        <strong>Technicien Assistant aux Utilisateurs d'Informatique</strong> (niveau 4) - AFPA Creil.
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">75</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2020-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>1996-1997</b></span>
                     </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">76</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <ul class="listContent">
-                            <li><span class="projets">* Nom et lien (si disponible) :</span>
-                            <!--<a href="http://www.thermidor.xyz/" class="link">Thermidor</a>-->
-                            Portfolio de Jérôme Fromantin
-                            </li>
-                            <li><span class="projets">* Type :</span> Portfolio</li>
-                            <li><span class="projets">* Sujet :</span> Présente ma personnalité, mes compétences, une partie
-                            des projets réalisés (plus à venir...) et mon C.V., avec entre autres mes formations et expériences
-                            en développement web front-end.</li>
-                            <li>
-                                <span class="projets">* Technologies utilisées :</span>
-                                <span class="value">HTML5</span>, <span class="value">CSS3</span>,
-                                <span class="value">Sass</span>, <span class="value">JavaScript</span>.
-                            </li>
-                            <li><span class="projets">* Dépôt GitHub :</span>
-                                <a href="https://github.com/Jerome-Fromantin/Portfolio.git" class="link">Code du portfolio</a>
-                            </li>
-                            <li><span class="projets">* Description :</span> C'est ce que vous êtes en train de lire&nbsp;!
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">77</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2020-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">78</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2021-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">79</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <ul class="listContent">
-                            <li><span class="projets">* Nom et lien (si disponible) :</span>
-                            <!--<a href="http://www.thermidor.xyz/" class="link">Thermidor</a>-->
-                            King Of Pop Collection
-                            </li>
-                            <li><span class="projets">* Type :</span> Application React personnelle</li>
-                            <li><span class="projets">* Sujet :</span> Sur le thème du King Of Pop, Michael Jackson. Pour
-                            partager en images les nombreuses pièces de collection de cet artiste (disques, DVD, livres,
-                            revues...) que j'ai réunies au cours des ans.</li>
-                            <li><span class="projets">* Images :</span> A venir...</li>
-                            <li>
-                                <span class="projets">* Technologies utilisées :</span>
-                                <span class="value">HTML5</span>, <span class="value">CSS3</span>,
-                                <span class="value">JavaScript</span>, <span class="value">React</span>.
-                            </li>
-                            <li><span class="projets">* Dépôt GitHub :</span> Non créé.</li>
-                            <li><span class="projets">* Description :</span> Travail en cours non disponible en ligne.
-                            Application réalisée seul débutée durant ma dernière formation web. Elle contient plusieurs
-                            fonctionnalités telles que la pagination et le tri des pièces de collection affichées selon
-                            plusieurs critères. C'est un travail de longue haleine qui nécessite encore beaucoup, beaucoup de
-                            temps, dont la récolte des données. Par exemple, pour la page "Disques", plus de 220 cartes
-                            actuellement présentes, et ce n'est pas fini&nbsp;!! Je créérai bientôt son dépôt GitHub.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">80</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2021-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">81</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>projets-hors-formations</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">82</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>projets-de-formations</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">83</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>projets-de-formations</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">84</div>
-                    <div class="sub1">
-                        <div class="baliseSymbol">&lt/</div>
-                        <div>réalisations</div>
-                        <div class="baliseSymbol">&gt</div>
-                    </div>
-                </div>
-            </section>
-            <div class="eachLine">
-                <div class="line">85</div>
-                <div class="sub2"></div>
-            </div>
-            <section>
-                <div class="eachLine">
-                    <div class="line">86</div>
-                    <div class="sub1">
-                        <span class="baliseSymbol">&lt</span>
-                        <h2>c.v.</h2>
-                        <span class="baliseSymbol">&gt</span>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">87</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>formations-informatiques</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">88</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2021-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">89</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="formations">Développeur d'applications JavaScript/React</span> (niveau 5)
-                            (OpenClassrooms)<br>
-                            <span class="formations">==></span> Mettre en oeuvre des animations CSS, assurer l'accessibilité
-                            d'un site web...<br>
-                            <span class="formations">==></span> Créer des composants avec React, créer une librairie
-                            réutilisable...
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">90</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2021-2022</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">91</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2020</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">92</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="formations">Développeur web/web mobile</span> (niveau 5) (AFORMAC Limoges)<br>
-                            <span class="formations">==></span> Implémenter une maquette, créer une appli avec PHP/Symfony ou
-                            Vue.js...<br>
-                            <span class="formations">==></span> Manipuler une base de données avec SQL...
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">93</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2020</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">94</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2007-2008</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">95</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="formations">Technicien Supérieur de Support en Informatique</span> (niveau 5) (AFPA
-                            Istres)
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">96</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2007-2008</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">97</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2000-2001</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">98</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="formations">Technicien Assistant aux Utilisateurs d’Informatique</span> (niveau 4)
-                            (AFPA Creil)
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">99</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2000-2001</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">100</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>1996-1997</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">101</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="formations">Opérateur Système Texte/Image</span> (PAO-DAO) (niveau 4) (GRETA Limoges)
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">102</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>1996-1997</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">103</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>formations-informatiques</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">104</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">105</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>expériences-informatiques</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">106</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2020</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">107</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="expériences">Développeur web/web mobile (7 semaines)</span><br>
-                            <span>Stage en entreprise (La Part des Anges - près de Bordeaux).</span><br>
-                            <span class="expériences">==></span> Développement d'un site WordPress
-                            (<a href="http://la-part-des-anges.eu/" class="link">La Part des Anges</a>) présentant les services
-                            de l'entreprise (gîte de tourisme).
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">108</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2020</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">109</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>2008-à-2011</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">110</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="expériences">Technicien en maintenance informatique (14 semaines)</span><br>
-                            <span>Stages (CHU Dupuytren et boutique Micro Rezo - Limoges).</span><br>
-                            <span class="expériences">==></span> Gestion et maintenance du parc informatique de l'hôpital.<br>
-                            <span class="expériences">==></span> Maintenance informatique pour particuliers.
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">111</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>2008-à-2011</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">112</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>1997</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">113</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="expériences">Metteur en page (3 semaines)</span><br>
-                            <span>Stage (Éditions Flanant - Limoges).</span><br>
-                            <span class="expériences">==></span> Mise en page et traitement photo (X-Press, Photoshop,
-                            Illustrator).
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">114</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>1997</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">115</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-hover">
-                            <div class="baliseSymbol">&lt</div>
-                            <div>1996</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">116</div>
-                    <div class="sub4">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="content">
-                            <span class="expériences">Metteur en page</span> et <span class="expériences">accompagnateur (5
-                            mois)</span><br>
-                            <span>CDD (Collège International Ausiàs March - Valencia, Espagne).</span><br>
-                            <span class="expériences">==></span> Créations diverses sur ordinateur et encadrement d'étudiants
-                            étrangers.
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">117</div>
-                    <div class="sub3">
-                        <div class="indent"></div>
-                        <div class="indent"></div>
-                        <div class="sub3-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>1996</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">118</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>expériences-informatiques</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">119</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                    </div>
-                </div>
-                <div class="eachLine">
-                    <div class="line">120</div>
-                    <div class="sub2">
-                        <div class="indent"></div>
-                        <div class="sub2-hover">
-                            <span class="baliseSymbol">&lt</span>
-                            <h3>lien-download</h3>
-                            <span class="baliseSymbol">&gt</span>
-                        </div>
-                        <div class="content">
-                            <a href="CV_Fromantin_Jerome.pdf" class="link">
-                                Voir ou télécharger mon C.V. complet
-                            </a>
-                        </div>
-                        <div class="sub2-close-hover">
-                            <div class="baliseSymbol">&lt/</div>
-                            <div>lien-download</div>
-                            <div class="baliseSymbol">&gt</div>
-                        </div>
+                    <div class="ml-5">
+                        <strong>Opérateur Système Texte/Image</strong> (PAO-DAO) (niveau 4) - GRETA Limoges.
                     </div>
                 </div>
 
-                <div style="height:50px"></div>
-
-                <div class="eachLine">
-                    <div class="line">130</div>
-                    <div class="sub1">
-                        <div class="baliseSymbol">&lt/</div>
-                        <div>c.v.</div>
-                        <div class="baliseSymbol">&gt</div>
+                <h3 class="px-3 py-1 mt-5 font-weight-bold cv">Expériences informatiques</h3>
+                <div class="categorieCV">
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>2020 (7 semaines)</b></span>
+                    </div>
+                    <div class="ml-5">
+                        <strong>Développeur web/web mobile</strong> - La Part des Anges (près de Bordeaux).
+                        <br>► Développement d'un site WordPress
+                        (<a href="http://la-part-des-anges.eu/" class="cvLink">La Part des Anges</a>) présentant les
+                        services de l'entreprise (gîte de tourisme).
+                    </div>
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>2008 à 2011 (14 semaines)</b></span>
+                    </div>
+                    <div class="ml-5">
+                        <strong>Technicien en maintenance informatique</strong> - CHU Dupuytren et boutique Micro Rezo
+                        (Limoges).
+                        <br>► Gestion et maintenance du parc informatique de l'hôpital.
+                        <br>► Maintenance informatique pour particuliers.
+                    </div>
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>1997 (3 semaines)</b></span>
+                    </div>
+                    <div class="ml-5">
+                        <strong>Metteur en page</strong> - Éditions Flanant (Limoges).
+                        <br>► Mise en page et traitement photo (X-Press, Photoshop, Illustrator).
+                    </div>
+                    <div class="mt-4 d-flex">
+                        <img src="Images/Favicon.png" class="mr-1 cv cvIcon">
+                        <span class="d-flex align-items-center cv cvYear"><b>1996 (5 mois)</b></span>
+                    </div>
+                    <div class="ml-5">
+                        <strong>Metteur en page</strong> et <strong>accompagnateur</strong> - Collège International
+                        Ausiàs March (Valencia, Espagne).
+                        <br>► Créations diverses sur ordinateur et encadrement d'étudiants étrangers.
                     </div>
                 </div>
+
+                <a href="CV_Fromantin_Jerome.pdf" class="mt-5" id="cvDown">
+                    <h3 class="px-3 py-1 font-weight-bold" id="cvDownText">Voir ou télécharger
+                    mon&nbsp;C.V.&nbsp;complet</h3>
+                </a>
             </section>
-            <div class="eachLine">
-                <div class="line">131</div>
-                <div class="root">
-                    <div class="baliseSymbol">&lt/</div>
-                    <div>portfolio</div>
-                    <div class="baliseSymbol">&gt</div>
-                </div>
-            </div>
-            <div class="eachLine">
-                <div class="line">132</div>
-            </div>
         </main>
+
+        <footer>
+            <!-- Pied de page -->
+            <div class="container-fluid font-weight-bold" id="pdp">
+                <nav class="d-flex align-items-center justify-content-between" id="navbar-pdp">
+                    <a href="index.html" id="logoLink-pdp">
+                        <img src="Images/Logo.png" alt="Logo" title="Accueil" id="logo-pdp">
+                    </a>
+                    <div class="d-flex flex-grow-1 flex-wrap justify-content-center">
+                        <div class="d-flex align-items-center flex-grow-1 justify-content-around">
+                            <span class="text-center">
+                                <a href="https://github.com/Jerome-Fromantin" class="links-pdp">Github</a>
+                            </span>
+                            <span class="text-center">
+                                <a href="https://www.linkedin.com/in/jérôme-fromantin" class="links-pdp">LinkedIn</a>
+                            </span>
+                        </div>
+                        <div class="d-flex align-items-center flex-grow-1 justify-content-around">
+                            <span class="text-center">
+                                <a href="https://www.freecodecamp.org/Jerome-Fromantin" class="links-pdp">FreeCodeCamp</a>
+                            </span>
+                            <span class="text-center"><a href="#" class="links-pdp">Mentions légales</a></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+
+        <!-- Ci-dessous, librairie "Animate On Scroll". Lien : https://michalsnik.github.io/aos/ -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="Script.js"></script>
     </body>
 </html>
 
