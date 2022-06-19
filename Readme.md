@@ -12,7 +12,7 @@ Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections impo
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Samedi 18 juin 2022
+Dimanche 19 juin 2022
 
 ## Travail effectué
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
