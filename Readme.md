@@ -22,6 +22,10 @@ Samedi 18 juin 2022
 - [x] Ajout d'un Easter Egg ! (A trouver sans regarder le code sinon c'est trop facile...)
 
 ## Travail (éventuel) à faire
+- [x] Régler le problème d'affichage de la police choisie.
+- [ ] Ajouter un "smooth scroll" au clic sur chacune des 3 catégories du haut de page.
+- [ ] Réduire la durée de l'animation au scroll.
+- [ ] Eventuellement, modifier les couleurs du site.
 - [ ] Ajouter les réalisations faites durant la dernière formation professionnelle.
-- [ ] Eventuellement, régler des problèmes graphiques non connus actuellement.
+- [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
 - [ ] Eventuellement, ajouter une ou des fonctionnalités avec JavaScript.
