@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Averia Serif Libre", "Times New Roman", Times, serif;
   font-size: 14px;
@@ -42,6 +46,7 @@ body {
 }
 
 #navbar span a, #navbar-pdp span a {
+  color: #4a69bd;
   border: 2px transparent solid;
   border-radius: 20px 0 20px 0;
 }
@@ -55,24 +60,24 @@ body {
 
 @-webkit-keyframes color-change {
   0% {
-    background: royalblue;
+    background: #4a69bd;
   }
   50% {
     background: white;
   }
   100% {
-    background: red;
+    background: #b71540;
   }
 }
 @keyframes color-change {
   0% {
-    background: royalblue;
+    background: #4a69bd;
   }
   50% {
     background: white;
   }
   100% {
-    background: red;
+    background: #b71540;
   }
 }
 .links-header, .links-pdp {
@@ -117,15 +122,15 @@ h2 {
 
 .quisuisje {
   display: inline-block;
-  background-color: #e63946;
+  background-color: #b71540;
   color: white;
   border: 2px black solid;
   border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, border 0.5s;
 }
 .quisuisje:hover {
-  background-color: royalblue;
-  border: 2px #e63946 solid;
+  background-color: #4a69bd;
+  border: 2px #b71540 solid;
 }
 
 .description, .citation, .contact, .compet, .autresComp, .passions, .projets {
@@ -138,7 +143,7 @@ h2 {
 }
 
 .impWord {
-  color: royalblue;
+  color: #4a69bd;
 }
 
 .citation, .autresComp {
@@ -182,23 +187,23 @@ ul {
 }
 
 ul span {
-  color: #e63946;
+  color: #b71540;
   font-weight: bold;
 }
 
 ul a {
-  color: royalblue;
+  color: #4a69bd;
   text-decoration: underline;
 }
 ul a:visited {
   color: black;
 }
 ul a:hover {
-  color: #e63946;
+  color: #b71540;
 }
 
 li img {
-  background: #e63946;
+  background: #b71540;
   border-radius: 10px;
 }
 
@@ -220,23 +225,23 @@ li img {
 }
 
 .parag span {
-  color: #e63946;
+  color: #b71540;
   font-weight: bold;
 }
 
 #thermidor {
-  color: royalblue;
+  color: #4a69bd;
   font-weight: bold;
 }
 
 #realisations {
-  background-color: #e63946;
+  background-color: #b71540;
   padding: 110px 80px 55px 80px;
 }
 
 .realisations {
   display: inline-block;
-  background-color: royalblue;
+  background-color: #4a69bd;
   color: white;
   border: 2px black solid;
   border-radius: 20px 0 20px 0;
@@ -244,16 +249,16 @@ li img {
 }
 .realisations:hover {
   background-color: #dedede;
-  color: #e63946;
+  color: #b71540;
 }
 
 .projets img {
-  background: #e63946;
+  background: #b71540;
   border-radius: 10px;
 }
 
 .typeProjet {
-  color: #e63946;
+  color: #b71540;
   font-weight: bold;
 }
 
@@ -264,7 +269,7 @@ li img {
 }
 
 .boutonProjet {
-  background-color: #e63946;
+  background-color: #b71540;
   min-width: 250px;
   color: white;
   font-size: 24px;
@@ -276,7 +281,7 @@ li img {
 }
 .boutonProjet:hover {
   background-color: #dedede;
-  color: #e63946;
+  color: #b71540;
 }
 
 .texteProjet {
@@ -284,25 +289,25 @@ li img {
 }
 
 .technos {
-  color: royalblue;
+  color: #4a69bd;
 }
 
 #cv {
-  background-color: royalblue;
+  background-color: #4a69bd;
   padding: 110px 80px 55px 80px;
 }
 
 .cv {
   display: inline-block;
   background-color: #dedede;
-  color: #e63946;
+  color: #b71540;
   border: 2px black solid;
   border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, color 0.5s;
 }
 .cv:hover {
   background-color: #969696;
-  color: royalblue;
+  color: #4a69bd;
 }
 
 .categorieCV {
@@ -350,7 +355,7 @@ li img {
   max-width: 550px;
   color: black;
   padding: 5px;
-  border: 2px #e63946 solid;
+  border: 2px #b71540 solid;
   border-radius: 20px 0 20px 0;
   margin-bottom: 5px;
 }
@@ -358,7 +363,7 @@ li img {
 #easterClose {
   cursor: pointer;
   width: 100px;
-  background: royalblue;
+  background: #4a69bd;
   color: white;
   border: 2px white solid;
   border-radius: 10px 0 10px 0;
@@ -367,7 +372,7 @@ li img {
 #easterClose:hover {
   background: #dedede;
   color: black;
-  border: 2px #e63946 solid;
+  border: 2px #b71540 solid;
 }
 
 .cvLink {

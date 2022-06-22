@@ -1,5 +1,9 @@
 @import "imports/Variables.scss";
 
+html {
+  scroll-behavior: smooth
+}
+
 body {
   font-family: "Averia Serif Libre", "Times New Roman", Times, serif;
   font-size: 14px
@@ -42,6 +46,7 @@ body {
 }
 
 #navbar span a, #navbar-pdp span a {
+  color: $blue;
   border: 2px transparent solid;
   border-radius: $title;
   &:hover {
@@ -55,24 +60,24 @@ body {
 
 @-webkit-keyframes color-change {
   0% {
-    background: royalblue;
+    background: $blue;
   }
   50% {
     background: white;
   }
   100% {
-    background: red;
+    background: $red;
   }
 }
 @keyframes color-change {
   0% {
-    background: royalblue;
+    background: $blue;
   }
   50% {
     background: white;
   }
   100% {
-    background: red;
+    background: $red;
   }
 }
 
