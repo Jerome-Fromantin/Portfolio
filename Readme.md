@@ -12,7 +12,7 @@ Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections impo
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Mardi 21 juin 2022
+Mercredi 22 juin 2022
 
 ## Travail effectué
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
@@ -24,9 +24,10 @@ Mardi 21 juin 2022
 ## Travail (éventuel) à faire
 - [x] Régler le problème d'affichage de la police choisie.
 - [x] Régler le problème de largeur de la barnav en format mobile.
-- [ ] Ajouter un "smooth scroll" au clic sur chacune des 3 catégories du haut de page.
+- [x] Ajouter un "smooth scroll" au clic sur chacune des 3 catégories du haut de page.
 - [x] Réduire la durée de l'animation au scroll.
-- [ ] Eventuellement, modifier les couleurs du site.
+- [ ] Ajouter une page de mentions légales.
+- [x] Eventuellement, modifier les couleurs du site.
 - [ ] Ajouter les réalisations faites durant la dernière formation professionnelle.
 - [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
 - [ ] Eventuellement, ajouter une ou des fonctionnalités avec JavaScript.
