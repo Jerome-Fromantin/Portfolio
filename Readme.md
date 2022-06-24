@@ -12,22 +12,18 @@ Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections impo
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Mercredi 22 juin 2022
+Vendredi 24 juin 2022
 
-## Travail effectué
+## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
 - [x] 2022 : Ajout de Sass et implémentation d'une nouvelle page d'index façon IDE pour essai.
 - [x] Création de ce repository.
 - [x] Retour à l'index original, ajout de contenu et travail sur le responsive du site entier jusqu'à 360 pixels de large.
 - [x] Ajout d'un Easter Egg ! (A trouver sans regarder le code sinon c'est trop facile...)
-
-## Travail (éventuel) à faire
-- [x] Régler le problème d'affichage de la police choisie.
-- [x] Régler le problème de largeur de la barnav en format mobile.
-- [x] Ajouter un "smooth scroll" au clic sur chacune des 3 catégories du haut de page.
-- [x] Réduire la durée de l'animation au scroll.
+- [x] Correction de défauts graphiques : police affichée, largeur du header, smooth scroll, couleurs...
+- [x] Début d'ajout des projets de la dernière formation professionnelle.
+- [ ] Ajouter une navigation par boutons dans la partie "Réalisations".
 - [ ] Ajouter une page de mentions légales.
-- [x] Eventuellement, modifier les couleurs du site.
-- [ ] Ajouter les réalisations faites durant la dernière formation professionnelle.
+- [ ] Continuer d'ajouter les réalisations faites durant la formation.
 - [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
 - [ ] Eventuellement, ajouter une ou des fonctionnalités avec JavaScript.
