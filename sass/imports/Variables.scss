@@ -7,8 +7,12 @@ $backGrey: rgb(222, 222, 222);
 // Border-radius des titres
 $title: 20px 0 20px 0;
 
-// Fonds rouges
-$red: #b71540;
+// Fonds rouges ou certains mots importants
+// Ce rouge-orange "Tangerine Tango" (Pantone 17-1463) est considéré comme allant bien avec le bleu "Very Peri".
+// Code RGB : RGB(221, 65, 36)
+$red: #dd4124;
 
-// Fonds bleus ou mots importants
-$blue: #4a69bd
+// Fonds bleus ou certains mots importants
+// C'est le bleu-violet "Very Peri", désigné couleur Pantone 2022 (Pantone 17-3938).
+// Code RGB : RGB(102, 103, 171)
+$blue: #6667ab
