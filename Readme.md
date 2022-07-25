@@ -27,7 +27,7 @@ Lundi 25 juillet 2022
 - [x] Ajout d'un Easter Egg ! (A trouver sans regarder le code sinon c'est trop facile...)
 - [x] Correction de défauts graphiques : police affichée, largeur du header, smooth scroll, couleurs...
 - [x] Début d'ajout des projets de la dernière formation professionnelle.
-- [x] Ajouter une navigation par boutons dans la partie "Réalisations".
+- [x] Ajout d'une navigation par boutons dans la partie "Réalisations".
 - [ ] Ajouter une page de mentions légales.
 - [ ] Finir d'ajouter les réalisations faites durant la formation.
 - [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
