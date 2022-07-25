@@ -46,7 +46,7 @@ body {
 }
 
 #navbar span a, #navbar-pdp span a {
-  color: #4a69bd;
+  color: #6667ab;
   border: 2px transparent solid;
   border-radius: 20px 0 20px 0;
 }
@@ -60,24 +60,24 @@ body {
 
 @-webkit-keyframes color-change {
   0% {
-    background: #4a69bd;
+    background: #6667ab;
   }
   50% {
     background: white;
   }
   100% {
-    background: #b71540;
+    background: #dd4124;
   }
 }
 @keyframes color-change {
   0% {
-    background: #4a69bd;
+    background: #6667ab;
   }
   50% {
     background: white;
   }
   100% {
-    background: #b71540;
+    background: #dd4124;
   }
 }
 .links-header, .links-pdp {
@@ -122,15 +122,15 @@ h2 {
 
 .quisuisje {
   display: inline-block;
-  background-color: #b71540;
+  background-color: #dd4124;
   color: white;
   border: 2px black solid;
   border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, border 0.5s;
 }
 .quisuisje:hover {
-  background-color: #4a69bd;
-  border: 2px #b71540 solid;
+  background-color: #6667ab;
+  border: 2px #dd4124 solid;
 }
 
 .description, .citation, .contact, .compet, .autresComp, .passions, .projets {
@@ -143,11 +143,11 @@ h2 {
 }
 
 .impWord {
-  color: #4a69bd;
+  color: #6667ab;
 }
 
 .citation, .autresComp {
-  width: 480px;
+  width: 570px;
   text-align: center;
   text-indent: 0;
   margin: 0 auto;
@@ -187,23 +187,23 @@ ul {
 }
 
 ul span {
-  color: #b71540;
+  color: #dd4124;
   font-weight: bold;
 }
 
 ul a {
-  color: #4a69bd;
+  color: #6667ab;
   text-decoration: underline;
 }
 ul a:visited {
   color: black;
 }
 ul a:hover {
-  color: #b71540;
+  color: #dd4124;
 }
 
 li img {
-  background: #b71540;
+  background: #dd4124;
   border-radius: 10px;
 }
 
@@ -225,23 +225,23 @@ li img {
 }
 
 .parag span {
-  color: #b71540;
+  color: #dd4124;
   font-weight: bold;
 }
 
-#thermidor {
-  color: #4a69bd;
+#thermi {
+  color: #6667ab;
   font-weight: bold;
 }
 
 #realisations {
-  background-color: #b71540;
+  background-color: #dd4124;
   padding: 110px 80px 55px 80px;
 }
 
 .realisations {
   display: inline-block;
-  background-color: #4a69bd;
+  background-color: #6667ab;
   color: white;
   border: 2px black solid;
   border-radius: 20px 0 20px 0;
@@ -249,16 +249,37 @@ li img {
 }
 .realisations:hover {
   background-color: #dedede;
-  color: #b71540;
+  color: #dd4124;
+}
+
+.projetsGroupe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*flex-direction: column*/
+  /* en dessous d'une certaine largeur... */
+}
+
+#projetsPersos1, #projetsPersos2, #projetsFormation1, #projetsFormation2, #projetsFormation3, #projetsFormation4,
+#projetsFormation5, #projetsFormation6 {
+  font-size: 0.7em;
+}
+
+.projetsGroupe a:hover {
+  text-decoration: none;
+}
+
+#thermidor, #lpda, #portfolio, #KOP, #reservia, #ohmyfood, #gameon, #fisheye {
+  scroll-margin: 150px;
 }
 
 .projets img {
-  background: #b71540;
+  background: #dd4124;
   border-radius: 10px;
 }
 
 .typeProjet {
-  color: #b71540;
+  color: #dd4124;
   font-weight: bold;
 }
 
@@ -269,7 +290,7 @@ li img {
 }
 
 .boutonProjet {
-  background-color: #b71540;
+  background-color: #dd4124;
   min-width: 250px;
   color: white;
   font-size: 24px;
@@ -281,7 +302,7 @@ li img {
 }
 .boutonProjet:hover {
   background-color: #dedede;
-  color: #b71540;
+  color: #dd4124;
 }
 
 .texteProjet {
@@ -289,25 +310,25 @@ li img {
 }
 
 .technos {
-  color: #4a69bd;
+  color: #6667ab;
 }
 
 #cv {
-  background-color: #4a69bd;
+  background-color: #6667ab;
   padding: 110px 80px 55px 80px;
 }
 
 .cv {
   display: inline-block;
   background-color: #dedede;
-  color: #b71540;
+  color: #dd4124;
   border: 2px black solid;
   border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, color 0.5s;
 }
 .cv:hover {
   background-color: #969696;
-  color: #4a69bd;
+  color: #6667ab;
 }
 
 .categorieCV {
@@ -355,7 +376,7 @@ li img {
   max-width: 550px;
   color: black;
   padding: 5px;
-  border: 2px #b71540 solid;
+  border: 2px #dd4124 solid;
   border-radius: 20px 0 20px 0;
   margin-bottom: 5px;
 }
@@ -363,7 +384,7 @@ li img {
 #easterClose {
   cursor: pointer;
   width: 100px;
-  background: #4a69bd;
+  background: #6667ab;
   color: white;
   border: 2px white solid;
   border-radius: 10px 0 10px 0;
@@ -372,7 +393,7 @@ li img {
 #easterClose:hover {
   background: #dedede;
   color: black;
-  border: 2px #b71540 solid;
+  border: 2px #dd4124 solid;
 }
 
 .cvLink {
@@ -440,7 +461,7 @@ li img {
     flex-direction: column;
   }
 
-  .contact, .compet, .autresComp {
+  .contact, .compet, .citation, .autresComp {
     width: 100%;
     max-width: 570px;
   }
@@ -506,10 +527,6 @@ li img {
 
   #quisuisje, #realisations, #cv {
     padding: 80px 50px 40px 50px;
-  }
-
-  .citation, .autresComp {
-    width: 100%;
   }
 
   #pdp {

@@ -148,7 +148,7 @@ h2 {
 }
 
 .citation, .autresComp {
-  width: 480px;
+  width: 570px;
   text-align: center;
   text-indent: 0;
   margin: 0 auto
@@ -228,7 +228,7 @@ li img {
   font-weight: bold
 }
 
-#thermidor {
+#thermi {
   color: $blue;
   font-weight: bold
 }
@@ -249,6 +249,26 @@ li img {
     background-color: $backGrey;
     color: $red
   }
+}
+
+.projetsGroupe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*flex-direction: column*/ /* en dessous d'une certaine largeur... */
+}
+
+#projetsPersos1, #projetsPersos2, #projetsFormation1, #projetsFormation2, #projetsFormation3, #projetsFormation4,
+#projetsFormation5, #projetsFormation6 {
+  font-size: 0.7em
+}
+
+.projetsGroupe a:hover {
+  text-decoration: none
+}
+
+#thermidor, #lpda, #portfolio, #KOP, #reservia, #ohmyfood, #gameon, #fisheye {
+  scroll-margin: 150px /* Devra peut-être être modifié ! */
 }
 
 .projets img {
@@ -433,7 +453,7 @@ li img {
     align-items: center;
     flex-direction: column
   }
-  .contact, .compet, .autresComp {
+  .contact, .compet, .citation, .autresComp {
     width: 100%;
     max-width: 570px
   }
@@ -488,9 +508,6 @@ li img {
   }
   #quisuisje, #realisations, #cv {
     padding: 80px 50px 40px 50px
-  }
-  .citation, .autresComp {
-    width: 100%
   }
   #pdp {
     font-size: 1em
