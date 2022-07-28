@@ -45,7 +45,7 @@ body {
   margin: 0 2%
 }
 
-#navbar span a, #navbar-pdp span a {
+#navbar span a, #navbar-pdp span a, #mentions {
   color: $blue;
   border: 2px transparent solid;
   border-radius: $title;
@@ -81,7 +81,7 @@ body {
   }
 }
 
-.links-header, .links-pdp {
+.links-header, .links-pdp, #mentions {
   padding: 8px
 }
 
@@ -238,7 +238,7 @@ li img {
   padding: 110px 80px 55px 80px
 }
 
-.realisations {
+.realisations, .realPersos {
   display: inline-block;
   background-color: $blue;
   color: white;
@@ -250,25 +250,29 @@ li img {
     color: $red
   }
 }
+.realPersos {
+  background-color: $red;
+}
 
-.projetsGroupe {
+#creaPerso {
+  color: $red;
+  font-weight: bold
+}
+
+.groupeProjets {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  /*flex-direction: column*/ /* en dessous d'une certaine largeur... */
+  font-size: 0.9em
 }
 
-#projetsPersos1, #projetsPersos2, #projetsFormation1, #projetsFormation2, #projetsFormation3, #projetsFormation4,
-#projetsFormation5, #projetsFormation6 {
-  font-size: 0.7em
-}
-
-.projetsGroupe a:hover {
+.groupeProjets a:hover {
   text-decoration: none
 }
 
 #thermidor, #lpda, #portfolio, #KOP, #reservia, #ohmyfood, #gameon, #fisheye {
-  scroll-margin: 150px /* Devra peut-être être modifié ! */
+  scroll-margin: 150px
 }
 
 .projets img {
@@ -276,8 +280,13 @@ li img {
   border-radius: 10px
 }
 
-.typeProjet {
+.typeProjetPerso {
   color: $red;
+  font-weight: bold
+}
+
+.typeProjetOC {
+  color: $blue;
   font-weight: bold
 }
 
@@ -319,13 +328,13 @@ li img {
 .cv {
   display: inline-block;
   background-color: $backGrey;
-  color: $red;
+  color: $blue;
   border: $blackBor;
   border-radius: $title;
   transition: background-color 0.5s, color 0.5s;
   &:hover {
-    background-color: rgb(150, 150, 150);
-    color: $blue
+    background-color: $red;
+    color: white
   }
 }
 
@@ -427,6 +436,54 @@ li img {
   font-size: 2em;
   padding: 0;
   border-top: $blackBor
+}
+
+#mentions {
+  cursor: pointer
+}
+
+#divMentionsToOpen {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  z-index: 1
+}
+
+#mentionsText {
+  background-color: $backGrey;
+  width: 50%;
+  max-width: 550px;
+  color: black;
+  padding: 5px;
+  border: 2px $red solid;
+  border-radius: $title;
+  margin-bottom: 15px /* A modifier... */
+}
+
+#mentionsClose {
+  cursor: pointer;
+  width: 100px;
+  background: $blue;
+  color: white;
+  border: 2px white solid;
+  border-radius: 10px 0 10px 0;
+  margin-top: 15px; /* A modifier... */
+  transition: 0.5s;
+  &:hover {
+    background: $backGrey;
+    color: black;
+    border: 2px $red solid;
+  }
 }
 
 /* MEDIA QUERIES */

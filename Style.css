@@ -45,12 +45,12 @@ body {
   margin: 0 2%;
 }
 
-#navbar span a, #navbar-pdp span a {
+#navbar span a, #navbar-pdp span a, #mentions {
   color: #6667ab;
   border: 2px transparent solid;
   border-radius: 20px 0 20px 0;
 }
-#navbar span a:hover, #navbar-pdp span a:hover {
+#navbar span a:hover, #navbar-pdp span a:hover, #mentions:hover {
   color: black;
   text-decoration: none;
   border: 2px black solid;
@@ -80,7 +80,7 @@ body {
     background: #dd4124;
   }
 }
-.links-header, .links-pdp {
+.links-header, .links-pdp, #mentions {
   padding: 8px;
 }
 
@@ -239,7 +239,7 @@ li img {
   padding: 110px 80px 55px 80px;
 }
 
-.realisations {
+.realisations, .realPersos {
   display: inline-block;
   background-color: #6667ab;
   color: white;
@@ -247,25 +247,29 @@ li img {
   border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, color 0.5s;
 }
-.realisations:hover {
+.realisations:hover, .realPersos:hover {
   background-color: #dedede;
   color: #dd4124;
 }
 
-.projetsGroupe {
+.realPersos {
+  background-color: #dd4124;
+}
+
+#creaPerso {
+  color: #dd4124;
+  font-weight: bold;
+}
+
+.groupeProjets {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  /*flex-direction: column*/
-  /* en dessous d'une certaine largeur... */
+  font-size: 0.9em;
 }
 
-#projetsPersos1, #projetsPersos2, #projetsFormation1, #projetsFormation2, #projetsFormation3, #projetsFormation4,
-#projetsFormation5, #projetsFormation6 {
-  font-size: 0.7em;
-}
-
-.projetsGroupe a:hover {
+.groupeProjets a:hover {
   text-decoration: none;
 }
 
@@ -278,8 +282,13 @@ li img {
   border-radius: 10px;
 }
 
-.typeProjet {
+.typeProjetPerso {
   color: #dd4124;
+  font-weight: bold;
+}
+
+.typeProjetOC {
+  color: #6667ab;
   font-weight: bold;
 }
 
@@ -321,14 +330,14 @@ li img {
 .cv {
   display: inline-block;
   background-color: #dedede;
-  color: #dd4124;
+  color: #6667ab;
   border: 2px black solid;
   border-radius: 20px 0 20px 0;
   transition: background-color 0.5s, color 0.5s;
 }
 .cv:hover {
-  background-color: #969696;
-  color: #6667ab;
+  background-color: #dd4124;
+  color: white;
 }
 
 .categorieCV {
@@ -429,6 +438,55 @@ li img {
   font-size: 2em;
   padding: 0;
   border-top: 2px black solid;
+}
+
+#mentions {
+  cursor: pointer;
+}
+
+#divMentionsToOpen {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+}
+
+#mentionsText {
+  background-color: #dedede;
+  width: 50%;
+  max-width: 550px;
+  color: black;
+  padding: 5px;
+  border: 2px #dd4124 solid;
+  border-radius: 20px 0 20px 0;
+  margin-bottom: 15px;
+}
+
+#mentionsClose {
+  cursor: pointer;
+  width: 100px;
+  background: #6667ab;
+  color: white;
+  border: 2px white solid;
+  border-radius: 10px 0 10px 0;
+  margin-top: 15px;
+  /* A modifier... */
+  transition: 0.5s;
+}
+#mentionsClose:hover {
+  background: #dedede;
+  color: black;
+  border: 2px #dd4124 solid;
 }
 
 /* MEDIA QUERIES */
