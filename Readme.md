@@ -12,12 +12,9 @@ Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections impo
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Lundi 25 juillet 2022
-- Ajout d'une navigation par boutons dans la partie "Réalisations".
-- Remplacement des couleurs bleue et rouge par le bleu "Very Peri", couleur Pantone 2022 (code 17-3938), et le rouge
-"Tangerine Tango" (code 17-1463).
-- Ajout d'un projet de formation.
-- Autres modifications mineures.
+Jeudi 28 juillet 2022
+- Nettoyage de code.
+- Ajout d'une modale pour les futures mentions légales.
 
 ## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
@@ -28,6 +25,8 @@ Lundi 25 juillet 2022
 - [x] Correction de défauts graphiques : police affichée, largeur du header, smooth scroll, couleurs...
 - [x] Début d'ajout des projets de la dernière formation professionnelle.
 - [x] Ajout d'une navigation par boutons dans la partie "Réalisations".
+- [x] Remplacement des couleurs bleue et rouge par le bleu "Very Peri", couleur Pantone 2022 (code 17-3938), et le rouge
+"Tangerine Tango" (code 17-1463).
 - [ ] Ajouter une page de mentions légales.
 - [ ] Finir d'ajouter les réalisations faites durant la formation.
 - [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
