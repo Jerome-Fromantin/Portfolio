@@ -26,7 +26,7 @@
         <header>
             <!-- Barre de navigation -->
             <div class="container-fluid font-weight-bold" id="entete">
-                <nav id="navbar">
+                <nav class="barnav">
                     <a href="index.html" id="logoLink">
                         <img src="Images/Logo.png" alt="Logo" title="Accueil" id="logo">
                     </a>
@@ -189,7 +189,7 @@
                     <p>Ci-dessous sont affichés certains des travaux sur lesquels je me suis exercé.</p>
                     <p>Les 4 premiers sont des <strong id="creaPerso">créations personnelles</strong> développées seul.</p>
                     <p>Les réalisations suivantes sont des projets professionnalisants développés lors de la formation de
-                    "<strong class="impWord">Développeur d'applications JavaScript/React</strong>". Seulement 4 sont
+                    "<strong class="impWord">Développeur d'applications JavaScript/React</strong>". Seulement 6 sont
                     affichés actuellement mais d'autres seront prochainement ajoutés pour compléter cette section. Ces
                     projets sont considérés comme terminés dans le cadre de cette formation mais peuvent bien sûr être
                     améliorés (et ils le seront à des degrés divers). Après tout, je suis un développeur front-end
@@ -213,10 +213,10 @@
                         <a href="#ohmyfood" class="px-3 py-1 m-1 realisations">ohmyfood</a>
                         <a href="#gameon" class="px-3 py-1 m-1 realisations">GameOn</a>
                         <a href="#fisheye" class="px-3 py-1 m-1 realisations">Fisheye</a>
+                        <a href="#lespetitsplats" class="px-3 py-1 m-1 realisations">Les petits plats</a>
+                        <a href="#billed" class="px-3 py-1 m-1 realisations">Billed</a>
                     </h3>
-                    <!-- Code des 7 boutons à intégrer plus tard...
-                        <a href="#" class="px-3 py-1 m-1 realisations">Projet 7</a>
-                        <a href="#" class="px-3 py-1 m-1 realisations">Projet 9</a>
+                    <!-- Code des 5 boutons à intégrer plus tard...
                         <a href="#" class="px-3 py-1 m-1 realisations">Projet 10</a>
                         <a href="#" class="px-3 py-1 m-1 realisations">Projet 11</a>
                         <a href="#" class="px-3 py-1 m-1 realisations">Projet 12</a>
@@ -367,7 +367,7 @@
                         </div>
                         <div class="d-flex align-self-start texteProjet">
                             <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
-                                <p><span>Année :</span> 2021</p>
+                                <p><span>Année :</span> Mars/Avril 2021</p>
                                 <p><span>Sujet :</span> Site de réservations d'hébergements de vacances.</p>
                                 <p class="technos">
                                     <span>Technologies :</span>
@@ -396,7 +396,7 @@
                         </div>
                         <div class="d-flex align-self-start texteProjet">
                             <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
-                                <p><span>Année :</span> 2021</p>
+                                <p><span>Année :</span> Avril/Mai 2021</p>
                                 <p><span>Sujet :</span> Site de réservations de repas.</p>
                                 <p class="technos">
                                     <span>Technologies :</span>
@@ -422,11 +422,11 @@
                             <div>
                                 <a class="btn boutonProjet" href="https://jerome-fromantin.github.io/JeromeFromantin_4_20052021/">Application en ligne</a>
                             </div>
-                            <div><a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/JeromeFromantin_4_20052021">Code sur GitHub</a></div>
+                            <div><a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/JeromeFromantin_4_20052021.git">Code sur GitHub</a></div>
                         </div>
                         <div class="d-flex align-self-start texteProjet">
                             <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
-                                <p><span>Année :</span> 2021</p>
+                                <p><span>Année :</span> Mai/Juin 2021</p>
                                 <p><span>Sujet :</span> Site d'inscription à un marathon national de jeux vidéos.</p>
                                 <p class="technos">
                                     <span>Technologies :</span>
@@ -451,52 +451,83 @@
                             <div>
                                 <a class="btn boutonProjet" href="https://jerome-fromantin.github.io/JeromeFromantin_6_06072021/">Application en ligne</a>
                             </div>
-                            <div><a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/JeromeFromantin_6_06072021">Code sur GitHub</a></div>
+                            <div><a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/JeromeFromantin_6_06072021.git">Code sur GitHub</a></div>
                         </div>
                         <div class="d-flex align-self-start texteProjet">
                             <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
-                                <p><span>Année :</span> 2021</p>
+                                <p><span>Année :</span> Juillet/Septembre 2021</p>
                                 <p><span>Sujet :</span> Site de photographes.</p>
                                 <p class="technos">
                                     <span>Technologies :</span>
                                     <strong>HTML5, CSS3, JavaScript, GitHub.</strong>
                                 </p>
                                 <p><span>Description :</span> Ce projet consiste en l'intégration de maquettes pour la
-                                réalisation d'un site de photographes respectant les WCAG (règles pour l'accessibilité du
-                                web). Du JavaScript est aussi utilisé pour le rendre fonctionnel.</p>
+                                réalisation d'un site respectant les WCAG (règles pour l'accessibilité du web). Du
+                                JavaScript est aussi utilisé pour le rendre fonctionnel.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- BLOC DE CODE POUR PROJET PAR DEFAUT
-                <div class="mt-5 projets" id="nom-du-projet">
+                <div class="mt-5 projets" id="lespetitsplats">
                     <h3 class="d-flex align-items-center justify-content-center">
                         <img src="Images/Favicon.png">
-                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">Nom du projet</span>
+                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">Les petits plats</span>
                         <img src="Images/Favicon.png">
                     </h3>
-                    <p class="typeProjet">Blog/Maquette/Application React/...<br>(formation OpenClassrooms)</p>
+                    <p class="typeProjetOC">Intégration d'une maquette,<br>création de 2 algorithmes et JavaScript</p>
                     <div class="d-flex align-items-center flex-column justify-content-between">
                         <div class="liensProjet">
                             <div>
-                                <a class="btn boutonProjet" href="https://jerome-fromantin.github.io/#">Application en ligne</a>
+                                <a class="btn boutonProjet" href="https://jerome-fromantin.github.io/JeromeFromantin_7_02092021/">Application en ligne</a>
                             </div>
-                            <div><a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/#">Code sur GitHub</a></div>
+                            <div><a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/JeromeFromantin_7_02092021.git">Code sur GitHub</a></div>
                         </div>
                         <div class="d-flex align-self-start texteProjet">
                             <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
-                                <p><span>Année :</span> 2021</p>
-                                <p><span>Sujet :</span> Description rapide du sujet.</p>
+                                <p><span>Année :</span> Septembre/Octobre 2021</p>
+                                <p><span>Sujet :</span> Site de recettes de cuisine.</p>
                                 <p class="technos">
                                     <span>Technologies :</span>
-                                    <strong>HTML5, CSS3, Sass, BootStrap, JavaScript, React, GitHub...</strong>
+                                    <strong>HTML5, CSS3, Sass, JavaScript, GitHub.</strong>
                                 </p>
-                                <p><span>Description :</span> Description un peu plus détaillée...</p>
+                                <p><span>Description :</span> Ce projet consiste tout d'abord en l'intégration d'une
+                                maquette, mais surtout en la création de deux implémentations d'un algorithme de recherche
+                                afin de privilégier la plus rapide. Du JavaScript est bien sûr utilisé pour le rendre
+                                fonctionnel.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                -->
+                <div class="mt-5 projets" id="billed">
+                    <h3 class="d-flex align-items-center justify-content-center">
+                        <img src="Images/Favicon.png">
+                        <span class="px-3 py-1 mx-1 font-weight-bold realisations">Billed</span>
+                        <img src="Images/Favicon.png">
+                    </h3>
+                    <p class="typeProjetOC">Débogage et tests d'un SaaS</p>
+                    <div class="d-flex align-items-center flex-column justify-content-between">
+                        <div class="liensProjet">
+                            <div>
+                                <a class="btn boutonProjet" href="https://jerome-fromantin.github.io/JeromeFromantin_9_03112021/">Application en ligne</a>
+                            </div>
+                            <div><a class="btn boutonProjet" href="https://github.com/Jerome-Fromantin/JeromeFromantin_9_03112021.git">Code sur GitHub</a></div>
+                        </div>
+                        <div class="d-flex align-self-start texteProjet">
+                            <div class="d-flex align-items-start flex-column justify-content-start mt-3 parag">
+                                <p><span>Année :</span> Novembre/Décembre 2021</p>
+                                <p><span>Sujet :</span> SaaS de Ressources Humaines.</p>
+                                <p class="technos">
+                                    <span>Technologies :</span>
+                                    <strong>HTML5, CSS3, JavaScript, Jest, GitHub.</strong>
+                                </p>
+                                <p><span>Description :</span> Ce projet consiste en un débogage et en plusieurs tests d'un
+                                SaaS. Tout d'abord, la correction de code pour faire passer par Jest des tests déjà mis en
+                                place. Puis la création d'autres tests unitaires et d'intégration. Pour finir, la
+                                réalisation d'un plan de test End 2 End.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Section "C.V." -->
@@ -525,8 +556,7 @@
                         <div id="divEasterToOpen">
                             <span id="easterText">Félicitations !<br>Vous avez découvert le message caché de ce
                             portfolio&nbsp;!<br>Maintenant, n'hésitez pas à découvrir aussi mes compétences en
-                            développement en me recrutant...
-                            </span>
+                            développement en me recrutant...</span>
                             <span id="easterClose" onclick=showOrCloseEasterEgg()>Fermer</span>
                         </div>
                     </div>
@@ -612,7 +642,7 @@
         <footer>
             <!-- Pied de page -->
             <div class="container-fluid font-weight-bold" id="pdp">
-                <nav class="d-flex align-items-center justify-content-between" id="navbar-pdp">
+                <nav class="d-flex align-items-center justify-content-between barnav">
                     <a href="index.html" id="logoLink-pdp">
                         <img src="Images/Logo.png" alt="Logo" title="Accueil" id="logo-pdp">
                     </a>
@@ -631,7 +661,36 @@
                             </span>
                             <span class="text-center" id="mentions" onclick=showOrCloseMentions()>Mentions légales</span>
                             <div id="divMentionsToOpen">
-                                <span id="mentionsText">Ici se trouveront prochainement<br>les mentions légales...</span>
+                                <div id="mentionsText">
+                                    <p id="mentionsTitle"><strong>MENTIONS LÉGALES</strong></p>
+                                    <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la
+                                    confiance en l'économie numérique, il est précisé aux utilisateurs de ce site
+                                    l'identité des différents intervenants dans le cadre de sa réalisation et de son
+                                    suivi.</p>
+
+                                    <p><b>Édition du site</b>
+                                    <br>Le présent site, accessible à l’URL
+                                    https://jerome-fromantin.github.io/Portfolio/, est édité par Jérôme Fromantin, résidant
+                                    6 route de Meuzac 87380 Magnac-Bourg, de nationalité française (France), né le
+                                    23/07/1971.</p>
+
+                                    <p><b>Hébergement</b>
+                                    <br>Le site est hébergé par la société GitHub,
+                                    <!--situé 666 rue de l'hébergeur 75006 PARIS, (contact téléphonique ou email :
+                                    +33600000000).-->
+                                    accessible via le site <a href="https://github.com">https://github.com</a>.</p>
+
+                                    <p><b>Directeur de publication</b>
+                                    <br>Le Directeur de la publication du site est Jérôme Fromantin.</p>
+
+                                    <p><b>Me contacter</b>
+                                    <br>Par téléphone : +33 6 62 13 68 01
+                                    <br>Par email : jeromefromantin@hotmail.fr
+                                    <br>Par courrier : 6 route de Meuzac 87380 Magnac-Bourg</p>
+
+                                    <p>Génération des mentions légales par
+                                    <a href="https://www.legalstart.fr/">Legalstart</a>.
+                                </div>
                                 <span id="mentionsClose" onclick=showOrCloseMentions()>Fermer</span>
                             </div>
                         </div>
