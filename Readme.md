@@ -12,8 +12,7 @@ Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections impo
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Mardi 2 août 2022
-- Création complète de la page des mentions légales.
+Mercredi 10 août 2022
 - Ajout de 2 projets de formation.
 
 ## Travaux effectués ou à faire
