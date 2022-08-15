@@ -12,8 +12,9 @@ Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections impo
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Mercredi 10 août 2022
-- Ajout de 2 projets de formation.
+Lundi 15 août 2022
+- Ajout des derniers projets de formation.
+- Mise en ligne de mon application React personnelle.
 
 ## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
@@ -27,6 +28,6 @@ Mercredi 10 août 2022
 - [x] Remplacement des couleurs bleue et rouge par le bleu "Very Peri", couleur Pantone 2022 (code 17-3938), et le rouge
 "Tangerine Tango" (code 17-1463).
 - [x] Ajouter une page de mentions légales.
-- [ ] Finir d'ajouter les réalisations faites durant la formation.
+- [x] Finir d'ajouter les réalisations faites durant la formation.
 - [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
 - [ ] Eventuellement, ajouter une ou des fonctionnalités avec JavaScript.
