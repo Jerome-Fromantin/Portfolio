@@ -1,5 +1,5 @@
 # Portfolio
-Bonjour ! Cette application est le portfolio de **Jérôme Fromantin, développeur front-end junior** en recherche de recrutement.
+Bonjour ! Cette application est le portfolio de **Jérôme Fromantin, développeur JavaScript/React et Symfony** en recherche de recrutement.
 
 ## Historique
 Créé en 2020 lors d'une première formation professionnelle intitulée "**Développeur web/web mobile**", il fut mis de côté jusqu'en mai 2022, après une deuxième formation intitulée elle "**Développeur d'applications JavaScript/React**".
@@ -12,9 +12,9 @@ Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections impo
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Lundi 15 août 2022
-- Ajout des derniers projets de formation.
-- Mise en ligne de mon application React personnelle.
+Jeudi 19 janvier 2023
+- Amélioration partielle du code HTML et SCSS.
+- Ajout du projet de la formation Symfony.
 
 ## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
@@ -23,7 +23,7 @@ Lundi 15 août 2022
 - [x] Retour à l'index original, ajout de contenu et travail sur le responsive du site entier jusqu'à 360 pixels de large.
 - [x] Ajout d'un Easter Egg ! (A trouver sans regarder le code sinon c'est trop facile...)
 - [x] Correction de défauts graphiques : police affichée, largeur du header, smooth scroll, couleurs...
-- [x] Début d'ajout des projets de la dernière formation professionnelle.
+- [x] Début d'ajout des projets de la formation professionnelle JavaScript/React.
 - [x] Ajout d'une navigation par boutons dans la partie "Réalisations".
 - [x] Remplacement des couleurs bleue et rouge par le bleu "Very Peri", couleur Pantone 2022 (code 17-3938), et le rouge
 "Tangerine Tango" (code 17-1463).

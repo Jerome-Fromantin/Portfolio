@@ -9,6 +9,7 @@ body {
   font-size: 14px
 }
 
+// Header
 #entete {
   position: fixed;
   z-index: 1;
@@ -16,27 +17,55 @@ body {
   width: 100vw;
   font-size: 3em;
   padding: 0;
-  border-bottom: $blackBor
+  border-bottom: $blackBor;
+
+  >.barnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >#header-categs {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: space-around
+    }
+  }
 }
 
-.barnav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between
+#head {
+  background-color: black;
+  background-image: url(Images/Clavier.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+
+  >#headText {
+    background-color: rgba(222, 222, 222, 0.7);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+    border: $blackBor;
+    border-radius: $title;
+
+    >h1 {
+      font-size: 5em
+    }
+
+    >h2 {
+      font-size: 2em
+    }
+  }
 }
 
+// Header et footer
 #logoLink, #logoLink-pdp {
   margin: 0 0 0 10px
 }
 #logo, #logo-pdp {
   height: 100px
-}
-
-#header-categs {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-around
 }
 
 .barnav span {
@@ -83,29 +112,7 @@ body {
   padding: 8px
 }
 
-#head {
-  background-color: black;
-  background-image: url(Images/Clavier.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px
-}
-
-#headText {
-  background-color: rgba(222, 222, 222, 0.7);
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 0 10px;
-  border: $blackBor;
-  border-radius: $title
-}
-
-h1 {
-  font-size: 5em
-}
-
+// Main
 h2 {
   font-size: 2em
 }
@@ -154,20 +161,23 @@ h2 {
 
 .contact-compet {
   display: flex;
-  justify-content: center
-}
+  justify-content: center;
 
-.contact, .compet {
-  width: 48%;
-  max-width: 570px;
-  text-align: center;
-  text-indent: 0
-}
-.contact {
-  margin-right: 10px
-}
-.compet {
-  margin-left: 10px
+  >.contact, >.compet {
+    width: 48%;
+    max-width: 570px;
+    text-align: center;
+    text-indent: 0;
+    margin: 10px
+  }
+
+  >.contact {
+    margin : 0 10px 0 0
+  }
+
+  >.compet {
+    margin : 0 0 0 10px
+  }
 }
 
 #idImg {
@@ -180,22 +190,22 @@ h2 {
 ul {
   list-style-type: none;
   text-align: left;
-  padding: 0
-}
+  padding: 0;
 
-ul span {
-  color: $red;
-  font-weight: bold
-}
+  span {
+    color: $red;
+    font-weight: bold
+  }
 
-ul a {
-  color: $blue;
-  text-decoration: underline;
-  &:visited {
-    color: black
-  };
-  &:hover {
-    color: $red
+  a {
+    color: $blue;
+    text-decoration: underline;
+    &:visited {
+      color: black
+    };
+    &:hover {
+      color: $red
+    }
   }
 }
 
@@ -205,11 +215,11 @@ li img {
 }
 
 .autresComp {
-  margin-top: 20px
-}
+  margin-top: 20px;
 
-.autresComp ul {
-  text-align: center
+  >ul {
+    text-align: center
+  }
 }
 
 .passions, .projets {
@@ -218,17 +228,16 @@ li img {
 }
 
 .parag {
-  text-align: left
-}
+  text-align: left;
 
-.parag span {
-  color: $red;
-  font-weight: bold
-}
-
-#thermi {
-  color: $blue;
-  font-weight: bold
+  >span {
+    color: $red;
+    font-weight: bold
+  }
+  
+  >#thermi {
+    color: $blue
+  }
 }
 
 #realisations {
@@ -265,20 +274,20 @@ li img {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 0.9em
-}
+  font-size: 0.9em;
 
-.groupeProjets a:hover {
-  text-decoration: none
+  >a:hover {
+    text-decoration: none
+  }
 }
 
 .projets {
-  scroll-margin: 150px
-}
+  scroll-margin: 150px;
 
-.projets img {
-  background: $red;
-  border-radius: 10px
+  img {
+    background: $red;
+    border-radius: 10px
+  }
 }
 
 .typeProjetPerso {
@@ -286,7 +295,7 @@ li img {
   font-weight: bold
 }
 
-.typeProjetOC {
+.typeProjetFormation {
   color: $blue;
   font-weight: bold
 }
@@ -315,10 +324,6 @@ li img {
 
 .texteProjet {
   padding: 0 10px
-}
-
-.technos {
-  color: $blue
 }
 
 #cv {
@@ -378,32 +383,32 @@ li img {
   font-size: 18px;
   font-weight: normal;
   text-align: center;
-  z-index: 1
-}
+  z-index: 1;
 
-#easterText {
-  background-color: $backGrey;
-  width: 50%;
-  max-width: 550px;
-  color: black;
-  padding: 10px;
-  border: 2px $red solid;
-  border-radius: $title;
-  margin-bottom: 5px
-}
-
-#easterClose {
-  cursor: pointer;
-  width: 100px;
-  background: $blue;
-  color: white;
-  border: 2px white solid;
-  border-radius: 10px 0 10px 0;
-  transition: 0.5s;
-  &:hover {
-    background: $backGrey;
+  >#easterText {
+    background-color: $backGrey;
+    width: 80%;
+    max-width: 550px;
     color: black;
+    padding: 10px;
     border: 2px $red solid;
+    border-radius: $title;
+    margin-bottom: 5px
+  }
+  
+  >#easterClose {
+    cursor: pointer;
+    width: 100px;
+    background: $blue;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10px 0 10px 0;
+    transition: 0.5s;
+    &:hover {
+      background: $backGrey;
+      color: black;
+      border: 2px $red solid;
+    }
   }
 }
 
@@ -413,7 +418,7 @@ li img {
   transition: background-color 0.5s, color 0.5s;
   &:hover {
     background-color: black;
-    color: $backGrey;
+    color: white;
     text-decoration: none
   }
 }
@@ -427,13 +432,13 @@ li img {
   transition: background-color 0.5s, color 0.5s;
   &:hover {
     background-color: black;
-    color: $backGrey;
+    color: white;
     text-decoration: none
   }
-}
 
-#cvDownText {
-  margin: 0
+  #cvDownText {
+    margin: 0
+  }
 }
 
 #pdp {
@@ -444,7 +449,7 @@ li img {
 }
 
 #mentions {
-  /* D'autres propriétés de "#mentions" sont présentes en lignes 46 à 84. */
+  /* D'autres propriétés de "#mentions" sont présentes en lignes 75 à 113. */
   cursor: pointer
 }
 
@@ -463,38 +468,40 @@ li img {
   font-size: 18px;
   font-weight: normal;
   text-align: center;
-  z-index: 1
-}
+  z-index: 1;
 
-#mentionsText {
-  background-color: $backGrey;
-  width: 80%;
-  max-width: 800px;
-  color: black;
-  text-align: left;
-  padding: 10px;
-  border: 2px $red solid;
-  border-radius: $title;
-  margin: 0 0 5px 0
-}
-
-#mentionsTitle {
-  text-align: center
-}
-
-#mentionsClose {
-  cursor: pointer;
-  width: 100px;
-  background: $blue;
-  color: white;
-  border: 2px white solid;
-  border-radius: 10px 0 10px 0;
-  margin: 0;
-  transition: 0.5s;
-  &:hover {
-    background: $backGrey;
+  >#mentionsText {
+    background-color: $backGrey;
+    width: 80%;
+    max-width: 800px;
+    max-height: 90%;
+    overflow: scroll;
     color: black;
+    text-align: left;
+    padding: 10px;
     border: 2px $red solid;
+    border-radius: $title;
+    margin: 0 0 5px 0;
+
+    >#mentionsTitle {
+      text-align: center
+    }
+  }
+
+  >#mentionsClose {
+    cursor: pointer;
+    width: 100px;
+    background: $blue;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10px 0 10px 0;
+    margin: 0;
+    transition: 0.5s;
+    &:hover {
+      background: $backGrey;
+      color: black;
+      border: 2px $red solid;
+    }
   }
 }
 
@@ -520,17 +527,23 @@ li img {
   .contact-compet {
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    >.contact, >.compet {
+      width: 100%;
+      max-width: 570px
+    }
+    >.contact {
+      margin : 0 0 10px 0
+    }
+    >.compet {
+      margin : 10px 0 0 0
+    }
   }
-  .contact, .compet, .citation, .autresComp {
+  .citation, .autresComp {
     width: 100%;
     max-width: 570px
-  }
-  .contact {
-    margin-right: 0
-  }
-  .compet {
-    margin: 20px 0 0 0
   }
   #pdp {
     font-size: 1.5em

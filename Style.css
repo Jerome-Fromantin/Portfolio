@@ -17,11 +17,40 @@ body {
   padding: 0;
   border-bottom: 2px black solid;
 }
-
-.barnav {
+#entete > .barnav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+#entete > .barnav > #header-categs {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+#head {
+  background-color: black;
+  background-image: url(Images/Clavier.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+#head > #headText {
+  background-color: rgba(222, 222, 222, 0.7);
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 10px;
+  border: 2px black solid;
+  border-radius: 20px 0;
+}
+#head > #headText > h1 {
+  font-size: 5em;
+}
+#head > #headText > h2 {
+  font-size: 2em;
 }
 
 #logoLink, #logoLink-pdp {
@@ -32,13 +61,6 @@ body {
   height: 100px;
 }
 
-#header-categs {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-
 .barnav span {
   margin: 0 2%;
 }
@@ -46,7 +68,7 @@ body {
 .barnav span a, #mentions {
   color: #6667ab;
   border: 2px transparent solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
 }
 .barnav span a:hover, #mentions:hover {
   color: black;
@@ -82,29 +104,6 @@ body {
   padding: 8px;
 }
 
-#head {
-  background-color: black;
-  background-image: url(Images/Clavier.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-}
-
-#headText {
-  background-color: rgba(222, 222, 222, 0.7);
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 0 10px;
-  border: 2px black solid;
-  border-radius: 20px 0 20px 0;
-}
-
-h1 {
-  font-size: 5em;
-}
-
 h2 {
   font-size: 2em;
 }
@@ -123,7 +122,7 @@ h2 {
   background-color: #dd4124;
   color: white;
   border: 2px black solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
   transition: background-color 0.5s, border 0.5s;
 }
 .quisuisje:hover {
@@ -155,27 +154,25 @@ h2 {
   display: flex;
   justify-content: center;
 }
-
-.contact, .compet {
+.contact-compet > .contact, .contact-compet > .compet {
   width: 48%;
   max-width: 570px;
   text-align: center;
   text-indent: 0;
+  margin: 10px;
 }
-
-.contact {
-  margin-right: 10px;
+.contact-compet > .contact {
+  margin: 0 10px 0 0;
 }
-
-.compet {
-  margin-left: 10px;
+.contact-compet > .compet {
+  margin: 0 0 0 10px;
 }
 
 #idImg {
   width: 50%;
   max-width: 300px;
   border: 2px black solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
 }
 
 ul {
@@ -183,12 +180,10 @@ ul {
   text-align: left;
   padding: 0;
 }
-
 ul span {
   color: #dd4124;
   font-weight: bold;
 }
-
 ul a {
   color: #6667ab;
   text-decoration: underline;
@@ -208,8 +203,7 @@ li img {
 .autresComp {
   margin-top: 20px;
 }
-
-.autresComp ul {
+.autresComp > ul {
   text-align: center;
 }
 
@@ -221,15 +215,12 @@ li img {
 .parag {
   text-align: left;
 }
-
-.parag span {
+.parag > span {
   color: #dd4124;
   font-weight: bold;
 }
-
-#thermi {
+.parag > #thermi {
   color: #6667ab;
-  font-weight: bold;
 }
 
 #realisations {
@@ -242,7 +233,7 @@ li img {
   background-color: #6667ab;
   color: white;
   border: 2px black solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
   transition: background-color 0.5s, color 0.5s;
 }
 .realisations:hover, .realPersos:hover {
@@ -269,15 +260,13 @@ li img {
   justify-content: center;
   font-size: 0.9em;
 }
-
-.groupeProjets a:hover {
+.groupeProjets > a:hover {
   text-decoration: none;
 }
 
 .projets {
   scroll-margin: 150px;
 }
-
 .projets img {
   background: #dd4124;
   border-radius: 10px;
@@ -288,7 +277,7 @@ li img {
   font-weight: bold;
 }
 
-.typeProjetOC {
+.typeProjetFormation {
   color: #6667ab;
   font-weight: bold;
 }
@@ -306,7 +295,7 @@ li img {
   font-size: 24px;
   font-weight: bold;
   border: 2px black solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
   margin: 10px;
   transition: background-color 0.5s, color 0.5s;
 }
@@ -319,10 +308,6 @@ li img {
   padding: 0 10px;
 }
 
-.technos {
-  color: #6667ab;
-}
-
 #cv {
   background-color: #6667ab;
   padding: 110px 80px 55px 80px;
@@ -333,7 +318,7 @@ li img {
   background-color: #dedede;
   color: #6667ab;
   border: 2px black solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
   transition: background-color 0.5s, color 0.5s;
 }
 .cv:hover {
@@ -382,19 +367,17 @@ li img {
   text-align: center;
   z-index: 1;
 }
-
-#easterText {
+#divEasterToOpen > #easterText {
   background-color: #dedede;
-  width: 50%;
+  width: 80%;
   max-width: 550px;
   color: black;
   padding: 10px;
   border: 2px #dd4124 solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
   margin-bottom: 5px;
 }
-
-#easterClose {
+#divEasterToOpen > #easterClose {
   cursor: pointer;
   width: 100px;
   background: #6667ab;
@@ -403,7 +386,7 @@ li img {
   border-radius: 10px 0 10px 0;
   transition: 0.5s;
 }
-#easterClose:hover {
+#divEasterToOpen > #easterClose:hover {
   background: #dedede;
   color: black;
   border: 2px #dd4124 solid;
@@ -416,7 +399,7 @@ li img {
 }
 .cvLink:hover {
   background-color: black;
-  color: #dedede;
+  color: white;
   text-decoration: none;
 }
 
@@ -425,16 +408,15 @@ li img {
   background-color: #dedede;
   color: black;
   border: 2px black solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
   transition: background-color 0.5s, color 0.5s;
 }
 #cvDown:hover {
   background-color: black;
-  color: #dedede;
+  color: white;
   text-decoration: none;
 }
-
-#cvDownText {
+#cvDown #cvDownText {
   margin: 0;
 }
 
@@ -446,7 +428,7 @@ li img {
 }
 
 #mentions {
-  /* D'autres propriétés de "#mentions" sont présentes en lignes 46 à 84. */
+  /* D'autres propriétés de "#mentions" sont présentes en lignes 75 à 113. */
   cursor: pointer;
 }
 
@@ -467,24 +449,23 @@ li img {
   text-align: center;
   z-index: 1;
 }
-
-#mentionsText {
+#divMentionsToOpen > #mentionsText {
   background-color: #dedede;
   width: 80%;
   max-width: 800px;
+  max-height: 90%;
+  overflow: scroll;
   color: black;
   text-align: left;
   padding: 10px;
   border: 2px #dd4124 solid;
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px 0;
   margin: 0 0 5px 0;
 }
-
-#mentionsTitle {
+#divMentionsToOpen > #mentionsText > #mentionsTitle {
   text-align: center;
 }
-
-#mentionsClose {
+#divMentionsToOpen > #mentionsClose {
   cursor: pointer;
   width: 100px;
   background: #6667ab;
@@ -494,7 +475,7 @@ li img {
   margin: 0;
   transition: 0.5s;
 }
-#mentionsClose:hover {
+#divMentionsToOpen > #mentionsClose:hover {
   background: #dedede;
   color: black;
   border: 2px #dd4124 solid;
@@ -528,19 +509,23 @@ li img {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
   }
-
-  .contact, .compet, .citation, .autresComp {
+  .contact-compet > .contact, .contact-compet > .compet {
     width: 100%;
     max-width: 570px;
   }
-
-  .contact {
-    margin-right: 0;
+  .contact-compet > .contact {
+    margin: 0 0 10px 0;
+  }
+  .contact-compet > .compet {
+    margin: 10px 0 0 0;
   }
 
-  .compet {
-    margin: 20px 0 0 0;
+  .citation, .autresComp {
+    width: 100%;
+    max-width: 570px;
   }
 
   #pdp {
