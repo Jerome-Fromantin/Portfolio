@@ -6,16 +6,17 @@ html {
 
 body {
   font-family: "Averia Serif Libre", "Times New Roman", Times, serif;
-  font-size: 14px
+  font-size: 16px
 }
 
-// Header
+/* HEADER */
 #entete {
   position: fixed;
   z-index: 1;
-  background-color: $backGrey;
+  background: white;
   width: 100vw;
   font-size: 3em;
+  font-weight: bold;
   padding: 0;
   border-bottom: $blackBor;
 
@@ -24,17 +25,49 @@ body {
     align-items: center;
     justify-content: space-between;
 
+    >#logoLink {
+      margin: 0 0 0 10px;
+
+      >#logo {
+        height: 100px
+      }
+    }
+
     >#header-categs {
       display: flex;
       align-items: center;
       flex-grow: 1;
-      justify-content: space-around
+      justify-content: center;
+
+      >span {
+        margin: 0 2%;
+
+        >a {
+          color: $blue;
+          border: 2px transparent solid;
+          border-radius: $title;
+          &:hover {
+            color: white;
+            text-decoration: none;
+            border: $blackBor;
+            -webkit-animation: color-change 2s linear infinite;
+            animation: color-change 2s linear infinite
+          }
+        }
+
+        >.links-header {
+          padding: 8px
+        }
+      }
     }
   }
 }
 
 #head {
-  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $blue;
   background-image: url(Images/Clavier.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +75,7 @@ body {
   height: 600px;
 
   >#headText {
-    background-color: rgba(222, 222, 222, 0.7);
+    background: rgba(222, 222, 222, 0.7);
     color: black;
     font-weight: bold;
     text-align: center;
@@ -59,41 +92,18 @@ body {
     }
   }
 }
+/* FIN DE HEADER */
 
-// Header et footer
-#logoLink, #logoLink-pdp {
-  margin: 0 0 0 10px
-}
-#logo, #logo-pdp {
-  height: 100px
-}
-
-.barnav span {
-  margin: 0 2%
-}
-
-.barnav span a, #mentions {
-  color: $blue;
-  border: 2px transparent solid;
-  border-radius: $title;
-  &:hover {
-    color: black;
-    text-decoration: none;
-    border: $blackBor;
-    -webkit-animation: color-change 2s linear infinite;
-    animation: color-change 2s linear infinite
-  }
-}
-
+/* HEADER ET FOOTER */
 @-webkit-keyframes color-change {
   0% {
     background: $blue;
   }
   50% {
-    background: white;
+    background: $red;
   }
   100% {
-    background: $red;
+    background: $blue
   }
 }
 @keyframes color-change {
@@ -101,46 +111,48 @@ body {
     background: $blue;
   }
   50% {
-    background: white;
-  }
-  100% {
     background: $red;
   }
+  100% {
+    background: $blue;
+  }
 }
+/* FIN DE HEADER ET FOOTER */
 
-.links-header, .links-pdp, #mentions {
-  padding: 8px
-}
-
-// Main
-h2 {
-  font-size: 2em
-}
-
-#quisuisje {
-  background-color: $backGrey;
-  padding: 110px 80px 55px 80px
-}
-
-.section-h2 {
+/* MAIN */
+// Présence dans différentes sections
+main h2 {
   font-size: 3em
 }
 
-.quisuisje {
+.impWord {
+  color: $blue
+}
+// Fin de présence dans différentes sections
+
+// Section "L'entreprise"
+#entreprise {
+  background: $blue;
+  text-align: center;
+  padding: 110px 80px 55px 80px
+}
+
+.entreprise {
   display: inline-block;
-  background-color: $red;
+  background: $red;
   color: white;
+  font-weight: bold;
   border: $blackBor;
   border-radius: $title;
-  transition: background-color 0.5s, border 0.5s;
   &:hover {
-    background-color: $blue;
+    background: white;
+    color: $red;
     border: 2px $red solid
   }
 }
 
-.description, .citation, .contact, .compet, .autresComp, .passions, .projets {
-  background-color: white;
+.weblocal, .citation, .infos {
+  background: white;
   font-size: 1.5em;
   text-align: left;
   text-indent: 30px;
@@ -148,53 +160,147 @@ h2 {
   border-radius: 20px
 }
 
-.impWord {
-  color: $blue
-}
-
-.citation, .autresComp {
-  width: 570px;
+.weblocal {
   text-align: center;
   text-indent: 0;
-  margin: 0 auto
+
+  #idImg {
+    width: 50%;
+    max-width: 200px;
+    border: $blackBor;
+    border-radius: $title
+  }
+
+  .sub-list {
+    text-align: left;
+    text-indent: 30px;
+    margin-top: 20px;
+
+    .sub-list-li {
+      display: flex;
+      align-items: center;
+
+      >.sub-list-text {
+        text-align: left;
+        text-indent: 0;
+        
+        >.sub-list-icon {
+          width: 20px;
+          border-radius: 50%;
+          margin: 0 10px 0 30px
+        }
+
+        >#easterEgg {
+          cursor: pointer;
+          background: transparent;
+          color: black;
+          font-weight: normal;
+          padding: 0;
+          border: none;
+          border-radius: 15px 0;
+          margin: 0;
+          transition: background 0.5s, color 0.5s;
+          &:hover {
+            background: $red;
+            color: white
+          }
+        }
+        
+        >#divEasterToOpen {
+          display: none;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          position: fixed;
+          left: 0;
+          top: 0;
+          background: rgba(0,0,0,0.7);
+          width: 100%;
+          height: 100%;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 18px;
+          font-weight: normal;
+          text-align: center;
+          z-index: 1;
+        
+          >#easterText {
+            background-color: $backGrey;
+            width: 80%;
+            max-width: 550px;
+            color: black;
+            padding: 10px;
+            border: 2px $red solid;
+            border-radius: $title;
+            margin-bottom: 5px
+          }
+          
+          >#easterClose {
+            cursor: pointer;
+            width: 100px;
+            background: $blue;
+            color: white;
+            border: 2px white solid;
+            border-radius: 10px 0;
+            transition: 0.5s;
+            &:hover {
+              background: $backGrey;
+              color: black;
+              border: 2px $red solid;
+            }
+          }
+        }
+      }
+    }
+
+    li img {
+      background: $red;
+      border-radius: 10px
+    }
+
+    .separator {
+      height: 2px;
+      width: 20%;
+      background: $red;
+      margin: 10px auto
+    }
+  }
+
+  .small-list .separator {
+    display: none;
+    height: 2px;
+    width: 20%;
+    background: $red;
+    margin: 10px auto
+  }
 }
 
-.contact-compet {
-  display: flex;
-  justify-content: center;
-
-  >.contact, >.compet {
-    width: 48%;
-    max-width: 570px;
-    text-align: center;
-    text-indent: 0;
-    margin: 10px
-  }
-
-  >.contact {
-    margin : 0 10px 0 0
-  }
-
-  >.compet {
-    margin : 0 0 0 10px
-  }
-}
-
-#idImg {
-  width: 50%;
-  max-width: 300px;
+.entreprise-sub {
+  display: inline-block;
+  background: $red;
+  color: white;
+  font-weight: bold;
   border: $blackBor;
-  border-radius: $title
+  border-radius: $title;
+  &:hover {
+    background: $blue;
+    border: 2px $red solid
+  }
 }
 
 ul {
   list-style-type: none;
-  text-align: left;
+  text-align: center;
   padding: 0;
 
   span {
-    color: $red;
-    font-weight: bold
+    display: inline-block;
+    background: $red;
+    color: white;
+    font-weight: bold;
+    padding: 2px 10px;
+    border: $blackBor;
+    border-radius: $title;
+    margin: 20px 0 0 0
   }
 
   a {
@@ -209,304 +315,289 @@ ul {
   }
 }
 
-li img {
-  background: $red;
-  border-radius: 10px
-}
-
-.autresComp {
-  margin-top: 20px;
-
-  >ul {
-    text-align: center
-  }
-}
-
-.passions, .projets {
+.citation {
+  width: 610px;
   text-align: center;
-  text-indent: 0
+  text-indent: 0;
+  margin: 0 auto
 }
 
-.parag {
-  text-align: left;
-
-  >span {
-    color: $red;
-    font-weight: bold
-  }
-  
-  >#thermi {
-    color: $blue
-  }
+.infos .titreInfos {
+  display: block;
+  text-align: center;
+  text-indent: 0;
+  width: 325px;
+  max-width: 90%;
+  margin: 0 auto
 }
 
+.infos ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left
+}
+
+#cvDown {
+  display: block;
+  background: $backGrey;
+  width: 434px;
+  max-width: 90%;
+  color: black;
+  text-align: center;
+  text-indent: 0;
+  padding: 2px 10px;
+  border: $blackBor;
+  border-radius: $title;
+  margin: 0 auto 10px auto;
+  transition: background 0.5s, color 0.5s;
+  &:hover {
+    background: black;
+    color: white;
+    text-decoration: none
+  }
+}
+// Fin de section "L'entreprise"
+
+// Section "Les réalisations"
 #realisations {
-  background-color: $red;
+  background: $red;
+  text-align: center;
   padding: 110px 80px 55px 80px
 }
 
-.realisations, .realPersos {
+.realisations {
   display: inline-block;
-  background-color: $blue;
+  background: $blue;
   color: white;
+  font-weight: bold;
   border: $blackBor;
   border-radius: $title;
-  transition: background-color 0.5s, color 0.5s;
   &:hover {
-    background-color: $backGrey;
-    color: $blue
+    background: white;
+    color: $blue;
+    border: 2px $blue solid
   }
 }
-.realPersos {
-  background-color: $red;
-  &:hover {
+
+.descripReal {
+  background: white;
+  font-size: 1.5em;
+  text-align: left;
+  text-indent: 30px;
+  padding: 30px 30px 10px 30px;
+  border-radius: 20px;
+  a {
+    text-decoration: underline;
+    &:visited {
+      color: black
+    }
+  }
+  #creaPerso {
     color: $red
-  }
-}
-
-#creaPerso {
-  color: $red;
-  font-weight: bold
-}
-
-.groupeProjets {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 0.9em;
-
-  >a:hover {
-    text-decoration: none
   }
 }
 
 .projets {
+  background: white;
+  font-size: 1.5em;
+  text-align: center;
+  text-indent: 0;
+  padding: 30px 30px 10px 30px;
+  border-radius: 20px;
   scroll-margin: 150px;
 
-  img {
-    background: $red;
-    border-radius: 10px
-  }
-}
-
-.typeProjetPerso {
-  color: $red;
-  font-weight: bold
-}
-
-.typeProjetFormation {
-  color: $blue;
-  font-weight: bold
-}
-
-.liensProjet {
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-.boutonProjet {
-  background-color: $red;
-  min-width: 250px;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  border: $blackBor;
-  border-radius: $title;
-  margin: 10px;
-  transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: $backGrey;
-    color: $red
-  }
-}
-
-.texteProjet {
-  padding: 0 10px
-}
-
-#cv {
-  background-color: $blue;
-  padding: 110px 80px 55px 80px
-}
-
-.cv {
-  display: inline-block;
-  background-color: $backGrey;
-  color: $blue;
-  border: $blackBor;
-  border-radius: $title;
-  transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: $red;
-    color: white
-  }
-}
-
-.categorieCV {
-  color: white;
-  font-size: 1.5em;
-  text-align: left;
-  padding: 10px 0
-}
-
-.cvIcon {
-  padding: 3px
-}
-
-.cvYear {
-  padding: 2px 6px
-}
-
-#easterEgg {
-  cursor: pointer;
-  transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: $backGrey;
-    color: black
-  }
-}
-
-#divEasterToOpen {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: rgba(0,0,0,0.7);
-  width: 100%;
-  height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-  z-index: 1;
-
-  >#easterText {
-    background-color: $backGrey;
-    width: 80%;
-    max-width: 550px;
-    color: black;
-    padding: 10px;
-    border: 2px $red solid;
-    border-radius: $title;
-    margin-bottom: 5px
-  }
+  >.groupeProjets {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.9em;
   
-  >#easterClose {
-    cursor: pointer;
-    width: 100px;
-    background: $blue;
-    color: white;
-    border: 2px white solid;
-    border-radius: 10px 0 10px 0;
-    transition: 0.5s;
-    &:hover {
-      background: $backGrey;
-      color: black;
-      border: 2px $red solid;
+    >a:hover {
+      text-decoration: none
     }
   }
-}
 
-.cvLink {
-  background-color: $backGrey;
-  color: black;
-  transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: black;
+  .realPerso, .realForm {
+    display: inline-block;
+    background: $red;
     color: white;
-    text-decoration: none
-  }
-}
-
-#cvDown {
-  display: inline-block;
-  background-color: $backGrey;
-  color: black;
-  border: $blackBor;
-  border-radius: $title;
-  transition: background-color 0.5s, color 0.5s;
-  &:hover {
-    background-color: black;
-    color: white;
-    text-decoration: none
-  }
-
-  #cvDownText {
-    margin: 0
-  }
-}
-
-#pdp {
-  background-color: $backGrey;
-  font-size: 2em;
-  padding: 0;
-  border-top: $blackBor
-}
-
-#mentions {
-  /* D'autres propriétés de "#mentions" sont présentes en lignes 75 à 113. */
-  cursor: pointer
-}
-
-#divMentionsToOpen {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: rgba(0,0,0,0.7);
-  width: 100%;
-  height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-  z-index: 1;
-
-  >#mentionsText {
-    background-color: $backGrey;
-    width: 80%;
-    max-width: 800px;
-    max-height: 90%;
-    overflow: scroll;
-    color: black;
-    text-align: left;
-    padding: 10px;
-    border: 2px $red solid;
+    font-weight: bold;
+    border: $blackBor;
     border-radius: $title;
-    margin: 0 0 5px 0;
-
-    >#mentionsTitle {
-      text-align: center
+    &:hover {
+      background: $backGrey;
+      color: $red
+    }
+  }
+  .realForm {
+    background: $blue;
+    &:hover {
+      color: $blue
     }
   }
 
-  >#mentionsClose {
-    cursor: pointer;
-    width: 100px;
-    background: $blue;
-    color: white;
-    border: 2px white solid;
-    border-radius: 10px 0 10px 0;
-    margin: 0;
-    transition: 0.5s;
+  >.titreProjet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      background: $red;
+      border-radius: 10px
+    }
+  }
+
+  >.soustitrePerso {
+    color: $red;
+    font-weight: bold
+  }
+
+  >.soustitreForm {
+    color: $blue;
+    font-weight: bold
+  }
+
+  .liensProjet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btnPerso, .btnForm {
+      background: $red;
+      min-width: 250px;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      border: $blackBor;
+      border-radius: $title;
+      margin: 10px;
+      transition: background 0.5s, color 0.5s;
+      &:hover {
+        background: $backGrey;
+        color: $red
+      }
+    }
+
+    .btnForm {
+      background: $blue;
+      color: white;
+      transition: background 0.5s, color 0.5s;
+      &:hover {
+        background: $backGrey;
+        color: $blue
+      }
+    }
+  }
+
+  .texteProjet {
+    text-align: left;
+    padding: 0 10px
+  }
+}
+// Fin de section "Les réalisations"
+
+// Section "Mentions légales - CGU-CGV"
+#cgu-cgv {
+  background: $blue;
+  color: white;
+  padding: 20px;
+
+  a {
+    color: lightgreen;
+    text-decoration: underline;
+
+    &:visited {
+      color: rgb(240, 200, 80)
+    }
+
     &:hover {
-      background: $backGrey;
-      color: black;
-      border: 2px $red solid;
+      color: white
     }
   }
 }
+
+.cgu-cgv {
+  font-weight: bold;
+  text-align: center
+}
+
+.cguTitles {
+  font-weight: bold;
+  margin: 40px 0 10px 0
+}
+
+.cguText {
+  font-size: 1.2em
+}
+
+.cguList {
+  margin-left: 50px;
+}
+
+.cguSubtitles {
+  font-weight: bold;
+  margin: 20px 0 0 0
+}
+// Fin de section "Mentions légales - CGU-CGV"
+/* FIN DE MAIN */
+
+/* FOOTER */
+#pdp {
+  background-color: white;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 0;
+  border-top: $blackBor;
+
+  >.barnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >#logoLink-pdp {
+      margin: 0 0 0 10px;
+
+      >#logo-pdp {
+        height: 100px
+      }
+    }
+
+    >#footer-categs {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5px 0;
+
+      >span {
+        margin: 0 2%;
+
+        >a {
+          color: $blue;
+          border: 2px transparent solid;
+          border-radius: $title;
+          &:hover {
+            color: white;
+            text-decoration: none;
+            border: $blackBor;
+            -webkit-animation: color-change 2s linear infinite;
+            animation: color-change 2s linear infinite
+          }
+        }
+
+        >.links-pdp {
+          padding: 8px
+        }
+      }
+    }
+  }
+}
+/* FIN DE FOOTER */
 
 /* MEDIA QUERIES */
-/* 5 breakpoints : 1000, 760, 650, 540, 390 */
+/* 5 breakpoints : 1000, 780, 660, 540, 390 */
 @media screen and (max-width: 1000px) {
   #entete {
     font-size: 2.5em
@@ -521,36 +612,15 @@ li img {
     display: flex;
     padding: 0 6px
   }
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 100px 70px 50px 70px
-  }
-  .contact-compet {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-    >.contact, >.compet {
-      width: 100%;
-      max-width: 570px
-    }
-    >.contact {
-      margin : 0 0 10px 0
-    }
-    >.compet {
-      margin : 10px 0 0 0
-    }
-  }
-  .citation, .autresComp {
-    width: 100%;
-    max-width: 570px
   }
   #pdp {
     font-size: 1.5em
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
   #entete {
     font-size: 2em
   }
@@ -558,10 +628,16 @@ li img {
     height: 80px
   }
   #head {
-    height: 400px
+    align-items: flex-end;
+    height: 400px;
+    padding-bottom: 30px
   }
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 90px 60px 45px 60px
+  }
+  .citation {
+    width: 100%;
+    max-width: 610px
   }
   .liensProjet {
     display: flex;
@@ -579,17 +655,17 @@ li img {
   #logo, #logo-pdp {
     height: 70px
   }
-  #head {
-    height: 300px
+  header h1 {
+    font-size: 4em !important
   }
-  h1 {
-    font-size: 4em
+  header h2 {
+    font-size: 1.6em !important
   }
-  h2 {
-    font-size: 1.6em
-  }
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 80px 50px 40px 50px
+  }
+  .weblocal .small-list .separator {
+    display: block
   }
   #pdp {
     font-size: 1em
@@ -603,29 +679,40 @@ li img {
   #logo, #logo-pdp {
     height: 60px
   }
-  h1 {
-    font-size: 3em
+  #head {
+    height: 300px;
+    padding-bottom: 20px
   }
-  h2 {
-    font-size: 1.3em
+  header h1 {
+    font-size: 3em !important
+  }
+  header h2 {
+    font-size: 1.3em !important
   }
   h3 {
     font-size: 1.3em
   }
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 70px 40px 35px 40px
   }
-  .description, .citation, .contact, .compet, .autresComp, .passions, .projets, .categorieCV {
-    font-size: 1.3em
+  main h2 {
+    font-size: 2em
+  }
+  .weblocal, .citation, .infos, .descripReal, .projets {
+    font-size: 1.25em;
+    text-indent: 20px
+  }
+  .weblocal, .citation, .projets {
+    text-indent: 0
+  }
+  .sub-list-icon {
+    margin: 0 10px 0 -20px !important
+  }
+  .infos .titreInfos {
+    width: 305px
   }
   .boutonProjet {
     font-size: 20px
-  }
-  .cvIcon {
-    padding: 0 3px
-  }
-  .cvYear {
-    padding: 0 6px
   }
   #pdp {
     font-size: 0.9em
@@ -639,19 +726,29 @@ li img {
   #logo, #logo-pdp {
     height: 50px
   }
-  h1 {
-    font-size: 2em
+  #head {
+    height: 250px
   }
-  h2 {
-    font-size: 1.1em
+  header h1 {
+    font-size: 2em !important
+  }
+  header h2 {
+    font-size: 1.1em !important
   }
   h3 {
     font-size: 1.1em
   }
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 60px 30px 30px 30px
   }
-  .description, .citation, .contact, .compet, .autresComp, .passions, .projets, .categorieCV {
-    font-size: 1.1em
+  main h2 {
+    font-size: 1.6em
+  }
+  .weblocal, .citation, .infos, .descripReal, .projets {
+    font-size: 1.1em;
+    text-indent: 15px
+  }
+  .weblocal, .citation, .projets {
+    text-indent: 0
   }
 }

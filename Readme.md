@@ -1,20 +1,19 @@
-# Portfolio
-Bonjour ! Cette application est le portfolio de **Jérôme Fromantin, développeur JavaScript/React et Symfony** en recherche de recrutement.
+# Web loc@l
+Bonjour ! Cette application est le site web de **Web loc@l**, entreprise individuelle de développement web basée en Haute-Vienne.
 
 ## Historique
-Créé en 2020 lors d'une première formation professionnelle intitulée "**Développeur web/web mobile**", il fut mis de côté jusqu'en mai 2022, après une deuxième formation intitulée elle "**Développeur d'applications JavaScript/React**".
+Originellement un portfolio créé en 2020 lors d'une première formation professionnelle intitulée "**Développeur web/web mobile**", il fut mis de côté jusqu'en mai 2022, après une deuxième formation intitulée elle "**Développeur d'applications JavaScript/React**".
 
 Depuis lors, j'ai tenté une présentation de ce portfolio façon IDE. J'ai donc créé ce repository afin d'avoir un regard extérieur sur mon travail. Le retour que j'en ai eu étant majoritairement négatif (mais cependant juste), je suis revenu à ma présentation initiale beaucoup plus classique mais beaucoup plus agréable du point de vue de l'utilisateur.
 
-Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections importantes (**Qui suis-je ?** - **Réalisations** - **C.V.**) mais cependant, plusieurs réalisations seront ajoutées prochainement au fur et à mesure.
+Finalement, sa dernière grande modification a été son adaptation pour en faire le site professionnel de la micro-entreprise que j'ai créé le 14 mars dernier. Il est aujourd'hui terminé en ce qui concerne sa structure et ses sections importantes (**L'entreprise** - **Les réalisations**) mais cependant, plusieurs réalisations seront ajoutées prochainement au fur et à mesure.
 
 ## Technologies utilisées
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Jeudi 19 janvier 2023
-- Amélioration partielle du code HTML et SCSS.
-- Ajout du projet de la formation Symfony.
+Mardi 28 mars 2023
+- Transformation du portfolio en site d'entreprise avec CGU-CGV.
 
 ## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
@@ -27,7 +26,8 @@ Jeudi 19 janvier 2023
 - [x] Ajout d'une navigation par boutons dans la partie "Réalisations".
 - [x] Remplacement des couleurs bleue et rouge par le bleu "Very Peri", couleur Pantone 2022 (code 17-3938), et le rouge
 "Tangerine Tango" (code 17-1463).
-- [x] Ajouter une page de mentions légales.
-- [x] Finir d'ajouter les réalisations faites durant la formation.
+- [x] Ajout d'une page de mentions légales.
+- [x] Transformation du portfolio en site d'entreprise avec CGU-CGV.
+- [ ] Finir d'ajouter les réalisations faites durant la formation.
 - [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
 - [ ] Eventuellement, ajouter une ou des fonctionnalités avec JavaScript.

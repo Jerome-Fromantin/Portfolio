@@ -1,19 +1,20 @@
-@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Averia Serif Libre", "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
+/* HEADER */
 #entete {
   position: fixed;
   z-index: 1;
-  background-color: #dedede;
+  background: white;
   width: 100vw;
   font-size: 3em;
+  font-weight: bold;
   padding: 0;
   border-bottom: 2px black solid;
 }
@@ -22,15 +23,42 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+#entete > .barnav > #logoLink {
+  margin: 0 0 0 10px;
+}
+#entete > .barnav > #logoLink > #logo {
+  height: 100px;
+}
 #entete > .barnav > #header-categs {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  justify-content: space-around;
+  justify-content: center;
+}
+#entete > .barnav > #header-categs > span {
+  margin: 0 2%;
+}
+#entete > .barnav > #header-categs > span > a {
+  color: #6667ab;
+  border: 2px transparent solid;
+  border-radius: 20px 0;
+}
+#entete > .barnav > #header-categs > span > a:hover {
+  color: white;
+  text-decoration: none;
+  border: 2px black solid;
+  -webkit-animation: color-change 2s linear infinite;
+  animation: color-change 2s linear infinite;
+}
+#entete > .barnav > #header-categs > span > .links-header {
+  padding: 8px;
 }
 
 #head {
-  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6667ab;
   background-image: url(Images/Clavier.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +66,7 @@ body {
   height: 600px;
 }
 #head > #headText {
-  background-color: rgba(222, 222, 222, 0.7);
+  background: rgba(222, 222, 222, 0.7);
   color: black;
   font-weight: bold;
   text-align: center;
@@ -53,40 +81,17 @@ body {
   font-size: 2em;
 }
 
-#logoLink, #logoLink-pdp {
-  margin: 0 0 0 10px;
-}
-
-#logo, #logo-pdp {
-  height: 100px;
-}
-
-.barnav span {
-  margin: 0 2%;
-}
-
-.barnav span a, #mentions {
-  color: #6667ab;
-  border: 2px transparent solid;
-  border-radius: 20px 0;
-}
-.barnav span a:hover, #mentions:hover {
-  color: black;
-  text-decoration: none;
-  border: 2px black solid;
-  -webkit-animation: color-change 2s linear infinite;
-  animation: color-change 2s linear infinite;
-}
-
+/* FIN DE HEADER */
+/* HEADER ET FOOTER */
 @-webkit-keyframes color-change {
   0% {
     background: #6667ab;
   }
   50% {
-    background: white;
+    background: #dd4124;
   }
   100% {
-    background: #dd4124;
+    background: #6667ab;
   }
 }
 @keyframes color-change {
@@ -94,44 +99,44 @@ body {
     background: #6667ab;
   }
   50% {
-    background: white;
-  }
-  100% {
     background: #dd4124;
   }
+  100% {
+    background: #6667ab;
+  }
 }
-.links-header, .links-pdp, #mentions {
-  padding: 8px;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-#quisuisje {
-  background-color: #dedede;
-  padding: 110px 80px 55px 80px;
-}
-
-.section-h2 {
+/* FIN DE HEADER ET FOOTER */
+/* MAIN */
+main h2 {
   font-size: 3em;
 }
 
-.quisuisje {
+.impWord {
+  color: #6667ab;
+}
+
+#entreprise {
+  background: #6667ab;
+  text-align: center;
+  padding: 110px 80px 55px 80px;
+}
+
+.entreprise {
   display: inline-block;
-  background-color: #dd4124;
+  background: #dd4124;
   color: white;
+  font-weight: bold;
   border: 2px black solid;
   border-radius: 20px 0;
-  transition: background-color 0.5s, border 0.5s;
 }
-.quisuisje:hover {
-  background-color: #6667ab;
+.entreprise:hover {
+  background: white;
+  color: #dd4124;
   border: 2px #dd4124 solid;
 }
 
-.description, .citation, .contact, .compet, .autresComp, .passions, .projets {
-  background-color: white;
+.weblocal, .citation, .infos {
+  background: white;
   font-size: 1.5em;
   text-align: left;
   text-indent: 30px;
@@ -139,50 +144,135 @@ h2 {
   border-radius: 20px;
 }
 
-.impWord {
-  color: #6667ab;
-}
-
-.citation, .autresComp {
-  width: 570px;
+.weblocal {
   text-align: center;
   text-indent: 0;
-  margin: 0 auto;
 }
-
-.contact-compet {
-  display: flex;
-  justify-content: center;
-}
-.contact-compet > .contact, .contact-compet > .compet {
-  width: 48%;
-  max-width: 570px;
-  text-align: center;
-  text-indent: 0;
-  margin: 10px;
-}
-.contact-compet > .contact {
-  margin: 0 10px 0 0;
-}
-.contact-compet > .compet {
-  margin: 0 0 0 10px;
-}
-
-#idImg {
+.weblocal #idImg {
   width: 50%;
-  max-width: 300px;
+  max-width: 200px;
   border: 2px black solid;
   border-radius: 20px 0;
+}
+.weblocal .sub-list {
+  text-align: left;
+  text-indent: 30px;
+  margin-top: 20px;
+}
+.weblocal .sub-list .sub-list-li {
+  display: flex;
+  align-items: center;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text {
+  text-align: left;
+  text-indent: 0;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > .sub-list-icon {
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 10px 0 30px;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > #easterEgg {
+  cursor: pointer;
+  background: transparent;
+  color: black;
+  font-weight: normal;
+  padding: 0;
+  border: none;
+  border-radius: 15px 0;
+  margin: 0;
+  transition: background 0.5s, color 0.5s;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > #easterEgg:hover {
+  background: #dd4124;
+  color: white;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > #divEasterToOpen {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > #divEasterToOpen > #easterText {
+  background-color: lightgray;
+  width: 80%;
+  max-width: 550px;
+  color: black;
+  padding: 10px;
+  border: 2px #dd4124 solid;
+  border-radius: 20px 0;
+  margin-bottom: 5px;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > #divEasterToOpen > #easterClose {
+  cursor: pointer;
+  width: 100px;
+  background: #6667ab;
+  color: white;
+  border: 2px white solid;
+  border-radius: 10px 0;
+  transition: 0.5s;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > #divEasterToOpen > #easterClose:hover {
+  background: lightgray;
+  color: black;
+  border: 2px #dd4124 solid;
+}
+.weblocal .sub-list li img {
+  background: #dd4124;
+  border-radius: 10px;
+}
+.weblocal .sub-list .separator {
+  height: 2px;
+  width: 20%;
+  background: #dd4124;
+  margin: 10px auto;
+}
+.weblocal .small-list .separator {
+  display: none;
+  height: 2px;
+  width: 20%;
+  background: #dd4124;
+  margin: 10px auto;
+}
+
+.entreprise-sub {
+  display: inline-block;
+  background: #dd4124;
+  color: white;
+  font-weight: bold;
+  border: 2px black solid;
+  border-radius: 20px 0;
+}
+.entreprise-sub:hover {
+  background: #6667ab;
+  border: 2px #dd4124 solid;
 }
 
 ul {
   list-style-type: none;
-  text-align: left;
+  text-align: center;
   padding: 0;
 }
 ul span {
-  color: #dd4124;
+  display: inline-block;
+  background: #dd4124;
+  color: white;
   font-weight: bold;
+  padding: 2px 10px;
+  border: 2px black solid;
+  border-radius: 20px 0;
+  margin: 20px 0 0 0;
 }
 ul a {
   color: #6667ab;
@@ -195,101 +285,147 @@ ul a:hover {
   color: #dd4124;
 }
 
-li img {
-  background: #dd4124;
-  border-radius: 10px;
-}
-
-.autresComp {
-  margin-top: 20px;
-}
-.autresComp > ul {
-  text-align: center;
-}
-
-.passions, .projets {
+.citation {
+  width: 610px;
   text-align: center;
   text-indent: 0;
+  margin: 0 auto;
 }
 
-.parag {
+.infos .titreInfos {
+  display: block;
+  text-align: center;
+  text-indent: 0;
+  width: 325px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.infos ul {
+  list-style-type: disc;
+  list-style-position: inside;
   text-align: left;
 }
-.parag > span {
-  color: #dd4124;
-  font-weight: bold;
+
+#cvDown {
+  display: block;
+  background: lightgray;
+  width: 434px;
+  max-width: 90%;
+  color: black;
+  text-align: center;
+  text-indent: 0;
+  padding: 2px 10px;
+  border: 2px black solid;
+  border-radius: 20px 0;
+  margin: 0 auto 10px auto;
+  transition: background 0.5s, color 0.5s;
 }
-.parag > #thermi {
-  color: #6667ab;
+#cvDown:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
 }
 
 #realisations {
-  background-color: #dd4124;
+  background: #dd4124;
+  text-align: center;
   padding: 110px 80px 55px 80px;
 }
 
-.realisations, .realPersos {
+.realisations {
   display: inline-block;
-  background-color: #6667ab;
+  background: #6667ab;
   color: white;
+  font-weight: bold;
   border: 2px black solid;
   border-radius: 20px 0;
-  transition: background-color 0.5s, color 0.5s;
 }
-.realisations:hover, .realPersos:hover {
-  background-color: #dedede;
+.realisations:hover {
+  background: white;
   color: #6667ab;
+  border: 2px #6667ab solid;
 }
 
-.realPersos {
-  background-color: #dd4124;
+.descripReal {
+  background: white;
+  font-size: 1.5em;
+  text-align: left;
+  text-indent: 30px;
+  padding: 30px 30px 10px 30px;
+  border-radius: 20px;
 }
-.realPersos:hover {
+.descripReal a {
+  text-decoration: underline;
+}
+.descripReal a:visited {
+  color: black;
+}
+.descripReal #creaPerso {
   color: #dd4124;
 }
 
-#creaPerso {
-  color: #dd4124;
-  font-weight: bold;
+.projets {
+  background: white;
+  font-size: 1.5em;
+  text-align: center;
+  text-indent: 0;
+  padding: 30px 30px 10px 30px;
+  border-radius: 20px;
+  scroll-margin: 150px;
 }
-
-.groupeProjets {
+.projets > .groupeProjets {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   font-size: 0.9em;
 }
-.groupeProjets > a:hover {
+.projets > .groupeProjets > a:hover {
   text-decoration: none;
 }
-
-.projets {
-  scroll-margin: 150px;
-}
-.projets img {
+.projets .realPerso, .projets .realForm {
+  display: inline-block;
   background: #dd4124;
-  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  border: 2px black solid;
+  border-radius: 20px 0;
 }
-
-.typeProjetPerso {
+.projets .realPerso:hover, .projets .realForm:hover {
+  background: lightgray;
   color: #dd4124;
-  font-weight: bold;
 }
-
-.typeProjetFormation {
+.projets .realForm {
+  background: #6667ab;
+}
+.projets .realForm:hover {
   color: #6667ab;
-  font-weight: bold;
 }
-
-.liensProjet {
+.projets > .titreProjet {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.boutonProjet {
-  background-color: #dd4124;
+.projets > .titreProjet img {
+  background: #dd4124;
+  border-radius: 10px;
+}
+.projets > .soustitrePerso {
+  color: #dd4124;
+  font-weight: bold;
+}
+.projets > .soustitreForm {
+  color: #6667ab;
+  font-weight: bold;
+}
+.projets .liensProjet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projets .liensProjet .btnPerso, .projets .liensProjet .btnForm {
+  background: #dd4124;
   min-width: 250px;
   color: white;
   font-size: 24px;
@@ -297,192 +433,115 @@ li img {
   border: 2px black solid;
   border-radius: 20px 0;
   margin: 10px;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background 0.5s, color 0.5s;
 }
-.boutonProjet:hover {
-  background-color: #dedede;
+.projets .liensProjet .btnPerso:hover, .projets .liensProjet .btnForm:hover {
+  background: lightgray;
   color: #dd4124;
 }
-
-.texteProjet {
+.projets .liensProjet .btnForm {
+  background: #6667ab;
+  color: white;
+  transition: background 0.5s, color 0.5s;
+}
+.projets .liensProjet .btnForm:hover {
+  background: lightgray;
+  color: #6667ab;
+}
+.projets .texteProjet {
+  text-align: left;
   padding: 0 10px;
 }
 
-#cv {
-  background-color: #6667ab;
-  padding: 110px 80px 55px 80px;
-}
-
-.cv {
-  display: inline-block;
-  background-color: #dedede;
-  color: #6667ab;
-  border: 2px black solid;
-  border-radius: 20px 0;
-  transition: background-color 0.5s, color 0.5s;
-}
-.cv:hover {
-  background-color: #dd4124;
-  color: white;
-}
-
-.categorieCV {
-  color: white;
-  font-size: 1.5em;
-  text-align: left;
-  padding: 10px 0;
-}
-
-.cvIcon {
-  padding: 3px;
-}
-
-.cvYear {
-  padding: 2px 6px;
-}
-
-#easterEgg {
-  cursor: pointer;
-  transition: background-color 0.5s, color 0.5s;
-}
-#easterEgg:hover {
-  background-color: #dedede;
-  color: black;
-}
-
-#divEasterToOpen {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-  z-index: 1;
-}
-#divEasterToOpen > #easterText {
-  background-color: #dedede;
-  width: 80%;
-  max-width: 550px;
-  color: black;
-  padding: 10px;
-  border: 2px #dd4124 solid;
-  border-radius: 20px 0;
-  margin-bottom: 5px;
-}
-#divEasterToOpen > #easterClose {
-  cursor: pointer;
-  width: 100px;
+#cgu-cgv {
   background: #6667ab;
   color: white;
-  border: 2px white solid;
-  border-radius: 10px 0 10px 0;
-  transition: 0.5s;
+  padding: 20px;
 }
-#divEasterToOpen > #easterClose:hover {
-  background: #dedede;
-  color: black;
-  border: 2px #dd4124 solid;
+#cgu-cgv a {
+  color: lightgreen;
+  text-decoration: underline;
 }
-
-.cvLink {
-  background-color: #dedede;
-  color: black;
-  transition: background-color 0.5s, color 0.5s;
+#cgu-cgv a:visited {
+  color: #f0c850;
 }
-.cvLink:hover {
-  background-color: black;
+#cgu-cgv a:hover {
   color: white;
-  text-decoration: none;
 }
 
-#cvDown {
-  display: inline-block;
-  background-color: #dedede;
-  color: black;
-  border: 2px black solid;
-  border-radius: 20px 0;
-  transition: background-color 0.5s, color 0.5s;
-}
-#cvDown:hover {
-  background-color: black;
-  color: white;
-  text-decoration: none;
-}
-#cvDown #cvDownText {
-  margin: 0;
+.cgu-cgv {
+  font-weight: bold;
+  text-align: center;
 }
 
+.cguTitles {
+  font-weight: bold;
+  margin: 40px 0 10px 0;
+}
+
+.cguText {
+  font-size: 1.2em;
+}
+
+.cguList {
+  margin-left: 50px;
+}
+
+.cguSubtitles {
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+
+/* FIN DE MAIN */
+/* FOOTER */
 #pdp {
-  background-color: #dedede;
+  background-color: white;
   font-size: 2em;
-  padding: 0;
+  font-weight: bold;
+  padding: 10px 0;
   border-top: 2px black solid;
 }
-
-#mentions {
-  /* D'autres propriétés de "#mentions" sont présentes en lignes 75 à 113. */
-  cursor: pointer;
-}
-
-#divMentionsToOpen {
-  display: none;
+#pdp > .barnav {
+  display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
+}
+#pdp > .barnav > #logoLink-pdp {
+  margin: 0 0 0 10px;
+}
+#pdp > .barnav > #logoLink-pdp > #logo-pdp {
+  height: 100px;
+}
+#pdp > .barnav > #footer-categs {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-  z-index: 1;
+  padding: 5px 0;
 }
-#divMentionsToOpen > #mentionsText {
-  background-color: #dedede;
-  width: 80%;
-  max-width: 800px;
-  max-height: 90%;
-  overflow: scroll;
-  color: black;
-  text-align: left;
-  padding: 10px;
-  border: 2px #dd4124 solid;
+#pdp > .barnav > #footer-categs > span {
+  margin: 0 2%;
+}
+#pdp > .barnav > #footer-categs > span > a {
+  color: #6667ab;
+  border: 2px transparent solid;
   border-radius: 20px 0;
-  margin: 0 0 5px 0;
 }
-#divMentionsToOpen > #mentionsText > #mentionsTitle {
-  text-align: center;
-}
-#divMentionsToOpen > #mentionsClose {
-  cursor: pointer;
-  width: 100px;
-  background: #6667ab;
+#pdp > .barnav > #footer-categs > span > a:hover {
   color: white;
-  border: 2px white solid;
-  border-radius: 10px 0 10px 0;
-  margin: 0;
-  transition: 0.5s;
+  text-decoration: none;
+  border: 2px black solid;
+  -webkit-animation: color-change 2s linear infinite;
+  animation: color-change 2s linear infinite;
 }
-#divMentionsToOpen > #mentionsClose:hover {
-  background: #dedede;
-  color: black;
-  border: 2px #dd4124 solid;
+#pdp > .barnav > #footer-categs > span > .links-pdp {
+  padding: 8px;
 }
 
+/* FIN DE FOOTER */
 /* MEDIA QUERIES */
-/* 5 breakpoints : 1000, 760, 650, 540, 390 */
+/* 5 breakpoints : 1000, 780, 660, 540, 390 */
 @media screen and (max-width: 1000px) {
   #entete {
     font-size: 2.5em;
@@ -501,38 +560,15 @@ li img {
     padding: 0 6px;
   }
 
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 100px 70px 50px 70px;
-  }
-
-  .contact-compet {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-  }
-  .contact-compet > .contact, .contact-compet > .compet {
-    width: 100%;
-    max-width: 570px;
-  }
-  .contact-compet > .contact {
-    margin: 0 0 10px 0;
-  }
-  .contact-compet > .compet {
-    margin: 10px 0 0 0;
-  }
-
-  .citation, .autresComp {
-    width: 100%;
-    max-width: 570px;
   }
 
   #pdp {
     font-size: 1.5em;
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 780px) {
   #entete {
     font-size: 2em;
   }
@@ -542,11 +578,18 @@ li img {
   }
 
   #head {
+    align-items: flex-end;
     height: 400px;
+    padding-bottom: 30px;
   }
 
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 90px 60px 45px 60px;
+  }
+
+  .citation {
+    width: 100%;
+    max-width: 610px;
   }
 
   .liensProjet {
@@ -567,20 +610,20 @@ li img {
     height: 70px;
   }
 
-  #head {
-    height: 300px;
+  header h1 {
+    font-size: 4em !important;
   }
 
-  h1 {
-    font-size: 4em;
+  header h2 {
+    font-size: 1.6em !important;
   }
 
-  h2 {
-    font-size: 1.6em;
-  }
-
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 80px 50px 40px 50px;
+  }
+
+  .weblocal .small-list .separator {
+    display: block;
   }
 
   #pdp {
@@ -596,36 +639,50 @@ li img {
     height: 60px;
   }
 
-  h1 {
-    font-size: 3em;
+  #head {
+    height: 300px;
+    padding-bottom: 20px;
   }
 
-  h2 {
-    font-size: 1.3em;
+  header h1 {
+    font-size: 3em !important;
+  }
+
+  header h2 {
+    font-size: 1.3em !important;
   }
 
   h3 {
     font-size: 1.3em;
   }
 
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 70px 40px 35px 40px;
   }
 
-  .description, .citation, .contact, .compet, .autresComp, .passions, .projets, .categorieCV {
-    font-size: 1.3em;
+  main h2 {
+    font-size: 2em;
+  }
+
+  .weblocal, .citation, .infos, .descripReal, .projets {
+    font-size: 1.25em;
+    text-indent: 20px;
+  }
+
+  .weblocal, .citation, .projets {
+    text-indent: 0;
+  }
+
+  .sub-list-icon {
+    margin: 0 10px 0 -20px !important;
+  }
+
+  .infos .titreInfos {
+    width: 305px;
   }
 
   .boutonProjet {
     font-size: 20px;
-  }
-
-  .cvIcon {
-    padding: 0 3px;
-  }
-
-  .cvYear {
-    padding: 0 6px;
   }
 
   #pdp {
@@ -641,24 +698,37 @@ li img {
     height: 50px;
   }
 
-  h1 {
-    font-size: 2em;
+  #head {
+    height: 250px;
   }
 
-  h2 {
-    font-size: 1.1em;
+  header h1 {
+    font-size: 2em !important;
+  }
+
+  header h2 {
+    font-size: 1.1em !important;
   }
 
   h3 {
     font-size: 1.1em;
   }
 
-  #quisuisje, #realisations, #cv {
+  #entreprise, #realisations {
     padding: 60px 30px 30px 30px;
   }
 
-  .description, .citation, .contact, .compet, .autresComp, .passions, .projets, .categorieCV {
+  main h2 {
+    font-size: 1.6em;
+  }
+
+  .weblocal, .citation, .infos, .descripReal, .projets {
     font-size: 1.1em;
+    text-indent: 15px;
+  }
+
+  .weblocal, .citation, .projets {
+    text-indent: 0;
   }
 }
 
