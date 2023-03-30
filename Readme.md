@@ -12,8 +12,8 @@ Finalement, sa dernière grande modification a été son adaptation pour en fair
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Mardi 28 mars 2023
-- Transformation du portfolio en site d'entreprise avec CGU-CGV.
+Jeudi 30 mars 2023
+- Mise à jour de l'URL après mise en ligne chez o2switch.
 
 ## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
