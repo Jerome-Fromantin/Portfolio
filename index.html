@@ -22,7 +22,7 @@
             <div class="container-fluid" id="entete">
                 <nav class="barnav">
                     <a href="index.html" id="logoLink">
-                        <img src="Images/Logo.png" alt="Logo" title="Accueil" id="logo">
+                        <img src="Images/Logo.jpg" alt="Logo" title="Accueil" id="logo">
                     </a>
                     <div id="header-categs">
                         <span class="text-center">
@@ -60,11 +60,9 @@
                 data-aos-once="false">L'entreprise</h2>
                 <div class="mt-5 weblocal">
                     <h3 class="px-3 py-1 entreprise-sub">Web loc@l</h3>
-                    <p><img src="Images/Moi.jpg" alt="Votre serviteur..." id="idImg"></p>
+                    <p><img src="Images/Moi.webp" alt="Votre serviteur..." id="idImg"></p>
                     <p><strong class="impWord">Web loc@l E.I.</strong> est une micro&#8209;entreprise de création de sites
-                    web basée en Haute&#8209;Vienne.<br>Elle débutera officiellement son activité le 1<sup>er</sup> avril
-                    2023.<!-- APRES LA DATE : Elle a débuté officiellement son activité le 1<sup>er</sup> avril 2023.--> Son
-                    créateur et dirigeant (moi&nbsp;!) est Jérôme Fromantin.</p>
+                    web basée en Haute&#8209;Vienne.<br>Son créateur est Jérôme Fromantin.</p>
                     <!-- Le caractère "&#8209;" est le trait d'union insécable. -->
                     <p>Numéro SIREN : 949 828 990</p>
                     <ul>
@@ -73,48 +71,55 @@
                             <ul class="sub-list">
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                         <b>E-mail :</b> jeromefromantin@hotmail.fr
                                     </div>
                                 </li>
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                         <b>Téléphone :</b> 06.62.13.68.01
+                                        <div id="horaires">&#x2794; Horaires : 9h/12h - 14h/18h</div>
+                                        <!-- Flèche vers la droite -->
                                     </div>
                                 </li>
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                         <b>LinkedIn :</b>
                                         <a href="https://www.linkedin.com/in/jerome-fromantin">Me suivre...</a>
                                     </div>
                                 </li>
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
-                                        <b>Adresse :</b> 6 route de Meuzac - 87380&nbsp;Magnac&#8209;Bourg
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
+                                        <b>Adresse :</b> 6 route de Meuzac - 87380 Magnac&#8209;Bourg
                                     </div>
                                 </li>
                             </ul>
                         </li>
                         <li class="mt-3">
-                            <span>Services proposés</span>
-                            <ul class="sub-list">
+                            <span id="services" onclick=showOrCloseServices()
+                            title="Cliquez pour découvrir tous mes services !">
+                                Services proposés
+                                <img src="Images/ArrowDown.png" alt="" id="arrow-down-serv">
+                                <img src="Images/ArrowUp.png" alt="" id="arrow-up-serv">
+                            </span>
+                            <ul class="sub-list" id="ulServicesToOpen">
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                         <b>Création de sites web divers&nbsp;:</b> Après une rencontre avec vous (dans un
                                         rayon de 40 km autour de Magnac-Bourg) ou après une conversation en visio (au delà
                                         des 40 km) pendant laquelle nous nous accordons sur les points importants de votre
                                         projet, je commence le développement de votre futur site web, quelle que soit la
-                                        forme choisie&nbsp;: Blog, site vitrine, WordPress, e-commerce....
+                                        forme choisie&nbsp;: Blog, site vitrine, WordPress, e-commerce...
                                     </div>
                                 </li>
                                 <li><div class="separator"></div></li>
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                         <b>Mini-cours de formation à la maintenance de site&nbsp;:</b> Une fois le site
                                         terminé, peut-être désirerez-vous mettre en ligne et/ou mettre à jour
                                         vous&#8209;même votre site... Je peux alors vous fournir l'aide dont vous pourriez
@@ -124,7 +129,7 @@
                                 <li><div class="separator"></div></li>
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                         <b>Maintenance de site&nbsp;:</b> Si vous préférez que je me charge de ces actions,
                                         faites-le moi savoir&nbsp;! Création du compte chez l'hébergeur choisi, mise en
                                         ligne du site et mises à jour des données dont vous me faites part...
@@ -133,7 +138,7 @@
                                 <li><div class="separator"></div></li>
                                 <li class="sub-list-li">
                                     <div class="sub-list-text">
-                                        <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                         <b>Prise de photographies&nbsp;:</b> Là encore dans un rayon de 40 km, mon appareil
                                         photo <b>Nikon</b> modèle <b>Coolpix L330</b> pourra être utile pour illustrer votre
                                         site&nbsp;: portraits, groupes, gros plans...
@@ -142,108 +147,113 @@
                             </ul>
                         </li>
                         <li class="mt-3">
-                            <span>Différentes compétences à votre service</span>
-                            <div class="sub-list small-list">
+                            <span id="competences" onclick=showOrCloseCompetences()
+                            title="Cliquez pour découvrir mes différentes compétences !">
+                                Différentes compétences à&nbsp;votre&nbsp;service
+                                <img src="Images/ArrowDown.png" alt="" id="arrow-down-comp">
+                                <img src="Images/ArrowUp.png" alt="" id="arrow-up-comp">
+                            </span>
+                            <div class="sub-list small-list" id="divDevWebToOpen">
                                 <b>Développement web</b>
                                 <ul>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             HTML5, CSS3, Sass, BootStrap
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             JavaScript, React, Redux
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             GitHub, NPM
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             PHP, Symfony, WordPress
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             <a href="https://www.opquast.com/">Opquast</a> : 845/1000
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Et d'autres...
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sub-list small-list">
+                            <div class="sub-list small-list" id="divInformatiqueToOpen">
                                 <b>Informatique</b>
                                 <ul>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Bureautique
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             PAO/DAO (mise en page)
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Support utilisateur
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sub-list small-list">
+                            <div class="sub-list small-list" id="divLanguesToOpen">
                                 <b>Langues</b>
                                 <ul>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Anglais : Avancé - C1
                                         </div>
                                     </li>
                                     <li><div class="separator"></div></li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Espagnol : Intermédiaire - B1
                                         </div>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sub-list">
+                            <div class="sub-list" id="divSoftSkillsToOpen">
                                 <b>Soft Skills</b>
                                 <ul>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Adaptabilité
                                         </div>
                                     </li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             <span id="easterEgg" onclick=showOrCloseEasterEgg()>Autonomie</span>
                                             <div id="divEasterToOpen">
                                                 <span id="easterText">Félicitations !<br>Vous avez découvert le message
@@ -255,37 +265,73 @@
                                     </li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Curiosité
                                         </div>
                                     </li>
                                     <li class="sub-list-li">
                                         
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Persévérance
                                         </div>
                                     </li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Sens de l'écoute
                                         </div>
                                     </li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Sens de l'organisation
                                         </div>
                                     </li>
                                     <li class="sub-list-li">
                                         <div class="sub-list-text">
-                                            <img src="Images/Favicon.png" alt="" class="sub-list-icon">
+                                            <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
                                             Travail en équipe
                                         </div>
                                     </li>
                                 </ul>
                             </div>
+                        </li>
+                        <li class="mt-3">
+                            <span id="infos" onclick=showOrCloseInfos()
+                            title="Cliquez pour en savoir un peu plus !">
+                                Quelques infos sur moi
+                                <img src="Images/ArrowDown.png" alt="" id="arrow-down-infos">
+                                <img src="Images/ArrowUp.png" alt="" id="arrow-up-infos">
+                            </span>
+                            <ul class="sub-list" id="ulInfosToOpen">
+                                <li class="sub-list-li">
+                                    <div class="sub-list-text">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
+                                        Passionné par l'informatique et internet depuis tout jeune, j'ai développé plusieurs
+                                        sites web personnels en autodidacte, en tant que hobby.
+                                    </div>
+                                </li>
+                                <li><div class="separator"></div></li>
+                                <li class="sub-list-li">
+                                    <div class="sub-list-text">
+                                        <img src="Images/Favicon2.png" alt="" class="sub-list-icon">
+                                        J'ai aussi participé à plusieurs formations professionnelles dans le développement
+                                        web entre avril 2020 et janvier 2023&nbsp;:
+                                        <ul>
+                                            <li>Développeur web/web mobile</li>
+                                            <li>Développeur d'applications JavaScript/React</li>
+                                            <li>Concepteur Développeur PHP/Symfony</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><div class="separator"></div></li>
+                                <li>
+                                    <a href="CV_Fromantin_Jerome.pdf" id="cvDown">
+                                        <div>Vous pouvez découvrir<br>ou télécharger mon CV.</div>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="mt-3"><b>Vous êtes intéressé et vous voudriez en savoir plus&nbsp;?<br>N'hésitez pas à me
                         contacter&nbsp;!</b></li>
@@ -297,34 +343,6 @@
                         <br>tout est affaire de volonté et de&nbsp;désir.</em>"</b>
                     </blockquote>
                     <p>Monique Moreau</p>
-                </div>
-                <div class="mt-5 infos">
-                    <h3 class="px-3 py-1 entreprise-sub titreInfos">Plus d'infos sur&nbsp;moi...</h3>
-                    <p>Mais qui suis-je donc ?</p>
-                    <p>Je suis passionné par l'informatique et internet <strong class="impWord">depuis tout jeune</strong>.
-                    Pendant des années, j'ai développé <strong class="impWord">plusieurs blogs personnels en
-                    autodidacte</strong>, en tant que hobby. Après une carrière professionnelle variée, j'ai donc décidé de
-                    me reconvertir dans le développement web.</p>
-                    <p>J'ai ainsi participé à <strong class="impWord">plusieurs formations professionnelles</strong> dans ce
-                    domaine entre avril 2020 et janvier 2023&nbsp;:</p>
-                    <ul>
-                        <li>Développeur web/web mobile</li>
-                        <li>Développeur d'applications JavaScript/React</li>
-                        <li>Concepteur Développeur PHP/Symfony</li>
-                    </ul>
-                    <p>Durant presque 3 ans, j'ai donc appris (ou réappris) différentes techniques du développement web,
-                    plus ou moins avancées. Ces nouvelles compétences m'ont permis de créer encore d'autres applications
-                    personnelles, parmi lesquelles ce site lui-même (à l'origine un simple portfolio).</p>
-                    <a href="CV_Fromantin_Jerome.pdf" id="cvDown">
-                        <div>Vous pouvez découvrir<br>le reste de mon C.V. ou le&nbsp;télécharger.</div>
-                    </a>
-                    <p>Sinon, je suis aussi passionné par les mathématiques. En effet, la magie des chiffres me fascine...
-                    C'est pourquoi j'aime à pratiquer le boulier chinois, ou <em><b>suan pan</b></em>. Cet outil, bien que
-                    multi&#8209;centenaire, permet des calculs complexes tels que les racines cubiques, l'utilisation du
-                    système binaire ou encore hexadécimal.</p>
-                    <p>Sans oublier les questions de politique et de société. Je suis un citoyen intéressé par la façon dont
-                    fonctionne le monde, au niveau politique comme au niveau sociétal et j'ai des opinions bien
-                    affirmées&nbsp;!</p>
                 </div>
             </section>
 
@@ -339,528 +357,329 @@
                 data-aos-mirror="true"
                 data-aos-once="false">Les réalisations</h2>
                 <div class="mt-5 descripReal">
-                    <p>Ci-dessous sont affichées certaines des réalisations sur lesquelles je me suis exercé.</p>
-                    <p>Le code de la plupart d'entre elles est disponible sur
-                    <a href="https://github.com/Jerome-Fromantin">GitHub</a> (onglet "Repositories").</p>
-                    <p>Les 5 premières réalisations sont des <strong id="creaPerso">créations personnelles</strong>
-                    développées seul.</p>
-                    <p>Les suivantes (excepté la dernière) sont des projets professionnalisants développés lors de la
-                    formation de <strong class="impWord">Développeur d'applications JavaScript/React</strong>. Ces projets
-                    sont considérés comme terminés dans le cadre de cette formation mais peuvent bien sûr être améliorés (et
-                    ils le seront à des degrés divers).</p>
-                    <p>Le dernier projet, "<strong class="impWord">La réponse D !</strong>" a été développé partiellement
-                    lors de la formation de <strong class="impWord">Concepteur Développeur PHP/Symfony</strong>. Il sera
-                    lui aussi amélioré dans le futur.</p>
-                    <p>Il n'y a bien sûr pour l'instant aucune réalisation créée dans le cadre de
-                    <strong class="impWord">Web&nbsp;loc@l&nbsp;E.I.</strong>...</p>
-                </div>
-                <!--
-                    Ci-dessous, boutons avec le nom de chaque projet qui au clic amènent en "smooth scroll"
-                    au bloc de projet correspondant.
-                    5 boutons pour les projets persos.
-                    10 boutons pour les projets OpenClassrooms.
-                    1 bouton pour le projet Aliptic.
-                -->
-                <div class="mt-5 projets">
-                    <p>Cliquez sur l'un de ces boutons, et vous accédez directement à la description de son
-                    projet&nbsp;!</p>
-                    <h3 class="groupeProjets">
-                        <a href="#thermidor" class="px-3 py-1 m-1 realPerso">Thermidor</a>
-                        <a href="#lpda" class="px-3 py-1 m-1 realPerso">La Part des&nbsp;Anges</a>
-                        <a href="#weblocal" class="px-3 py-1 m-1 realPerso">Web loc@l</a>
-                        <a href="#KOP" class="px-3 py-1 m-1 realPerso">King Of Pop Collection</a>
-                        <a href="#x-files" class="px-3 py-1 m-1 realPerso">X-Files</a>
-                        <a href="#reservia" class="px-3 py-1 m-1 realForm">Reservia</a>
-                        <a href="#ohmyfood" class="px-3 py-1 m-1 realForm">ohmyfood</a>
-                        <a href="#gameon" class="px-3 py-1 m-1 realForm">GameOn</a>
-                        <a href="#fisheye" class="px-3 py-1 m-1 realForm">Fisheye</a>
-                        <a href="#lespetitsplats" class="px-3 py-1 m-1 realForm">Les petits plats</a>
-                        <a href="#billed" class="px-3 py-1 m-1 realForm">Billed</a>
-                        <a href="#kasa" class="px-3 py-1 m-1 realForm">Kasa</a>
-                        <a href="#sportsee" class="px-3 py-1 m-1 realForm">SportSee</a>
-                        <a href="#argentbank" class="px-3 py-1 m-1 realForm">ArgentBank</a>
-                        <a href="#hrnet" class="px-3 py-1 m-1 realForm">HRnet</a>
-                        <a href="#lareponsed" class="px-3 py-1 m-1 realForm">La réponse D !</a>
-                    </h3>
+                    <p>Ci-dessous sont affichées la plupart des réalisations sur lesquelles je me suis exercé.</p>
+                    <p>Pour les personnes intéressées, le code de la majorité de ces travaux est disponible sur
+                    <a href="https://github.com/Jerome-Fromantin">GitHub</a> (onglet "Repositories") avec une description
+                    plus précise et technique que sur cette page.</p>
                 </div>
 
-                <!-- Chaque div qui suit à ce niveau est la description d'un projet réalisé. -->
-                <div class="mt-5 projets" id="thermidor">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realPerso">Thermidor</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitrePerso">Blog personnel</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnPerso" href="http://www.thermidor.xyz/">Application en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnPerso" href="#">Code (non dispo) sur&nbsp;GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="http://www.thermidor.xyz/">
+                                <img src="Images/Thermidor.webp" alt="Thermidor" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">Thermidor</strong><br>Blog personnel</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Années :</b> 2018-2022</p>
-                            <p><b>Sujet :</b> Sur le thème du Calendrier Républicain. Pour partager des opinions et des
-                            passions, dont la photographie.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript.</strong></p>
-                            <p><b>Description :</b> Site réalisé en autodidacte. Je prévois d'en faire une grande refonte
-                            grâce à mes nouvelles compétences pour améliorer le code, l'apparence, le contenu,
-                            l'adaptabilité (responsive) et l'accessibilité de ce site. Et je créérai son dépôt GitHub.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Années :</b> 2018-2022</p>
+                            <p><b class="impWord">Description :</b> Sur le thème du Calendrier Républicain, site réalisé en
+                            autodidacte. Non mis à jour depuis plus d'un an, je prévois d'en faire une grande refonte pour
+                            l'améliorer.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="lpda">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realPerso">La Part des&nbsp;Anges</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitrePerso">Site WordPress d'entreprise</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnPerso" href="http://la-part-des-anges.eu/">Application en ligne</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="http://la-part-des-anges.eu/">
+                                <img src="Images/LPDA.webp" alt="La Part des Anges" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">La Part des Anges</strong><br>Site WordPress d'entreprise</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> 2020</p>
-                            <p><b>Sujet :</b> Présente un gîte de tourisme de la campagne girondine ainsi que les services
-                            qu'il offre.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, PHP,
-                            WordPress.</strong></p>
-                            <p><b>Description :</b> Site réalisé seul en 7 semaines (mais en coopération avec les
-                            propriétaires du gîte) dans le cadre du stage de ma première formation web. Il contient
-                            plusieurs fonctionnalités telles que le bilinguisme français/anglais, l'affichage de galeries
-                            photos et la possibilité de réservations.<!-- Il nécessiterait quelques améliorations, parmi
-                            lesquelles le passage en HTTPS...--></p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Années :</b> 2020-2023</p>
+                            <p><b class="impWord">Description :</b> Présente un gîte de tourisme de la campagne girondine
+                            ainsi que les services qu'il offre. Il contient plusieurs fonctionnalités telles que le
+                            bilinguisme français/anglais, l'affichage de galeries photos et la possibilité de réservations.
+                            <!-- Il nécessiterait quelques améliorations, parmi lesquelles le passage en HTTPS...--></p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, PHP, WordPress.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="weblocal">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realPerso">Web loc@l</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitrePerso">Site d'entreprise, anciennement portfolio</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnPerso" href="https://github.com/Jerome-Fromantin/Portfolio.git">Code sur
-                                GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="http://www.weblocal.link/">
+                                <img src="Images/Weblocal.webp" alt="Web local" class="imgProjet"
+                                title="Avez-vous vraiment besoin de cliquer ?!">
+                            </a>
+                            <p><strong class="impWord">Web loc@l</strong><br>Site d'entreprise, anciennement portfolio</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Années :</b> 2020-2023</p>
-                            <p><b>Sujet :</b> Présente l'entreprise et moi-même, avec ma personnalité et mes compétences,
-                            puis une partie des projets réalisés.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, Sass, BootStrap, JavaScript,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Une description supplémentaire est-elle vraiment nécessaire&nbsp;?!</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Années :</b> 2020-2023</p>
+                            <p><b class="impWord">Description :</b> Une description supplémentaire est-elle vraiment
+                            nécessaire&nbsp;?!</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, Sass, BootStrap, JavaScript,
+                            <a href="https://github.com/Jerome-Fromantin/Portfolio.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="KOP">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realPerso">King Of Pop Collection</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitrePerso">Application React personnelle</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnPerso" href="https://king-of-pop-collection.netlify.app/">Application en
-                                ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnPerso" href="https://github.com/Jerome-Fromantin/King-Of-Pop-Collection.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://king-of-pop-collection.netlify.app/">
+                                <img src="Images/KOP.webp" alt="King Of Pop Collection" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">King Of Pop Collection</strong><br>Application React personnelle</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Années :</b> 2021-2022</p>
-                            <p><b>Sujet :</b> Sur le thème du King Of Pop, Michael Jackson. Pour partager en images les
-                            nombreuses pièces de collection (disques, DVD, livres, revues...) que j'ai réunies au cours des
-                            ans.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, React,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ceci est un travail en cours. C'est une application réalisée seul
-                            débutée durant ma formation JavaScript/React. Elle contient plusieurs fonctionnalités telles que
-                            la pagination et le tri des pièces de collection affichées. C'est un travail de longue haleine
-                            qui nécessite encore beaucoup de temps, par exemple pour la récolte des données.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Années :</b> 2021-2022</p>
+                            <p><b class="impWord">Description :</b> Sur le thème du King Of Pop, Michael Jackson. Pour
+                            partager en images les nombreuses pièces de collection que j'ai réunies au cours des ans. Cette
+                            application est un travail en cours qui contient plusieurs fonctionnalités telles que la
+                            pagination et le tri des pièces de collection affichées.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, React,
+                            <a href="https://github.com/Jerome-Fromantin/King-Of-Pop-Collection.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="x-files">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realPerso">X-Files</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitrePerso">Application Symfony personnelle</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnPerso" href="#">Application (bientôt dispo) en&nbsp;ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnPerso" href="#">Code (bientôt dispo) sur&nbsp;GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://*">
+                                <img src="Images/X-Files.webp" alt="X-Files" class="imgProjet"
+                                title="Ce site n'est pas accessible en ligne.">
+                            </a>
+                            <p><strong class="impWord">X-Files</strong><br>Application Symfony personnelle</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Années :</b> 2022-2023</p>
-                            <p><b>Sujet :</b> Sur le thème de la série télévisée culte X&#8209;Files. Une fois terminée,
-                            cette application présentera tous les épisodes de chacune des 11 saisons existantes.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, Symfony, Twig,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ceci est un travail en cours qui sera prochainement disponible. C'est
-                            une application réalisée seul débutée avant ma formation PHP/Symfony. Elle contient plusieurs
-                            fonctionnalités telles que l'affichage, l'ajout, la modification et la suppression des épisodes.
-                            Comme pour l'application précédente, c'est un travail de longue haleine qui nécessite encore
-                            beaucoup de temps, par exemple pour la récolte des données.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Années :</b> 2022-2023</p>
+                            <p><b class="impWord">Description :</b> <span class="noDispo">Non disponible en ligne.</span>
+                            Sur le thème de la série télévisée culte X-Files, ce site présentera tous les épisodes de
+                            chacune des 11 saisons existantes. Cette application est un travail en cours qui contient
+                            plusieurs fonctionnalités telles que l'affichage, l'ajout, la modification et la suppression des
+                            épisodes.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, Symfony, Twig.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="reservia">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">Reservia</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Intégration de maquettes en HTML5 et CSS3</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnForm" href="https://jerome-fromantin.github.io/JeromeFromantin_2_25032021/">Application
-                                en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_2_25032021.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://jerome-fromantin.github.io/JeromeFromantin_2_25032021/">
+                                <img src="Images/Reservia.webp" alt="Reservia" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">Reservia</strong><br>Intégration de maquettes</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Mars/Avril 2021</p>
-                            <p><b>Sujet :</b> Site de réservations d'hébergements de vacances.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en l'intégration d'une maquette "desktop" et de la
-                            maquette correspondante pour iPhone 8. Il fallait de plus réaliser l'intégration pour les écrans
-                            de type tablette.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Mars/Avril 2021</p>
+                            <p><b class="impWord">Description :</b> Site factice de réservations d'hébergements de vacances.
+                            Projet réalisé en formation consistant en l'intégration d'une maquette "desktop" et d'une
+                            maquette "mobile" plus l'intégration pour les écrans de type tablette.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_2_25032021.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="ohmyfood">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">ohmyfood</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Intégration d'une maquette<br>et utilisation d'animations en CSS3</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnForm" href="https://jerome-fromantin.github.io/JeromeFromantin_3_23042021/">Application
-                                en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_3_23042021.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://jerome-fromantin.github.io/JeromeFromantin_3_23042021/">
+                                <img src="Images/Ohmyfood.webp" alt="ohmyfood" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">ohmyfood</strong><br>Intégration d'une maquette et utilisation
+                            d'animations</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Avril/Mai 2021</p>
-                            <p><b>Sujet :</b> Site de réservations de repas.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, Sass, GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en l'intégration d'une maquette "mobile" sur 5
-                            pages&nbsp;: page d'accueil et 4 pages aditionnelles. Ces pages devaient être dynamisées avec
-                            des animations en CSS en intégrant le préprocesseur Sass. Il fallait de plus prévoir le
-                            responsive pour les écrans de type tablette et desktop.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Avril/Mai 2021</p>
+                            <p><b class="impWord">Description :</b> Site factice de réservations de repas. Projet réalisé en
+                            formation consistant en l'intégration d'une maquette "mobile" sur 5 pages qui devaient être
+                            dynamisées avec des animations. Il fallait de plus prévoir l'utilisation par des écrans de type
+                            tablette et desktop.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, Sass,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_3_23042021.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="gameon">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">GameOn</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Intégration d'une maquette<br>et ajout de JavaScript</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnForm" href="https://jerome-fromantin.github.io/JeromeFromantin_4_20052021/">Application
-                                en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_4_20052021.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://jerome-fromantin.github.io/JeromeFromantin_4_20052021/">
+                                <img src="Images/GameOn.webp" alt="GameOn" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">GameOn</strong><br>Intégration d'une maquette avec interactivité</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Mai/Juin 2021</p>
-                            <p><b>Sujet :</b> Site d'inscription à un marathon national de jeux vidéos.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en la finition de l'intégration d'une maquette avec
-                            l'ajout de JavaScript pour rendre un formulaire fonctionnel. Il s'agissait donc de reprendre un
-                            code existant en l'améliorant et le complétant.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Mai/Juin 2021</p>
+                            <p><b class="impWord">Description :</b> Site factice d'inscription à un marathon national de
+                            jeux vidéos. Projet réalisé en formation consistant en la finition de l'intégration d'une
+                            maquette avec l'ajout d'un formulaire fonctionnel. Il s'agissait donc de reprendre un code
+                            existant en l'améliorant et le complétant.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_4_20052021.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="fisheye">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">Fisheye</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Intégration de maquettes,<br>WCAG et JavaScript</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnForm" href="https://jerome-fromantin.github.io/JeromeFromantin_6_06072021/">Application
-                                en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_6_06072021.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://jerome-fromantin.github.io/JeromeFromantin_6_06072021/">
+                                <img src="Images/Fisheye.webp" alt="Fisheye" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">Fisheye</strong><br>Intégration de maquettes, WCAG et
+                            interactivité</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Juillet/Septembre 2021</p>
-                            <p><b>Sujet :</b> Site de photographes.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en l'intégration de maquettes pour la réalisation
-                            d'un site respectant les WCAG (règles pour l'accessibilité du web). Du JavaScript est aussi
-                            utilisé pour le rendre fonctionnel.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Juillet/Septembre 2021</p>
+                            <p><b class="impWord">Description :</b> Site factice de photographes. Projet réalisé en
+                            formation consistant en l'intégration de maquettes pour la réalisation d'un site respectant les
+                            WCAG (règles pour l'accessibilité du web). Il est aussi interactif avec une fonctionnalité de
+                            tri.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_6_06072021.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="lespetitsplats">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">Les petits plats</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Intégration d'une maquette,<br>création de 2 algorithmes et JavaScript</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnForm" href="https://jerome-fromantin.github.io/JeromeFromantin_7_02092021/">Application
-                                en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_7_02092021.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://jerome-fromantin.github.io/JeromeFromantin_7_02092021/">
+                                <img src="Images/Les-petits-plats.webp" alt="Les petits plats" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">Les petits plats</strong><br>Intégration d'une maquette, algorithmie
+                            et interactivité</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Septembre/Octobre 2021</p>
-                            <p><b>Sujet :</b> Site de recettes de cuisine.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, Sass, JavaScript,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste tout d'abord en l'intégration d'une maquette, mais
-                            surtout en la création de deux implémentations d'un algorithme de recherche afin de privilégier
-                            la plus rapide. Du JavaScript est bien sûr utilisé pour le rendre fonctionnel.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Septembre/Octobre 2021</p>
+                            <p><b class="impWord">Description :</b> Site factice de recettes de cuisine. Projet réalisé en
+                            formation consistant tout d'abord en l'intégration d'une maquette, mais surtout en la création
+                            de deux versions d'un algorithme de recherche afin de privilégier la plus rapide. Le site est
+                            interactif avec les fonctionnalités de recherche et de tri.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, Sass, JavaScript,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_7_02092021.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="billed">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">Billed</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Débogage et tests d'un SaaS<br>(Software as a Service)</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnForm" href="https://jerome-fromantin.github.io/JeromeFromantin_9_03112021/">Application
-                                en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_9_03112021.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://jerome-fromantin.github.io/JeromeFromantin_9_03112021/">
+                                <img src="Images/Billed.webp" alt="Billed" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">Billed</strong><br>Débogage et tests d'un SaaS (Software as a
+                            Service)</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Novembre/Décembre 2021</p>
-                            <p><b>Sujet :</b> SaaS de Ressources Humaines.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, Jest,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en un débogage et en plusieurs tests d'un SaaS. Tout
-                            d'abord, la correction de code pour faire passer par Jest des tests déjà mis en place. Puis la
-                            création d'autres tests unitaires et d'intégration. Pour finir, la réalisation d'un plan de test
-                            End 2 End.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Novembre/Décembre 2021</p>
+                            <p><b class="impWord">Description :</b> SaaS factice de Ressources Humaines. Projet réalisé en
+                            formation consistant en un débogage et en plusieurs tests d'un SaaS. Correction de code pour
+                            faire passer des tests déjà mis en place. Puis création de tests unitaires et d'intégration.
+                            Enfin, réalisation d'un plan de test End 2 End.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, Jest,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_9_03112021.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="kasa">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">Kasa</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Création d'une application React</p>
-                    <div>
-                        <div class="liensProjet">
-                            <div>
-                                <a class="btn btnForm" href="https://j-fromantin-kasa.netlify.app/">Application en ligne</a>
-                            </div>
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_11_04012022.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://j-fromantin-kasa.netlify.app/">
+                                <img src="Images/Kasa.webp" alt="Kasa" class="imgProjet"
+                                title="Cliquez pour y accéder !">
+                            </a>
+                            <p><strong class="impWord">Kasa</strong><br>Création d'une application React</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Janvier/Février 2022</p>
-                            <p><b>Sujet :</b> Site de locations de logements.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, React,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en l'intégration de maquettes pour la création et le
-                            développement d'une application React utilisant React Router. La page d'accueil présente
-                            plusieurs logements sous forme de cartes, chacune amenant à sa propre page contenant une galerie
-                            d'images et différentes informations sur le logement.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Janvier/Février 2022</p>
+                            <p><b class="impWord">Description :</b> Site factice de locations de logements. Projet réalisé
+                            en formation consistant en l'intégration de maquettes avec React. La page d'accueil présente
+                            divers logements sous forme de cartes, chacune amenant à sa propre page contenant une galerie
+                            d'images et différentes informations.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, React,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_11_04012022.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="sportsee">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">SportSee</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Création d'une application React</p>
-                    <div>
-                        <div class="liensProjet">
-                            <!-- La div ci-dessous sera décommentée lorsque le rendu de l'application sera disponible en
-                            ligne.
-                            <div>
-                                <a class="btn btnForm" href="https://*">Application en ligne</a>
-                            </div>
-                            -->
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_12_01022022.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://*">
+                                <img src="Images/SportSee.webp" alt="SportSee" class="imgProjet"
+                                title="Ce site n'est pas accessible en ligne.">
+                            </a>
+                            <p><strong class="impWord">SportSee</strong><br>Création d'une application React</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Février 2022</p>
-                            <p><b>Sujet :</b> Site de statistiques sportives.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, React, Recharts,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en l'intégration de maquettes pour la création et le
-                            développement d'une application React utilisant React Router, une API externe et la librairie
-                            Recharts. La page d'accueil présente le layout avec 2 barres de navigation et l'on accède aux
-                            graphiques de statistiques de l'utilisateur en complétant l'URL avec son id. L'application
-                            elle&#8209;même n'étant pas en ligne, il est possible de l'observer en suivant le processus
-                            expliqué dans le Readme (en anglais) accessible par le lien GitHub ci-dessus.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Février 2022</p>
+                            <p><b class="impWord">Description :</b> <span class="noDispo">Non disponible en ligne.</span>
+                            Site factice de statistiques sportives. Projet réalisé en formation consistant en l'intégration
+                            de maquettes avec React. L'application est observable plus en détail en suivant le processus
+                            technique expliqué dans le Readme (en anglais) accessible par le lien GitHub ci-dessous.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, React, Recharts,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_12_01022022.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="argentbank">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">ArgentBank</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Création d'une application React</p>
-                    <div>
-                        <div class="liensProjet">
-                            <!-- La div ci-dessous sera décommentée lorsque le rendu de l'application sera disponible en
-                            ligne.
-                            <div>
-                                <a class="btn btnForm" href="https://*">Application en ligne</a>
-                            </div>
-                            -->
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_13_02032022.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://*">
+                                <img src="Images/ArgentBank.webp" alt="ArgentBank" class="imgProjet"
+                                title="Ce site n'est pas accessible en ligne.">
+                            </a>
+                            <p><strong class="impWord">ArgentBank</strong><br>Création d'une application React</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Mars 2022</p>
-                            <p><b>Sujet :</b> Site bancaire.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, React, Redux, Swagger,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en l'intégration de maquettes pour la création et le
-                            développement d'une application React utilisant React Router, Redux, une API externe et la
-                            librairie Immer (entre autres). La page d'accueil donne accès à une page de connexion qui,
-                            lorsqu'elle est remplie avec des données d'un utilisateur présentes dans l'API de
-                            back&#8209;end, donne accès à ses comptes bancaires. L'application elle&#8209;même n'est pas en
-                            ligne, mais il est possible d'observer le code de la partie "front" avec le lien GitHub
-                            ci&#8209;dessus.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Mars 2022</p>
+                            <p><b class="impWord">Description :</b> <span class="noDispo">Non disponible en ligne.</span>
+                            Site bancaire factice. Projet réalisé en formation consistant en l'intégration de maquettes avec
+                            React. La page d'accueil donne accès à une page de connexion qui donne elle-même accès aux
+                            comptes bancaires de l'utilisateur.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, React, Redux, Swagger,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_13_02032022.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="hrnet">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">HRnet</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Création d'une application React</p>
-                    <div>
-                        <div class="liensProjet">
-                            <!-- La div ci-dessous sera décommentée lorsque le rendu de l'application sera disponible en
-                            ligne.
-                            <div>
-                                <a class="btn btnForm" href="https://j-fromantin-hrnet.netlify.app/">Application en ligne</a>
-                            </div>
-                            -->
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/Jerome-Fromantin/JeromeFromantin_14_30032022.git">Code
-                                sur GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://*">
+                            <!-- href="https://j-fromantin-hrnet.netlify.app/"-->
+                                <img src="Images/HRnet.webp" alt="HRnet" class="imgProjet"
+                                title="Ce site n'est pas accessible en ligne.">
+                            </a>
+                            <p><strong class="impWord">HRnet</strong><br>Création d'une application React</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Année :</b> Mars/Mai 2022</p>
-                            <p><b>Sujet :</b> Application de Ressources Humaines.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, JavaScript, React, npm,
-                            GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en la migration d'une application et de ses plugins
-                            JQuery vers une application React avec des librairies React de npm. Il s'agit d'un formulaire
-                            d'inscription d'employé à une base de données existant ici de façon "mockée". Ce formulaire
-                            fonctionne en partie grâce à des librairies externes dont l'une d'elles devait être créée et
-                            publiée sur npm. Enfin, il fallait utiliser Lighthouse pour comparer la performance des 2
-                            versions de l'application.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Année :</b> Mars/Mai 2022</p>
+                            <p><b class="impWord">Description :</b> <span class="noDispo">Non disponible en ligne.</span>
+                            Application factice de Ressources Humaines. Projet réalisé en formation consistant en la
+                            migration d'une application JQuery vers React et la comparaison des performances de chacune des
+                            versions. Il s'agit d'un formulaire d'inscription d'employé à une base de données.</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, JavaScript, React, npm,
+                            <a href="https://github.com/Jerome-Fromantin/JeromeFromantin_14_30032022.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5 projets" id="lareponsed">
-                    <h3 class="titreProjet">
-                        <img src="Images/Favicon.png" alt="">
-                        <span class="px-3 py-1 mx-1 realForm">La réponse D !</span>
-                        <img src="Images/Favicon.png" alt="">
-                    </h3>
-                    <p class="soustitreForm">Création d'une application Symfony</p>
-                    <div>
-                        <div class="liensProjet">
-                            <!-- La div ci-dessous sera décommentée lorsque le rendu de l'application sera disponible en
-                            ligne.
-                            <div>
-                                <a class="btn btnForm" href="https://*">Application en ligne</a>
-                            </div>
-                            -->
-                            <div>
-                                <a class="btn btnForm" href="https://github.com/POECgroupe2/laReponseD.git">Code sur
-                                GitHub</a>
-                            </div>
+                <div class="mt-5 projets" data-aos="flip-down">
+                    <div class="chaqueProjet">
+                        <div class="lienProjet">
+                            <a href="https://*">
+                                <img src="Images/LareponseD.webp" alt="La réponse D !" class="imgProjet"
+                                title="Ce site n'est pas accessible en ligne.">
+                            </a>
+                            <p><strong class="impWord">La réponse D !</strong><br>Création d'une application Symfony</p>
                         </div>
-                        <div class="mt-3 texteProjet">
-                            <p><b>Années :</b> Novembre 2022/Janvier 2023</p>
-                            <p><b>Sujet :</b> Application de jeu sur navigateur.</p>
-                            <p><b>Technologies :</b> <strong class="impWord">HTML5, CSS3, Sass, BootStrap, Symfony, Twig,
-                            JavaScript, GitHub.</strong></p>
-                            <p><b>Description :</b> Ce projet consiste en la conception et en le développement (tous deux
-                            dans un groupe de 3 personnes) d'une application de jeu de questions/réponses basée sur le
-                            modèle de "Qui veut gagner des millions&nbsp;?". Tout d'abord furent créés des documents tels
-                            qu'un brief, des wireframes, des modèles de données, une page Trello... Puis vint le
-                            développement lui&#8209;même avec la création de la BDD, des entités, des contrôleurs... Tout en
-                            travaillant parfois sur le back&#8209;end, j'ai principalement pris en charge le côté "front" de
-                            l'application avec l'utilisation des templates Twig.</p>
+                        <div class="texteProjet">
+                            <p><b class="impWord">Années :</b> Novembre 2022/Janvier 2023</p>
+                            <p><b class="impWord">Description :</b> <span class="noDispo">Non disponible en ligne.</span>
+                            Application de jeu sur navigateur. Projet réalisé en formation consistant en la conception et le
+                            développement (dans un groupe de 3 personnes) d'une application de jeu de questions/réponses
+                            basée sur le modèle de "Qui veut gagner des millions&nbsp;?".</p>
+                            <p><b class="impWord">Technologies :</b> HTML5, CSS3, Sass, BootStrap, Symfony, Twig,
+                            JavaScript,
+                            <a href="https://github.com/POECgroupe2/laReponseD.git">GitHub</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -872,7 +691,7 @@
             <div class="container-fluid" id="pdp">
                 <nav class="barnav">
                     <a href="index.html" id="logoLink-pdp">
-                        <img src="Images/Logo.png" alt="Logo" title="Accueil" id="logo-pdp">
+                        <img src="Images/Logo.jpg" alt="Logo" title="Accueil" id="logo-pdp">
                     </a>
                     <div id="footer-categs">
                         <span class="text-center">
@@ -880,9 +699,6 @@
                         </span>
                         <span class="text-center">
                             <a href="https://www.linkedin.com/in/jerome-fromantin" class="links-pdp">LinkedIn</a>
-                        </span>
-                        <span class="text-center">
-                            <a href="https://www.freecodecamp.org/Jerome-Fromantin" class="links-pdp">FreeCodeCamp</a>
                         </span>
                         <span class="text-center">
                             <a href="cgu-cgv.html" class="links-pdp">CGU-CGV</a>
@@ -895,8 +711,7 @@
         <!-- Ci-dessous, librairie "Animate On Scroll". Lien : https://michalsnik.github.io/aos/ -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="Scripts/script.js"></script>
-        <script src="Scripts/easterEgg.js"></script>
-        <script src="Scripts/mentions.js"></script>
+        <script src="Scripts/showClose.js"></script>
     </body>
 </html>
 

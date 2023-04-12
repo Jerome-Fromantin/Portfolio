@@ -12,8 +12,8 @@ Finalement, sa dernière grande modification a été son adaptation pour en fair
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Jeudi 30 mars 2023
-- Mise à jour de l'URL après mise en ligne chez o2switch.
+Mercredi 12 avril 2023
+- Amélioration de l'UI et de l'UX (user interface et user experience).
 
 ## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
@@ -27,7 +27,8 @@ Jeudi 30 mars 2023
 - [x] Remplacement des couleurs bleue et rouge par le bleu "Very Peri", couleur Pantone 2022 (code 17-3938), et le rouge
 "Tangerine Tango" (code 17-1463).
 - [x] Ajout d'une page de mentions légales.
-- [x] Transformation du portfolio en site d'entreprise avec CGU-CGV.
-- [ ] Finir d'ajouter les réalisations faites durant la formation.
+- [x] 2023 : Transformation du portfolio en site d'entreprise avec CGU-CGV.
+- [x] Finir d'ajouter les réalisations faites durant la formation.
+- [x] Amélioration de l'UI et de l'UX (user interface et user experience).
 - [ ] Eventuellement, régler d'autres problèmes graphiques non connus actuellement.
 - [ ] Eventuellement, ajouter une ou des fonctionnalités avec JavaScript.

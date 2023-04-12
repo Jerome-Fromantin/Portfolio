@@ -8,7 +8,7 @@ body {
 }
 
 /* HEADER */
-#entete {
+#entete, #entetecgu {
   position: fixed;
   z-index: 1;
   background: white;
@@ -18,42 +18,45 @@ body {
   padding: 0;
   border-bottom: 2px black solid;
 }
-#entete > .barnav {
+#entete > .barnav, #entetecgu > .barnav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#entete > .barnav > #logoLink {
+#entete > .barnav > #logoLink, #entetecgu > .barnav > #logoLink {
   margin: 0 0 0 10px;
 }
-#entete > .barnav > #logoLink > #logo {
+#entete > .barnav > #logoLink > #logo, #entetecgu > .barnav > #logoLink > #logo {
   height: 100px;
 }
-#entete > .barnav > #header-categs {
+#entete > .barnav > #header-categs, #entetecgu > .barnav > #header-categs {
   display: flex;
   align-items: center;
   flex-grow: 1;
   justify-content: center;
 }
-#entete > .barnav > #header-categs > span {
+#entete > .barnav > #header-categs > span, #entetecgu > .barnav > #header-categs > span {
   margin: 0 2%;
 }
-#entete > .barnav > #header-categs > span > a {
+#entete > .barnav > #header-categs > span > a, #entetecgu > .barnav > #header-categs > span > a {
   color: #6667ab;
   border: 2px transparent solid;
   border-radius: 20px 0;
 }
-#entete > .barnav > #header-categs > span > a:hover {
+#entete > .barnav > #header-categs > span > a:hover, #entetecgu > .barnav > #header-categs > span > a:hover {
   color: white;
   text-decoration: none;
   border: 2px black solid;
   -webkit-animation: color-change 2s linear infinite;
   animation: color-change 2s linear infinite;
 }
-#entete > .barnav > #header-categs > span > .links-header {
+#entete > .barnav > #header-categs > span > .links-header, #entetecgu > .barnav > #header-categs > span > .links-header {
   padding: 8px;
 }
 
+/*#entetecgu {
+  width: 80vw
+}*/
 #head {
   display: flex;
   align-items: center;
@@ -73,6 +76,9 @@ body {
   padding: 0 10px;
   border: 2px black solid;
   border-radius: 20px 0;
+  animation: webLocal 1s linear;
+  -moz-animation: webLocal 1s linear;
+  -moz-animation: webLocal 1s linear;
 }
 #head > #headText > h1 {
   font-size: 5em;
@@ -81,6 +87,14 @@ body {
   font-size: 2em;
 }
 
+@keyframes webLocal {
+  0% {
+    transform: rotate(-720deg) scale(0);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
 /* FIN DE HEADER */
 /* HEADER ET FOOTER */
 @-webkit-keyframes color-change {
@@ -135,7 +149,7 @@ main h2 {
   border: 2px #dd4124 solid;
 }
 
-.weblocal, .citation, .infos {
+.weblocal, .citation {
   background: white;
   font-size: 1.5em;
   text-align: left;
@@ -149,10 +163,25 @@ main h2 {
   text-indent: 0;
 }
 .weblocal #idImg {
-  width: 50%;
-  max-width: 200px;
+  width: 100%;
+  max-width: 800px;
   border: 2px black solid;
   border-radius: 20px 0;
+}
+.weblocal #services, .weblocal #competences, .weblocal #infos {
+  cursor: pointer;
+}
+.weblocal #services > #arrow-down-serv, .weblocal #services > #arrow-up-serv, .weblocal #services > #arrow-down-comp, .weblocal #services > #arrow-up-comp, .weblocal #services > #arrow-down-infos, .weblocal #services > #arrow-up-infos, .weblocal #competences > #arrow-down-serv, .weblocal #competences > #arrow-up-serv, .weblocal #competences > #arrow-down-comp, .weblocal #competences > #arrow-up-comp, .weblocal #competences > #arrow-down-infos, .weblocal #competences > #arrow-up-infos, .weblocal #infos > #arrow-down-serv, .weblocal #infos > #arrow-up-serv, .weblocal #infos > #arrow-down-comp, .weblocal #infos > #arrow-up-comp, .weblocal #infos > #arrow-down-infos, .weblocal #infos > #arrow-up-infos {
+  height: 20px;
+}
+.weblocal #services > #arrow-down-serv, .weblocal #services > #arrow-down-comp, .weblocal #services > #arrow-down-infos, .weblocal #competences > #arrow-down-serv, .weblocal #competences > #arrow-down-comp, .weblocal #competences > #arrow-down-infos, .weblocal #infos > #arrow-down-serv, .weblocal #infos > #arrow-down-comp, .weblocal #infos > #arrow-down-infos {
+  display: inline;
+}
+.weblocal #services > #arrow-up-serv, .weblocal #services > #arrow-up-comp, .weblocal #services > #arrow-up-infos, .weblocal #competences > #arrow-up-serv, .weblocal #competences > #arrow-up-comp, .weblocal #competences > #arrow-up-infos, .weblocal #infos > #arrow-up-serv, .weblocal #infos > #arrow-up-comp, .weblocal #infos > #arrow-up-infos {
+  display: none;
+}
+.weblocal #ulServicesToOpen, .weblocal #divDevWebToOpen, .weblocal #divInformatiqueToOpen, .weblocal #divLanguesToOpen, .weblocal #divSoftSkillsToOpen, .weblocal #ulInfosToOpen {
+  display: none;
 }
 .weblocal .sub-list {
   text-align: left;
@@ -171,6 +200,9 @@ main h2 {
   width: 20px;
   border-radius: 50%;
   margin: 0 10px 0 30px;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > #horaires {
+  margin-left: 64px;
 }
 .weblocal .sub-list .sub-list-li > .sub-list-text > #easterEgg {
   cursor: pointer;
@@ -227,6 +259,11 @@ main h2 {
   background: lightgray;
   color: black;
   border: 2px #dd4124 solid;
+}
+.weblocal .sub-list .sub-list-li > .sub-list-text > ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
 }
 .weblocal .sub-list li img {
   background: #dd4124;
@@ -292,21 +329,6 @@ ul a:hover {
   margin: 0 auto;
 }
 
-.infos .titreInfos {
-  display: block;
-  text-align: center;
-  text-indent: 0;
-  width: 325px;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.infos ul {
-  list-style-type: disc;
-  list-style-position: inside;
-  text-align: left;
-}
-
 #cvDown {
   display: block;
   background: lightgray;
@@ -315,6 +337,7 @@ ul a:hover {
   color: black;
   text-align: center;
   text-indent: 0;
+  text-decoration: none;
   padding: 2px 10px;
   border: 2px black solid;
   border-radius: 20px 0;
@@ -351,7 +374,6 @@ ul a:hover {
   background: white;
   font-size: 1.5em;
   text-align: left;
-  text-indent: 30px;
   padding: 30px 30px 10px 30px;
   border-radius: 20px;
 }
@@ -361,9 +383,6 @@ ul a:hover {
 .descripReal a:visited {
   color: black;
 }
-.descripReal #creaPerso {
-  color: #dd4124;
-}
 
 .projets {
   background: white;
@@ -372,85 +391,29 @@ ul a:hover {
   text-indent: 0;
   padding: 30px 30px 10px 30px;
   border-radius: 20px;
-  scroll-margin: 150px;
 }
-.projets > .groupeProjets {
+.projets > .chaqueProjet {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-size: 0.9em;
+  align-items: flex-start;
 }
-.projets > .groupeProjets > a:hover {
-  text-decoration: none;
+.projets > .chaqueProjet > .lienProjet {
+  width: 30%;
 }
-.projets .realPerso, .projets .realForm {
-  display: inline-block;
-  background: #dd4124;
-  color: white;
-  font-weight: bold;
+.projets > .chaqueProjet > .lienProjet .imgProjet {
+  width: 100%;
+  max-width: 400px;
   border: 2px black solid;
-  border-radius: 20px 0;
 }
-.projets .realPerso:hover, .projets .realForm:hover {
-  background: lightgray;
-  color: #dd4124;
-}
-.projets .realForm {
-  background: #6667ab;
-}
-.projets .realForm:hover {
-  color: #6667ab;
-}
-.projets > .titreProjet {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.projets > .titreProjet img {
-  background: #dd4124;
-  border-radius: 10px;
-}
-.projets > .soustitrePerso {
-  color: #dd4124;
-  font-weight: bold;
-}
-.projets > .soustitreForm {
-  color: #6667ab;
-  font-weight: bold;
-}
-.projets .liensProjet {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.projets .liensProjet .btnPerso, .projets .liensProjet .btnForm {
-  background: #dd4124;
-  min-width: 250px;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  border: 2px black solid;
-  border-radius: 20px 0;
-  margin: 10px;
-  transition: background 0.5s, color 0.5s;
-}
-.projets .liensProjet .btnPerso:hover, .projets .liensProjet .btnForm:hover {
-  background: lightgray;
-  color: #dd4124;
-}
-.projets .liensProjet .btnForm {
-  background: #6667ab;
-  color: white;
-  transition: background 0.5s, color 0.5s;
-}
-.projets .liensProjet .btnForm:hover {
-  background: lightgray;
-  color: #6667ab;
-}
-.projets .texteProjet {
+.projets > .chaqueProjet > .texteProjet {
+  width: 70%;
   text-align: left;
   padding: 0 10px;
+}
+.projets > .chaqueProjet > .texteProjet a {
+  text-decoration: underline;
+}
+.projets > .chaqueProjet > .texteProjet .noDispo {
+  color: #dd4124;
 }
 
 #cgu-cgv {
@@ -490,6 +453,10 @@ ul a:hover {
 .cguSubtitles {
   font-weight: bold;
   margin: 20px 0 0 0;
+}
+
+.cguRetract {
+  font-style: italic;
 }
 
 /* FIN DE MAIN */
@@ -561,7 +528,18 @@ ul a:hover {
   }
 
   #entreprise, #realisations {
-    padding: 100px 70px 50px 70px;
+    padding: 110px 70px 50px 70px;
+  }
+
+  .projets > .chaqueProjet {
+    align-items: center;
+    flex-direction: column;
+  }
+  .projets > .chaqueProjet > .lienProjet {
+    width: 100%;
+  }
+  .projets > .chaqueProjet > .texteProjet {
+    width: 100%;
   }
 
   #pdp {
@@ -584,7 +562,7 @@ ul a:hover {
   }
 
   #entreprise, #realisations {
-    padding: 90px 60px 45px 60px;
+    padding: 110px 60px 45px 60px;
   }
 
   .citation {
@@ -595,10 +573,6 @@ ul a:hover {
   .liensProjet {
     display: flex;
     flex-direction: column;
-  }
-
-  #pdp {
-    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 660px) {
@@ -619,15 +593,11 @@ ul a:hover {
   }
 
   #entreprise, #realisations {
-    padding: 80px 50px 40px 50px;
+    padding: 110px 50px 40px 50px;
   }
 
   .weblocal .small-list .separator {
     display: block;
-  }
-
-  #pdp {
-    font-size: 1em;
   }
 }
 @media screen and (max-width: 540px) {
@@ -656,15 +626,19 @@ ul a:hover {
     font-size: 1.3em;
   }
 
+  .cguSubtitles {
+    font-size: 1.2em;
+  }
+
   #entreprise, #realisations {
-    padding: 70px 40px 35px 40px;
+    padding: 110px 40px 35px 40px;
   }
 
   main h2 {
     font-size: 2em;
   }
 
-  .weblocal, .citation, .infos, .descripReal, .projets {
+  .weblocal, .citation, .descripReal, .projets {
     font-size: 1.25em;
     text-indent: 20px;
   }
@@ -677,25 +651,25 @@ ul a:hover {
     margin: 0 10px 0 -20px !important;
   }
 
-  .infos .titreInfos {
-    width: 305px;
-  }
-
   .boutonProjet {
     font-size: 20px;
   }
 
   #pdp {
-    font-size: 0.9em;
+    font-size: 1em;
+  }
+
+  #horaires {
+    margin-left: 16px !important;
   }
 }
 @media screen and (max-width: 390px) {
-  #entete, #pdp {
-    font-size: 0.8em;
-  }
-
   #logo, #logo-pdp {
     height: 50px;
+  }
+
+  #header-categs {
+    flex-direction: column;
   }
 
   #head {
@@ -714,15 +688,19 @@ ul a:hover {
     font-size: 1.1em;
   }
 
+  .cguText, .cguSubtitles {
+    font-size: 1em;
+  }
+
   #entreprise, #realisations {
-    padding: 60px 30px 30px 30px;
+    padding: 110px 30px 30px 30px;
   }
 
   main h2 {
     font-size: 1.6em;
   }
 
-  .weblocal, .citation, .infos, .descripReal, .projets {
+  .weblocal, .citation, .descripReal, .projets {
     font-size: 1.1em;
     text-indent: 15px;
   }

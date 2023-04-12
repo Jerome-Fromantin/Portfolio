@@ -10,7 +10,7 @@ body {
 }
 
 /* HEADER */
-#entete {
+#entete, #entetecgu {
   position: fixed;
   z-index: 1;
   background: white;
@@ -63,6 +63,10 @@ body {
   }
 }
 
+/*#entetecgu {
+  width: 80vw
+}*/
+
 #head {
   display: flex;
   align-items: center;
@@ -82,6 +86,9 @@ body {
     padding: 0 10px;
     border: $blackBor;
     border-radius: $title;
+    animation: webLocal 1s linear;
+    -moz-animation: webLocal 1s linear;
+    -moz-animation: webLocal 1s linear;
 
     >h1 {
       font-size: 5em
@@ -90,6 +97,14 @@ body {
     >h2 {
       font-size: 2em
     }
+  }
+}
+@keyframes webLocal {
+  0% {
+    transform: rotate(-720deg) scale(0)
+  }
+  100% {
+    transform: rotate(0) scale(1)
   }
 }
 /* FIN DE HEADER */
@@ -151,7 +166,7 @@ main h2 {
   }
 }
 
-.weblocal, .citation, .infos {
+.weblocal, .citation {
   background: white;
   font-size: 1.5em;
   text-align: left;
@@ -165,10 +180,28 @@ main h2 {
   text-indent: 0;
 
   #idImg {
-    width: 50%;
-    max-width: 200px;
+    width: 100%;
+    max-width: 800px;
     border: $blackBor;
     border-radius: $title
+  }
+
+  #services, #competences, #infos {
+    cursor: pointer;
+
+    >#arrow-down-serv, >#arrow-up-serv, >#arrow-down-comp, >#arrow-up-comp, >#arrow-down-infos, >#arrow-up-infos {
+      height: 20px
+    }
+    >#arrow-down-serv, >#arrow-down-comp, >#arrow-down-infos {
+      display: inline
+    }
+    >#arrow-up-serv, >#arrow-up-comp, >#arrow-up-infos {
+      display: none
+    }
+  }
+
+  #ulServicesToOpen, #divDevWebToOpen, #divInformatiqueToOpen, #divLanguesToOpen, #divSoftSkillsToOpen, #ulInfosToOpen {
+    display: none
   }
 
   .sub-list {
@@ -188,6 +221,10 @@ main h2 {
           width: 20px;
           border-radius: 50%;
           margin: 0 10px 0 30px
+        }
+
+        >#horaires {
+          margin-left: 64px
         }
 
         >#easterEgg {
@@ -248,6 +285,12 @@ main h2 {
               border: 2px $red solid;
             }
           }
+        }
+
+        >ul {
+          list-style-type: disc;
+          list-style-position: inside;
+          text-align: left
         }
       }
     }
@@ -322,21 +365,6 @@ ul {
   margin: 0 auto
 }
 
-.infos .titreInfos {
-  display: block;
-  text-align: center;
-  text-indent: 0;
-  width: 325px;
-  max-width: 90%;
-  margin: 0 auto
-}
-
-.infos ul {
-  list-style-type: disc;
-  list-style-position: inside;
-  text-align: left
-}
-
 #cvDown {
   display: block;
   background: $backGrey;
@@ -345,6 +373,7 @@ ul {
   color: black;
   text-align: center;
   text-indent: 0;
+  text-decoration: none;
   padding: 2px 10px;
   border: $blackBor;
   border-radius: $title;
@@ -383,7 +412,6 @@ ul {
   background: white;
   font-size: 1.5em;
   text-align: left;
-  text-indent: 30px;
   padding: 30px 30px 10px 30px;
   border-radius: 20px;
   a {
@@ -391,9 +419,6 @@ ul {
     &:visited {
       color: black
     }
-  }
-  #creaPerso {
-    color: $red
   }
 }
 
@@ -404,95 +429,30 @@ ul {
   text-indent: 0;
   padding: 30px 30px 10px 30px;
   border-radius: 20px;
-  scroll-margin: 150px;
 
-  >.groupeProjets {
+  >.chaqueProjet {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 0.9em;
-  
-    >a:hover {
-      text-decoration: none
+    align-items: flex-start;
+
+    >.lienProjet {
+      width: 30%;
+      .imgProjet {
+        width: 100%;
+        max-width: 400px;
+        border: $blackBor
+      }
     }
-  }
-
-  .realPerso, .realForm {
-    display: inline-block;
-    background: $red;
-    color: white;
-    font-weight: bold;
-    border: $blackBor;
-    border-radius: $title;
-    &:hover {
-      background: $backGrey;
-      color: $red
-    }
-  }
-  .realForm {
-    background: $blue;
-    &:hover {
-      color: $blue
-    }
-  }
-
-  >.titreProjet {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      background: $red;
-      border-radius: 10px
-    }
-  }
-
-  >.soustitrePerso {
-    color: $red;
-    font-weight: bold
-  }
-
-  >.soustitreForm {
-    color: $blue;
-    font-weight: bold
-  }
-
-  .liensProjet {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .btnPerso, .btnForm {
-      background: $red;
-      min-width: 250px;
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
-      border: $blackBor;
-      border-radius: $title;
-      margin: 10px;
-      transition: background 0.5s, color 0.5s;
-      &:hover {
-        background: $backGrey;
+    >.texteProjet {
+      width: 70%;
+      text-align: left;
+      padding: 0 10px;
+      a {
+        text-decoration: underline
+      }
+      .noDispo {
         color: $red
       }
     }
-
-    .btnForm {
-      background: $blue;
-      color: white;
-      transition: background 0.5s, color 0.5s;
-      &:hover {
-        background: $backGrey;
-        color: $blue
-      }
-    }
-  }
-
-  .texteProjet {
-    text-align: left;
-    padding: 0 10px
   }
 }
 // Fin de section "Les réalisations"
@@ -538,6 +498,10 @@ ul {
 .cguSubtitles {
   font-weight: bold;
   margin: 20px 0 0 0
+}
+
+.cguRetract {
+  font-style: italic
 }
 // Fin de section "Mentions légales - CGU-CGV"
 /* FIN DE MAIN */
@@ -613,7 +577,17 @@ ul {
     padding: 0 6px
   }
   #entreprise, #realisations {
-    padding: 100px 70px 50px 70px
+    padding: 110px 70px 50px 70px
+  }
+  .projets >.chaqueProjet{
+    align-items: center;
+    flex-direction: column;
+    >.lienProjet {
+      width: 100%
+    }
+    >.texteProjet {
+      width: 100%
+    }
   }
   #pdp {
     font-size: 1.5em
@@ -633,7 +607,7 @@ ul {
     padding-bottom: 30px
   }
   #entreprise, #realisations {
-    padding: 90px 60px 45px 60px
+    padding: 110px 60px 45px 60px
   }
   .citation {
     width: 100%;
@@ -642,9 +616,6 @@ ul {
   .liensProjet {
     display: flex;
     flex-direction: column
-  }
-  #pdp {
-    font-size: 1.2em
   }
 }
 
@@ -662,13 +633,10 @@ ul {
     font-size: 1.6em !important
   }
   #entreprise, #realisations {
-    padding: 80px 50px 40px 50px
+    padding: 110px 50px 40px 50px
   }
   .weblocal .small-list .separator {
     display: block
-  }
-  #pdp {
-    font-size: 1em
   }
 }
 
@@ -692,13 +660,16 @@ ul {
   h3 {
     font-size: 1.3em
   }
+  .cguSubtitles {
+    font-size: 1.2em
+  }
   #entreprise, #realisations {
-    padding: 70px 40px 35px 40px
+    padding: 110px 40px 35px 40px
   }
   main h2 {
     font-size: 2em
   }
-  .weblocal, .citation, .infos, .descripReal, .projets {
+  .weblocal, .citation, .descripReal, .projets {
     font-size: 1.25em;
     text-indent: 20px
   }
@@ -708,23 +679,23 @@ ul {
   .sub-list-icon {
     margin: 0 10px 0 -20px !important
   }
-  .infos .titreInfos {
-    width: 305px
-  }
   .boutonProjet {
     font-size: 20px
   }
   #pdp {
-    font-size: 0.9em
+    font-size: 1em
+  }
+  #horaires {
+    margin-left: 16px !important
   }
 }
 
 @media screen and (max-width: 390px) {
-  #entete, #pdp {
-    font-size: 0.8em
-  }
   #logo, #logo-pdp {
     height: 50px
+  }
+  #header-categs {
+    flex-direction: column
   }
   #head {
     height: 250px
@@ -738,13 +709,16 @@ ul {
   h3 {
     font-size: 1.1em
   }
+  .cguText, .cguSubtitles {
+    font-size: 1em
+  }
   #entreprise, #realisations {
-    padding: 60px 30px 30px 30px
+    padding: 110px 30px 30px 30px
   }
   main h2 {
     font-size: 1.6em
   }
-  .weblocal, .citation, .infos, .descripReal, .projets {
+  .weblocal, .citation, .descripReal, .projets {
     font-size: 1.1em;
     text-indent: 15px
   }
