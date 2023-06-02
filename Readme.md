@@ -12,8 +12,8 @@ Finalement, sa dernière grande modification a été son adaptation pour en fair
 HTML5 - CSS3 - Sass - BootStrap - JavaScript - GitHub
 
 ## Dernière mise à jour
-Mercredi 19 avril 2023
-- Modifications mineures.
+Vendredi 2 juin 2023
+- Mise à jour d'une réalisation.
 
 ## Travaux effectués ou à faire
 - [x] 2020 : Création des premiers fichiers HTML, CSS et JS.
